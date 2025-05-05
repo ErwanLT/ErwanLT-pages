@@ -1,0 +1,9 @@
+title: Spring Boot démo
+description: Documentation de mon projet GitHub
+author: LE TUTOUR Erwan
+markdown: kramdown
+baseurl: ""
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
