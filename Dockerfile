@@ -6,6 +6,7 @@ WORKDIR /srv/jekyll
 
 # Installer la gem webrick
 RUN gem install webrick
+RUN gem install jekyll-theme-cayman
 
 # Copier tout le contenu du dossier docs dans le conteneur
 COPY docs/ .
