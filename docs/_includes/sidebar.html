@@ -7,14 +7,14 @@
     
     <div class="collapse show w-100" id="sidebarContent">
         <div class="d-flex flex-column p-3 bg-light" style="width: 280px">
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                    <a href="{{ '/' | relative_url }}" class="nav-link">Accueil</a>
-                </li>
+            <div class="nav nav-pills flex-column mb-auto">
+                {% include designPattern_sidebar.html %}
+                <br>
+                {% include springboot_sidebar.html %}
+                <br>
                 
-                {% include springboot.html %}
-                
-            </ul>
+            </div>
+            
         </div>
     </div>
 
