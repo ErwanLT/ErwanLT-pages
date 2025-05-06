@@ -12,9 +12,12 @@ Le pattern **Médiateur** est un design pattern comportemental qui favorise le
 
 ## Avantages et inconvénients
 
-|   |   |
-|---|---|
-|- Découplage des composants<br>- Centralisation des interactions<br>- Facilité d'extension|- Complexité accrue du médiateur<br>- Augmentation de la dépendance sur le médiateur<br>- Surutilisation du pattern<br>- Coût d'initialisation|
+| Avantage                        | inconvénient                                   |
+|---------------------------------|------------------------------------------------|
+| Découplage des composants       | Complexité accrue du médiateur                 |
+| Centralisation des interactions | Augmentation de la dépendance sur le médiateur |                                                                                                                                                |
+| Facilité d'extension            | Surutilisation du pattern<br>                  |
+|                                 | Coût d'initialisation                          |
 
 ### Avantages
 
