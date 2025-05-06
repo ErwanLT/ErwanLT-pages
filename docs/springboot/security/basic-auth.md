@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Basic Auth
+tags: [spring-boot, java, tutoriel, securité]
 ---
 
 # Sécurisez vos API avec Spring Security : Basic Auth
