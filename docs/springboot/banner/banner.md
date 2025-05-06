@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Banner
+permalink: /springboot/banner/
 tags: [spring-boot, java, tutoriel, bannière]
 ---
 
