@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Banner
+tags: [spring-boot, java, tutoriel, bannière]
 ---
 
 # Comment personnaliser la bannière d'un projet Spring Boot

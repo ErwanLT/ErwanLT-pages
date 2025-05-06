@@ -1,6 +1,7 @@
 ---
 layout: default
 title: JWT RBAC
+tags: [spring-boot, java, tutoriel, securité]
 ---
 
 # Sécurisez vos API avec Spring Security : accès par rôle

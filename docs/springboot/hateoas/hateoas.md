@@ -1,6 +1,7 @@
 ---
 layout: default
-title: HATEOAS
+title: 
+tags: [spring-boot, java, tutoriel, restfull, HATEOAS]
 ---
 
 # HATEOAS

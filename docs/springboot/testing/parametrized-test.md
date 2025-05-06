@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Parametrized Test
+tags: [spring-boot, java, tutoriel, testing]
 ---
 
 # Tests Paramétrés avec JUnit 5

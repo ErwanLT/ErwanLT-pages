@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Prometheus
+tags: [spring-boot, java, tutoriel, monitoring]
 ---
 
 # Superviser votre application Spring Boot grâce à Prometheus et Grafana

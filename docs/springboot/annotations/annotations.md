@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Annotations
+tags: [spring-boot, java, tutoriel, annotations]
 ---
 
 # Comprendre les annotations dans Spring Boot : guide et exemples

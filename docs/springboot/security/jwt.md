@@ -2,6 +2,7 @@
 layout: default
 title: JWT
 permalink: /springboot/security/jwt/
+tags: [spring-boot, java, tutoriel, securité]
 ---
 
 # Sécurisez vos API avec Spring Security : JWT

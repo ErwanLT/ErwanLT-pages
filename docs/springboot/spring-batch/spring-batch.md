@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Spring Batch
+tags: [spring-boot, java, tutoriel, batch]
 ---
 
 # Planifier des tâches avec Spring Batch

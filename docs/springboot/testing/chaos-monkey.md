@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Chaos Monkey
+tags: [spring-boot, java, tutoriel, testing]
 ---
 
 # Introduisez du chaos dans votre application Spring Boot
