@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Spring Batch
+permalink: /springboot/batch/
 tags: [spring-boot, java, tutoriel, batch]
 ---
 

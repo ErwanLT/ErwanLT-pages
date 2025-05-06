@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Annotations
+permalink: /springboot/annotations/
 tags: [spring-boot, java, tutoriel, annotations]
 ---
 
