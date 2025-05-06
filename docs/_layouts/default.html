@@ -95,8 +95,15 @@
 
 <!-- Corps de la page avec sidebar verticale + contenu -->
 <main>
-    {% include sidebar.html %}
-    <div class="content-area">
+        {% include sidebar.html %}
+        <div class="content-area">
+        {% if page.tags %}
+            <div class="mb-3">
+                {% for tag in page.tags %}
+                    <span class="badge bg-primary me-1">{{ tag }}</span>
+                {% endfor %}
+            </div>
+        {% endif %}
         {{ content }}
         {% include footer.html %}
     </div>
