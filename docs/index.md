@@ -28,7 +28,9 @@ Mes valeurs :
 
 Si vous cherchez un artisan du code plutôt qu’un magicien de l’esbroufe, un bâtisseur de solutions plutôt qu’un simple exécutant, alors peut-être que nos chemins sont appelés à se croiser.
 
-> Ne jamais commenter son code !
-> Coder est un art, et l'art doit être sujet à interprétation.
-> 
-> — Erwan Le Tutour
+<blockquote>
+    Ne jamais commenter son code !
+    <br>Coder est un art, et l'art doit être sujet à interprétation.
+    <br>    
+    <cite>— Erwan Le Tutour</cite>
+</blockquote>

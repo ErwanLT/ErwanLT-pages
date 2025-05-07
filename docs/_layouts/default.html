@@ -51,6 +51,33 @@
             height: auto;
             border-radius: 12px;
         }
+        blockquote {
+          font-style: italic;
+          color: #3e3e3e;
+          background-color: #f9f6f1;
+          border-left: 5px solid #8b5e3c;
+          padding: 1rem 1.5rem;
+          margin: 2rem 0;
+          position: relative;
+          font-family: 'Georgia', serif;
+        }
+        blockquote::before {
+          content: "“";
+          font-size: 3rem;
+          color: #8b5e3c;
+          position: absolute;
+          left: 10px;
+          top: -10px;
+          line-height: 1;
+        }
+        blockquote cite {
+          display: block;
+          margin-top: 1rem;
+          text-align: right;
+          font-style: normal;
+          color: #6b4e2e;
+          font-weight: bold;
+        }
     </style>
     
     <!-- Bootstrap et dépendances -->
