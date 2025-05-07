@@ -27,3 +27,8 @@ Mes valeurs :
 - **Respect du passé** : j’aime construire sur des fondations solides et éprouvées.
 
 Si vous cherchez un artisan du code plutôt qu’un magicien de l’esbroufe, un bâtisseur de solutions plutôt qu’un simple exécutant, alors peut-être que nos chemins sont appelés à se croiser.
+
+> Ne jamais commenter son code !
+> Coder est un art, et l'art doit être sujet à interprétation.
+> 
+> — Erwan Le Tutour
