@@ -4,7 +4,7 @@ title: Accueil
 music: https://open.spotify.com/embed/track/5DOr4iUblzjlMrlnZ7MSSg?utm_source=generator&theme=0
 ---
 
-# Bienvenue dans mon portefolio
+# Bienvenue dans mon grimoire
 <div style="text-align: center;">
     <img src="{{ '/assets/images/img.png' | relative_url }}" alt="portfolio" class="portefolio"/>
 </div>
