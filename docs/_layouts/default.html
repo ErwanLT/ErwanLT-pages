@@ -46,6 +46,11 @@
           max-height: 100vh; /* hauteur de l’écran */
           overflow-y: auto;  /* permet le scroll si le contenu dépasse */
         }
+        .music {
+            width: 25%;
+            height: auto;
+            border-radius: 12px;
+        }
     </style>
     
     <!-- Bootstrap et dépendances -->
@@ -77,9 +82,12 @@
 <!-- Corps de la page avec sidebar verticale + contenu -->
 <main>
         {% include sidebar.html %}
-        <div class="content-area">
+    <div class="content-area">
         {% if page.tags %}
             {% include tags.html %}
+        {% endif %}
+        {% if page.music %}
+            <iframe class="music" src="{{ page.music }}" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         {% endif %}
         {{ content }}
         {% include footer.html %}

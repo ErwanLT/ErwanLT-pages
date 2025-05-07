@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Accueil
+music: https://open.spotify.com/embed/track/5DOr4iUblzjlMrlnZ7MSSg?utm_source=generator&theme=0
 ---
 
 # Bienvenue dans mon portefolio
