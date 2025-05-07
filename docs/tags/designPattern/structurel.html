@@ -7,3 +7,78 @@ tags:
 ---
 <h1>{{page.title}}</h1>
 <p>Les Design Patterns structurels se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus facile à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.</p>
+
+<div class="row">
+    <div class="col-md-6 d-flex">
+        <div class="card mb-3 h-100 w-100">
+            <h5 class="card-header">Adaptateur</h5>
+            <div class="card-body d-flex flex-column">
+                <p class="card-text">Le design pattern Adaptateur est un modèle structurel qui permet à des interfaces incompatibles de collaborer entre elles. Il agit comme un intermédiaire qui convertit l'interface d'une classe en une autre interface attendue par le client.</p>
+                <a href="{{ '/designPattern/structure/adaptateur' | relative_url }}" class="btn btn-primary mt-auto">Voir</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 d-flex">
+        <div class="card mb-3 h-100 w-100">
+            <h5 class="card-header">Composite</h5>
+            <div class="card-body d-flex flex-column">
+                <p class="card-text">Le design pattern Composite permet de composer des objets en structures arborescentes pour représenter des hiérarchies.
+                    <br>Imaginez un arbre : l'arbre complet représente l'ensemble de la structure, les branches représentent les compositions d'objets (les composites), et les feuilles représentent les objets individuels (les feuilles). De la même manière qu'un arbre peut être constitué de branches et de feuilles, une structure composite permet de combiner des objets simples et des compositions d'objets pour former une hiérarchie complexe.</p>
+                <a href="{{ '/designPattern/structure/composite' | relative_url }}" class="btn btn-primary mt-auto">Voir</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-6 d-flex">
+        <div class="card mb-3 h-100 w-100">
+            <h5 class="card-header">Décorateur</h5>
+            <div class="card-body d-flex flex-column">
+                <p class="card-text">Le design pattern Décorateur, aussi connu sous le nom de Wrapper, permet d’ajouter dynamiquement des comportements ou des responsabilités à un objet sans modifier son code.
+                    <br>Il favorise l'utilisation de la composition plutôt que de l'héritage pour l'extension des fonctionnalités.
+                    <br>Le décorateur enveloppe l'objet d'origine et ajoute de nouvelles fonctionnalités tout en déléguant les appels à l'objet encapsulé.</p>
+                <a href="{{ '/designPattern/structure/decorateur' | relative_url }}" class="btn btn-primary mt-auto">Voir</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 d-flex">
+        <div class="card mb-3 h-100 w-100">
+            <h5 class="card-header">Façade</h5>
+            <div class="card-body d-flex flex-column">
+                <p class="card-text">Le design pattern Façade fournit une interface simplifiée à un ensemble de classes ou à un sous-système complexe.
+                    <br>Il agit comme une "façade" qui cache la complexité des interactions internes, offrant aux clients une interface plus simple et plus facile à utiliser.
+                    <br> Ce pattern est particulièrement utile lorsque vous avez un système complexe avec de nombreuses classes interconnectées, et que vous souhaitez fournir une interface plus intuitive pour les utilisateurs de ce système.</p>
+                <a href="{{ '/designPattern/structure/facade' | relative_url }}" class="btn btn-primary mt-auto">Voir</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-6 d-flex">
+        <div class="card mb-3 h-100 w-100">
+            <h5 class="card-header">Pont</h5>
+            <div class="card-body d-flex flex-column">
+                <p class="card-text">Le design pattern Pont permet de découpler une abstraction d'une implémentation afin qu'elles puissent évoluer indépendamment.
+                    <br>Il permet de séparer la logique d'une classe de sa représentation physique, facilitant ainsi la gestion et l'extension du code.
+                    <br>Le pattern Pont utilise la composition plutôt que l'héritage, permettant de combiner des implémentations et des abstractions de manière plus flexible.</p>
+                <a href="{{ '/designPattern/structure/pont' | relative_url }}" class="btn btn-primary mt-auto">Voir</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 d-flex">
+        <div class="card mb-3 h-100 w-100">
+            <h5 class="card-header">Proxy</h5>
+            <div class="card-body d-flex flex-column">
+                <p class="card-text">Le design pattern Proxy est un modèle de conception structurel qui fournit un substitut ou un intermédiaire à un autre objet pour contrôler l'accès à cet objet.
+                    <br>En Java, un proxy peut être utilisé pour ajouter une couche d'indirection et d'interception, permettant de modifier ou de contrôler l'accès aux fonctionnalités d'un objet sans en altérer le code source.</p>
+                <a href="{{ '/designPattern/structure/proxy' | relative_url }}" class="btn btn-primary mt-auto">Voir</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
