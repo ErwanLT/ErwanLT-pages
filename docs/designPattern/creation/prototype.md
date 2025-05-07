@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Prototype
-tags: [java, tutoriel, design pattern, prototype]
+tags: [java, tutoriel, design pattern, creation, prototype]
 ---
 
 

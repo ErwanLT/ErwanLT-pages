@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Builder
-tags: [java, tutoriel, design pattern, builder]
+tags: [java, tutoriel, design pattern, creation, builder]
 ---
 
 # Le design pattern Builder

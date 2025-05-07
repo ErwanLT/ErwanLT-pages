@@ -1,0 +1,15 @@
+<div class="mb-3">
+    {% for tag in page.tags %}
+    {% if tag == "design pattern" %}
+    <a href="{{ '/designPattern/' | relative_url }}">
+        <span class="badge bg-primary me-1">{{ tag }}</span>
+    </a>
+    {% elsif tag == "creation" %}
+    <a href="{{ '/designPattern/creation/' | relative_url }}">
+        <span class="badge bg-primary me-1">{{ tag }}</span>
+    </a>
+    {% else %}
+    <span class="badge bg-secondary me-1">{{ tag }}</span>
+    {% endif %}
+    {% endfor %}
+</div>

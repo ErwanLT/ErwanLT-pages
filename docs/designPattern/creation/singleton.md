@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Singleton
-tags: [java, tutoriel, design pattern, singleton]
+tags: [java, tutoriel, design pattern, creation, singleton]
 ---
 
 # Le design pattern Singleton

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Factory
-tags: [java, tutoriel, design pattern, factory]
+tags: [java, tutoriel, design pattern, creation, factory]
 ---
 
 # Le design pattern Factory
