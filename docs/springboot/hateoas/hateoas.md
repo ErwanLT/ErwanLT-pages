@@ -5,7 +5,7 @@ permalink: /springboot/hateoas/
 tags: [spring-boot, java, tutoriel, restfull, HATEOAS]
 ---
 
-# HATEOAS
+# Mise en place de HATEOAS dans Spring Boot : un guide pratique
 
 ## Introduction à HATEOAS
 
