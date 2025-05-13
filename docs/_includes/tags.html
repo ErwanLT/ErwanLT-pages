@@ -18,6 +18,10 @@
                 <a href="{{ '/designPattern/structurel/' | relative_url }}">
                     <span class="badge bg-custom me-1">{{ tag }}</span>
                 </a>
+            {% when "spring-boot" %}
+                <a href="{{ '/springboot/' | relative_url }}">
+                    <span class="badge bg-custom me-1">{{ tag }}</span>
+                </a>
             {% else %}
                 <span class="badge bg-secondary me-1">{{ tag }}</span>
         {% endcase %}
