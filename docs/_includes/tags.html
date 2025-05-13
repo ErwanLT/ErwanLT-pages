@@ -4,19 +4,19 @@
         {% case handle %}
             {% when "design pattern" %}
                 <a href="{{ '/designPattern/' | relative_url }}">
-                    <span class="badge bg-primary me-1">{{ tag }}</span>
+                    <span class="badge bg-custom me-1">{{ tag }}</span>
                 </a>
             {% when "creation" %}
                 <a href="{{ '/designPattern/creation/' | relative_url }}">
-                    <span class="badge bg-primary me-1">{{ tag }}</span>
+                    <span class="badge bg-custom me-1">{{ tag }}</span>
                 </a>
             {% when "comportementaux" %}
                 <a href="{{ '/designPattern/comportementaux/' | relative_url }}">
-                    <span class="badge bg-primary me-1">{{ tag }}</span>
+                    <span class="badge bg-custom me-1">{{ tag }}</span>
                 </a>
             {% when "structure" %}
                 <a href="{{ '/designPattern/structurel/' | relative_url }}">
-                    <span class="badge bg-primary me-1">{{ tag }}</span>
+                    <span class="badge bg-custom me-1">{{ tag }}</span>
                 </a>
             {% else %}
                 <span class="badge bg-secondary me-1">{{ tag }}</span>
