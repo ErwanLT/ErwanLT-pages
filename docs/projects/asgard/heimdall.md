@@ -6,7 +6,7 @@ tags: [java, projet, asgard, heimdall]
 ---
 # Heimdall - Module de Logging pour Spring Boot
 <div align="center">
-    <img width="440" src="{{ '/assets/asagard/img/heimdall.png' | relative_url }}" alt="Heimdall" />
+    <img class="portrait" width="440" src="{{ '/assets/asgard/img/heimdall.png' | relative_url }}" alt="Heimdall" />
 </div>
 
 ## Description
