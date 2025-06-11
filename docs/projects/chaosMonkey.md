@@ -61,7 +61,8 @@ cd interface-chaos-monkey
 ./mvnw clean package
 ```
 
-3. Configurer l'URL de l'application Chaos Monkey dans `application.properties`
+3. Configurer l'URL de l'application Chaos Monkey dans `application.properties` :
+
 ```properties
 # URL de l'application cible contenant Chaos Monkey
 actuator.url=http://localhost:8089
