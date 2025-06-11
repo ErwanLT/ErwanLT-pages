@@ -55,6 +55,28 @@ Le module Hel fournit des API REST pour gérer l'arrêt d'une application de man
 - Arrêts d'urgence contrôlés
 - Maintenance programmée
 
+### [Mimir]( {{ '/projects/asgard/mimir' | relative_url }} ) - Module de Documentation Automatique pour Spring Boot
+
+Le module Mimir est un module de documentation automatique qui permet de générer une documentation complète de votre application Spring Boot.
+
+**Fonctionnalités principales** :
+- Documentation automatique avec les annotations OpenAPI :
+  - `@Tag` : Documentation des classes
+  - `@Operation` : Documentation des méthodes
+  - `@Parameter` : Documentation des paramètres
+  - `@ApiResponse` : Documentation des réponses
+- Génération de diagrammes UML avec Mermaid
+- API REST pour la génération de documentation
+- Documentation structurée au format Markdown
+- Validation des annotations au démarrage
+
+**Utilisation typique** :
+- Documentation automatique des API REST
+- Génération de documentation technique
+- Visualisation de l'architecture avec diagrammes UML
+- Documentation des services et composants
+- Maintenance de la documentation à jour
+
 ## Installation
 
 Chaque module peut être installé indépendamment. Consultez le README spécifique de chaque module pour les instructions d'installation détaillées.

@@ -4,7 +4,7 @@ title: Asgard - Hel
 permalink: /projects/asgard/hel
 tags: [java, projet, asgard, hel]
 ---
-# Module Hel
+# Module Hel - Gestion de l'arrêt d'application
 <div align="center">
   <img class="portrait" src="{{ '/assets/asgard/img/hel.png' | relative_url }}" alt="Heimdall" />
 </div>
