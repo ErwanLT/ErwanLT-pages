@@ -69,38 +69,59 @@ main {
     border-radius: 12px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: #4a3520;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1.5em 0 1em;
+    position: relative;
+}
+
+/* Séparateur uniquement pour les titres principaux, pas dans les accordéons */
+.content-area > h1::after,
+.content-area > h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #8b5e3c, transparent);
+    margin: 0.5em auto;
+}
+
 blockquote {
     font-style: italic;
-    color: #3e3e3e;
+    color: #4a3520;
     background-color: #f9f6f1;
-    border-left: 5px solid #8b5e3c;
-    padding: 1rem 1.5rem;
+    border: 2px solid #8b5e3c;
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
     margin: 2rem 0;
     position: relative;
-    font-family: 'Georgia', serif;
+    font-family: 'Goudy Bookletter 1911', serif;
+    box-shadow: 3px 3px 0px #a67c52;
 }
 
 blockquote::before {
     content: """;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #8b5e3c;
     position: absolute;
     left: 10px;
-    top: -10px;
+    top: -20px;
     line-height: 1;
+    text-shadow: 2px 2px 0px #a67c52;
 }
 
 blockquote cite {
     display: block;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     text-align: right;
     font-style: normal;
     color: #6b4e2e;
     font-weight: bold;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 1.1em;
 }
 
 .btn-custom {
@@ -112,11 +133,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-custom {
-    background-color: #8b5e3c !important;
+    background-color: #795649 !important;
+    color: #f4e5c3 !important;
 }
 
 .bg-custom:hover {
-    background-color: #96765d !important;
+    background-color: #8a6e2f !important;
+}
+
+.bg-secondary {
+    background-color: #6b4e2e !important;
+    color: #f4e5c3 !important;
+}
+
+.bg-secondary:hover {
+    background-color: #8a6e2f !important;
 }
 
 .medieval-button {
@@ -141,4 +172,149 @@ h1, h2, h3, h4, h5, h6 {
 .medieval-button:active {
     box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
     transform: translateY(2px);
+}
+
+/* Style médiéval pour les badges de tags */
+.badge {
+    font-family: 'Goudy Bookletter 1911', serif;
+    padding: 0.5em 1em;
+    border: 1px solid #c0a080;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    box-shadow: 2px 2px 0px #a67c52;
+    transition: all 0.3s ease;
+}
+
+.badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 0px #a67c52;
+}
+
+/* Style médiéval pour les paragraphes */
+p {
+    font-family: 'Goudy Bookletter 1911', serif;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 1.5em;
+    color: #2c2c2c;
+}
+
+/* Style médiéval pour les liens */
+.content-area a {
+    color: #8b5e3c;
+    text-decoration: none;
+    border-bottom: 1px solid #c0a080;
+    transition: all 0.3s ease;
+}
+
+.content-area a:hover {
+    color: #6b4e2e;
+    border-bottom: 2px solid #8b5e3c;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Style spécifique pour le footer */
+footer a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+footer a:hover {
+    color: inherit;
+    text-shadow: none;
+}
+
+/* Style médiéval pour les listes */
+ul, ol {
+    font-family: 'Goudy Bookletter 1911', serif;
+    padding-left: 2em;
+    margin: 1.5em 0;
+}
+
+ul li, ol li {
+    margin-bottom: 0.8em;
+    line-height: 1.6;
+}
+
+ul li::marker {
+    color: #8b5e3c;
+}
+
+/* Style médiéval pour les tableaux */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2em 0;
+    font-family: 'Goudy Bookletter 1911', serif;
+    box-shadow: 3px 3px 0px #a67c52;
+}
+
+th, td {
+    border: 2px solid #8b5e3c;
+    padding: 1em;
+    text-align: left;
+}
+
+th {
+    background-color: #795649;
+    color: #f4e5c3;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f6f1;
+}
+
+/* Style médiéval pour les listes de code */
+pre {
+    background-color: #f9f6f1;
+    border: 2px solid #8b5e3c;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin: 1.5em 0;
+    font-family: 'Courier New', monospace;
+    box-shadow: 3px 3px 0px #a67c52;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    background-color: #f9f6f1;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    color: #4a3520;
+}
+
+/* Style médiéval pour les listes de définition */
+dl {
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin: 1.5em 0;
+}
+
+dt {
+    font-weight: bold;
+    color: #8b5e3c;
+    margin-top: 1em;
+}
+
+dd {
+    margin-left: 2em;
+    margin-bottom: 1em;
+    color: #4a3520;
+}
+
+/* Style pour les liens du footer */
+.footer-link {
+    color: #f4e5c3 !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+.footer-link:hover {
+    color: #f4e5c3 !important;
+    text-shadow: none !important;
+    border-bottom: none !important;
 } 
