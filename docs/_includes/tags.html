@@ -34,6 +34,10 @@
                 <a href="{{ '/springboot/testing' | relative_url }}">
                     <span class="badge bg-custom me-1">{{ tag }}</span>
                 </a>
+            {% when "code-generation" %}
+                <a href="{{ '/springboot/code-gen' | relative_url }}">
+                    <span class="badge bg-custom me-1">{{ tag }}</span>
+                </a>
             {% when "asgard" %}
                 <a href="{{ '/asgard/' | relative_url }}">
                     <span class="badge bg-custom me-1">{{ tag }}</span>

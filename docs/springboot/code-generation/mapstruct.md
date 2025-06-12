@@ -1,6 +1,8 @@
 ---
 layout: default
 title: MapStruct
+permalink: /springboot/code-generation/mapstruct
+tags: [spring-boot, java, tutoriel, mapstruct, code-generation]
 ---
 
 # MapStruct : Dites adieu au code répétitif et boostez vos mappages Java !

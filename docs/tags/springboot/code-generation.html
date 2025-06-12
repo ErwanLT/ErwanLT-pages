@@ -6,3 +6,62 @@ tags:
 - spring-boot
 ---
 <h1>{{page.title}}</h1>
+<p>La génération de code est un aspect essentiel du développement Spring Boot qui permet d'automatiser la création de code répétitif. Cette section couvre les différents outils et techniques pour générer du code de manière efficace, des spécifications OpenAPI aux mappers d'objets.</p>
+
+<div class="row">
+    <div class="col-md-6 d-flex">
+        <div class="card mb-3 h-100 w-100">
+            <h5 class="card-header">OpenAPI</h5>
+            <div class="card-body d-flex flex-column">
+                <p class="card-text">Découvrez comment utiliser les spécifications OpenAPI pour générer automatiquement le code de vos API REST avec Spring Boot. Apprenez à créer et maintenir vos spécifications pour une génération de code efficace.</p>
+                <a href="{{ '/springboot/code-generation/openapi' | relative_url }}" class="medieval-button mt-auto">Voir</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 d-flex">
+        <div class="card mb-3 h-100 w-100">
+            <h5 class="card-header">MapStruct</h5>
+            <div class="card-body d-flex flex-column">
+                <p class="card-text">Maîtrisez l'utilisation de MapStruct pour la génération automatique de code de mapping entre objets en Java. Apprenez à créer des mappers performants et maintenables pour vos applications Spring Boot.</p>
+                <a href="{{ '/springboot/code-generation/mapstruct' | relative_url }}" class="medieval-button mt-auto">Voir</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+
+<style>
+.medieval-card {
+    background-color: #f9f6f1;
+    border: 2px solid #8b5e3c;
+    border-radius: 8px;
+    box-shadow: 3px 3px 0px #a67c52;
+    transition: all 0.3s ease;
+}
+
+.medieval-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 0px #a67c52;
+}
+
+.medieval-card .card-title {
+    color: #4a3520;
+    font-family: 'Goudy Bookletter 1911', serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.medieval-card .card-text {
+    color: #2c2c2c;
+    font-family: 'Goudy Bookletter 1911', serif;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.medieval-card .medieval-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+</style>

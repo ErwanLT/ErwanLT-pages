@@ -1,6 +1,8 @@
 ---
 layout: default
 title: OpenAPI
+permalink: /springboot/code-generation/openapi
+tags: [spring-boot, java, tutoriel, mapstruct, code-generation]
 ---
 
 # Générer vos clients d'API à partir de leur spécification OpenAPI
