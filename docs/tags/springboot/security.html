@@ -6,3 +6,37 @@ tags:
 - spring-boot
 ---
 <h1>{{page.title}}</h1>
+<p>La sécurité est un aspect crucial dans le développement d'applications Spring Boot. Cette section couvre les différentes méthodes d'authentification et d'autorisation, de l'authentification basique aux tokens JWT, en passant par la gestion des rôles et des permissions.</p>
+
+<div class="row">
+    <div class="col-md-4 d-flex">
+        <div class="card mb-3 h-100 w-100">
+            <h5 class="card-header">Authentification Basique</h5>
+            <div class="card-body d-flex flex-column">
+                <p class="card-text">Découvrez comment mettre en place une authentification basique dans votre application Spring Boot. Apprenez à configurer la sécurité, gérer les utilisateurs et protéger vos endpoints.</p>
+                <a href="{{ '/springboot/security/basic-auth' | relative_url }}" class="medieval-button mt-auto">Voir</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 d-flex">
+        <div class="card mb-3 h-100 w-100">
+            <h5 class="card-header">JWT</h5>
+            <div class="card-body d-flex flex-column">
+                <p class="card-text">Maîtrisez l'implémentation des JSON Web Tokens (JWT) dans Spring Boot. Apprenez à générer, valider et gérer les tokens pour une authentification stateless sécurisée.</p>
+                <a href="{{ '/springboot/security/jwt' | relative_url }}" class="medieval-button mt-auto">Voir</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4 d-flex">
+        <div class="card mb-3 h-100 w-100">
+            <h5 class="card-header">JWT avec RBAC</h5>
+            <div class="card-body d-flex flex-column">
+                <p class="card-text">Explorez l'implémentation du contrôle d'accès basé sur les rôles (RBAC) avec JWT. Découvrez comment gérer les permissions et les rôles dans une architecture sécurisée.</p>
+                <a href="{{ '/springboot/security/jwt-rbac' | relative_url }}" class="medieval-button mt-auto">Voir</a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
