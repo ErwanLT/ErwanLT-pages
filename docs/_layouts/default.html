@@ -64,6 +64,13 @@
             <iframe class="music my-6" src="{{ page.music }}" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         {% endif %}
+        {% assign banner_src = page.banner | default: page.banner_url %}
+        {% if banner_src and banner_src != "" %}
+        <div class="not-prose mb-6">
+            <img src="{{ banner_src }}" alt="" loading="lazy"
+                 class="banner-image w-full max-h-[360px] object-cover rounded-2xl border border-slate-200 shadow-sm" />
+        </div>
+        {% endif %}
         {{ content }}
     </div>
 </main>

@@ -53,6 +53,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1.25rem auto;
 }
 
+.content-area img.banner-image {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 .content-area img.full-width {
     max-width: 100%;
 }
