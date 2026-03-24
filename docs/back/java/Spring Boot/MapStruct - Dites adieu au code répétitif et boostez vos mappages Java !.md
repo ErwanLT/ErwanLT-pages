@@ -11,7 +11,7 @@ published_at: "2025-04-22"
 sfeir_slug: "mapstruct-dites-adieu-au-code-repetitif"
 sfeir_tags: [Back, Java, Maven, codegen]
 ---
-Dans le développement d'applications [[Il était une fois... Java|Java]], la conversion d'objets d'un type à un autre est une tâche courante mais souvent fastidieuse.  
+Dans le développement d'applications [Java](/back/java/il-etait-une-fois-java/), la conversion d'objets d'un type à un autre est une tâche courante mais souvent fastidieuse.  
 Que ce soit pour transformer des entités persistantes en objets de transfert de données (DTO) ou pour mapper des données entre différentes couches d'une application, les développeurs passent beaucoup de temps à écrire du code répétitif et sujet aux erreurs.  
 C'est dans ce contexte que **MapStruct** entre en jeu. Cette [bibliothèque open-source](https://www.sfeir.dev/tag/opensource/) offre une solution efficace et automatisée pour gérer les mappages entre beans Java.  
 Dans cet article, nous allons explorer ce qu'est **MapStruct**, ses avantages et inconvénients, ainsi que des exemples concrets d'utilisation, avant de conclure sur son intérêt dans les projets modernes.
@@ -102,7 +102,7 @@ public class ClientDTO {
 }
 ```
 
-On définit une interface de mappage avec [[Comprendre les annotations dans Spring Boot - guide et exemples|l'annotation]] `@Mapper` :
+On définit une interface de mappage avec [l'annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) `@Mapper` :
 
 ```java
 @Mapper

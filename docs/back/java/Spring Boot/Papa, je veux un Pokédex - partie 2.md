@@ -11,13 +11,13 @@ published_at: "2024-11-15"
 sfeir_slug: "papa-je-veux-un-pokedex-partie-2"
 sfeir_tags: [Back, Java, Vaadin, pokédex]
 ---
-[[Papa, je veux un Pokédex - Partie 1|Après avoir tester différentes approches]], qui se sont toutes retrouvées infructueuses, on continue de chercher comment réaliser le Pokédex parfait avec un autre solution.
+[Après avoir tester différentes approches](/back/java/spring-boot/papa-je-veux-un-pokedex-partie-1/), qui se sont toutes retrouvées infructueuses, on continue de chercher comment réaliser le Pokédex parfait avec un autre solution.
 
-## Quatrième solution : [[Vaadin - définition|Vaadin]]
+## Quatrième solution : [Vaadin](/definition/vaadin-definition/)
 
 ### Qu'est ce que c'est ?
 
-[[Vaadin - définition|Vaadin est un framework Java pour créer des applications web]]. Il est particulièrement apprécié pour sa capacité à simplifier le développement d'interfaces utilisateur, tout en utilisant [[Il était une fois... Java|Java]] pour tout le code, y compris celui de l'interface.
+[Vaadin est un framework Java pour créer des applications web](/definition/vaadin-definition/). Il est particulièrement apprécié pour sa capacité à simplifier le développement d'interfaces utilisateur, tout en utilisant [Java](/back/java/il-etait-une-fois-java/) pour tout le code, y compris celui de l'interface.
 
 ### L'intérêt ?
 
@@ -44,7 +44,7 @@ C'est ce que nous allons voir tout de suite.
 ### Mise en place
 
 L'un des avantages de Vaadin, c'est sa capacité à s'intégrer de manière transparente avec les frameworks Spring.  
-Voici les étapes pour démarrer une application Vaadin avec [[Il était une fois... Spring Boot|Spring Boot]] :
+Voici les étapes pour démarrer une application Vaadin avec [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) :
 
 1. Allez sur [Spring Initializr](https://start.spring.io/?ref=sfeir.dev)
 2. Choisissez votre type de projet (Maven / Gradle)
@@ -107,7 +107,7 @@ classe HomeView
 
 #### L'annotation @Route
 
-[[Comprendre les annotations dans Spring Boot - guide et exemples|L'annotation]] `@Route` dans Vaadin est utilisée pour définir les vues qui sont navigables dans l'application. Cette annotation indique que la classe annotée représente une page ou une vue de l'application, et elle spécifie le chemin d'accès (URL) où cette vue sera accessible.
+[L'annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) `@Route` dans Vaadin est utilisée pour définir les vues qui sont navigables dans l'application. Cette annotation indique que la classe annotée représente une page ou une vue de l'application, et elle spécifie le chemin d'accès (URL) où cette vue sera accessible.
 
 ⚠️ La classe annotée avec `@Route` doit hériter d'une classe de composant Vaadin, généralement `VerticalLayout`, `HorizontalLayout`.  
 Le chemin d'accès (URL) de la vue est défini dans la valeur de l'annotation `@Route`. Si aucune valeur n'est fournie, la vue sera accessible à la racine de l'application (`/`).

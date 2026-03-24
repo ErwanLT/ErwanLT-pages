@@ -11,7 +11,7 @@ published_at: "2024-11-08"
 sfeir_slug: "papa-je-veux-un-pokedex-partie-1"
 sfeir_tags: [Back, postman, html, CSS, JavaScript, pokédex]
 ---
-Ah, nos chères petites têtes blondes ! Dès que le petit a compris que papa n'était pas [[Papa, dessine-moi un programme|créateur de bugs, mais bel et bien un créateur d'applications magiques]], il a tout de suite cherché comment cela pouvait servir ses intérêts (malin, la guêpe).
+Ah, nos chères petites têtes blondes ! Dès que le petit a compris que papa n'était pas [créateur de bugs, mais bel et bien un créateur d'applications magiques](/product/papa-dessine-moi-un-programme/), il a tout de suite cherché comment cela pouvait servir ses intérêts (malin, la guêpe).
 
 Et comme la majorité des enfants de son âge, il a pour centre d'intérêt les petites (et les grandes) créatures d'une firme nippone : les Pokémon.
 
@@ -68,4 +68,4 @@ Sans doute la solution la plus simple, surtout qu'avec un peu de recherche googl
 
 Mais comme je suis curieux, je préfère continuer à chercher voir si je ne trouve pas quelque chose de moins front, quelque chose qui me permettrait de faire tout ça sans le faire directement.
 
-Découvrez la suite de la création d'un Pokédex dans [[Papa, je veux un Pokédex - partie 2|le prochain article]] !
+Découvrez la suite de la création d'un Pokédex dans [le prochain article](/back/java/spring-boot/papa-je-veux-un-pokedex-partie-2/) !

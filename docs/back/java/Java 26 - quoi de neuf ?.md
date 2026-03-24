@@ -13,7 +13,7 @@ sfeir_tags: [Back, Java]
 ---
 Java 26, dont la **publication est attendue en mars 2026**, continue la progression réfléchie et conservatrice du langage vers davantage de **sécurité, de robustesse et de simplicité pour les développeurs**.
 
-[[Java 25 - quelles sont les nouveautés ?|Contrairement à Java 25, cette version n'est pas une LTS]].
+[Contrairement à Java 25, cette version n'est pas une LTS](/back/java/java-25-quelles-sont-les-nouveautes/).
 
 Dans cette version, parmi les nouveautés, deux JEP ont un rôle **symbolique et fondamental** : **la JEP 500**, qui renforce la signification de `final` dans le langage, et **la JEP 504**, qui supprime un héritage historique aujourd’hui obsolète.
 

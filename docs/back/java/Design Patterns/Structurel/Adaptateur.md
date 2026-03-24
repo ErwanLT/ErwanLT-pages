@@ -11,15 +11,15 @@ published_at: "2024-06-03"
 sfeir_slug: "les-design-patterns-structurel-adaptateur"
 sfeir_tags: [Back, Java, Design pattern]
 ---
-[[Les Design Patterns]] en programmation, se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus faciles à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.
+[Les Design Patterns](/definition/les-design-patterns/) en programmation, se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus faciles à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.
 
 Les design patterns structurels les plus utilisés sont les suivants :
 - **Adaptateur**
-- [[Composite]]
-- [[Décorateur]]
-- [[Façade]]
-- [[Pont]]
-- [[Proxy]]
+- [Composite](/back/java/design-patterns/structurel/composite/)
+- [Décorateur](/back/java/design-patterns/structurel/decorateur/)
+- [Façade](/back/java/design-patterns/structurel/facade/)
+- [Pont](/back/java/design-patterns/structurel/pont/)
+- [Proxy](/back/java/design-patterns/structurel/proxy/)
 
 ## Le design pattern Adaptateur
 

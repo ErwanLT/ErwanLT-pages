@@ -12,7 +12,7 @@ sfeir_slug: "gerer-et-superviser-ses-applications-avec-spring-boot-admin"
 sfeir_tags: [Back, Java, Spring Boot, Monitoring]
 ---
 Dans un écosystème d'applications distribuées, la supervision et la gestion des services deviennent des enjeux critiques pour assurer leur performance et leur disponibilité.  
-Spring Boot Admin est une solution [open-source](https://www.sfeir.dev/tag/opensource/) qui simplifie la surveillance des applications basées sur [[Il était une fois... Spring Boot|Spring Boot]]. Si vous avez déjà implémenté Spring Boot Admin et que plusieurs applications clientes lui envoient leurs données, vous savez déjà à quel point cet outil peut être puissant.
+Spring Boot Admin est une solution [open-source](https://www.sfeir.dev/tag/opensource/) qui simplifie la surveillance des applications basées sur [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/). Si vous avez déjà implémenté Spring Boot Admin et que plusieurs applications clientes lui envoient leurs données, vous savez déjà à quel point cet outil peut être puissant.
 
 ## Présentation de Spring Boot Admin
 
@@ -50,7 +50,7 @@ Spring Boot Admin est particulièrement adapté aux architectures microservices,
 
 - **Limité à l’écosystème Spring** : Spring Boot Admin est conçu pour les applications Spring Boot, ce qui le rend inadapté pour d’autres technologies.
 - **Dépendance à Actuator** : Les applications clientes doivent exposer leurs endpoints Actuator, ce qui peut poser des problèmes de sécurité si mal configuré.
-- **Moins robuste pour l’analyse avancée** : Bien qu’efficace pour le monitoring de base, il manque de capacités d’analyse approfondie par rapport à des outils comme [[Superviser votre application Spring Boot grâce à Prometheus et Grafana|Grafana ou Prometheus]].
+- **Moins robuste pour l’analyse avancée** : Bien qu’efficace pour le monitoring de base, il manque de capacités d’analyse approfondie par rapport à des outils comme [Grafana ou Prometheus](/back/java/spring-boot/superviser-votre-application-spring-boot-grace-a-prometheus-et-grafana/).
 
 ## Complémentarité avec Grafana
 
@@ -77,7 +77,7 @@ Créer une application Spring Boot et lui ajouter la dépendance suivante :
 </dependency>
 ```
 
-il ne reste plus qu'à rajouter [[Comprendre les annotations dans Spring Boot - guide et exemples|l'annotation]]`@EnableAdminServer` dans votre classe main
+il ne reste plus qu'à rajouter [l'annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/)`@EnableAdminServer` dans votre classe main
 
 ```java
 @EnableAdminServer
@@ -148,7 +148,7 @@ Prenons l'exemple de **spring-batch tutorial** :
 
 Nous avons ici accès à plus d'informations qui sont en fait une représentation visuelle des Actuator, et soyons honnêtes, c'est beaucoup plus digeste qu'un json à lire.
 
-Dans le cas de **spring-batch tutorial**, [[Planifier des tâches avec Spring Batch|nous avions précédemment programmé des tâches]], nous pouvons les retrouver dans le sous-menu **Tâches programmées**.
+Dans le cas de **spring-batch tutorial**, [nous avions précédemment programmé des tâches](/back/java/spring-boot/planifier-des-taches-avec-spring-batch/), nous pouvons les retrouver dans le sous-menu **Tâches programmées**.
 
 [![](https://www.sfeir.dev/content/images/2025/04/image-11.png)](https://www.sfeir.dev/content/images/2025/04/image-11.png)
 

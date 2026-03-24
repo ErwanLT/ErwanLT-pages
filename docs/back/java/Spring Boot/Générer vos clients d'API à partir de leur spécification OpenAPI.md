@@ -13,13 +13,13 @@ sfeir_tags: [Back, Java, Spring Boot, openAPI, swagger, codegen, Maven]
 ---
 Il y a de cela fort longtemps, j'avais écrit un article sur comment réussir sa migration de swagger 2 vers OpenAPI 3 :
 
-[[Réussir sa migration de Swagger 2 à OpenApi 3]]
+[Réussir sa migration de Swagger 2 à OpenApi 3](/back/java/spring-boot/reussir-sa-migration-de-swagger-2-a-openapi-3/)
 
 Et à la fin de ce dernier, je vous promettais un futur article sur la génération de clients d'API depuis leur spécification OpenAPI, et bien nous y voilà.
 
 ---
 
-Dans le développement d’applications modernes, les [[REST - définition|API REST]]jouent un rôle central pour permettre la communication entre différents services. Cependant, écrire manuellement des clients pour interagir avec ces API peut être fastidieux et source d’erreurs.  
+Dans le développement d’applications modernes, les [API REST](/definition/rest-definition/)jouent un rôle central pour permettre la communication entre différents services. Cependant, écrire manuellement des clients pour interagir avec ces API peut être fastidieux et source d’erreurs.  
 C’est là qu’interviennent des outils comme le plugin Maven `openapi-generator-maven-plugin`, basé sur la spécification [OpenAPI](https://www.sfeir.dev/back/migrer-de-swagger-2-a-openapi-3/). Cet article explore pourquoi et comment utiliser ce plugin, ses avantages et inconvénients, ainsi qu’un cas pratique pour illustrer son application.
 
 ## Pourquoi générer ses clients d’API ?
@@ -38,7 +38,7 @@ Cela répond à plusieurs besoins :
 L’utilisation d’un générateur comme `openapi-generator-maven-plugin` offre plusieurs atouts :
 
 - **Productivité accrue** : Le plugin génère des interfaces, des modèles et parfois des implémentations en quelques secondes, éliminant des heures de travail manuel.
-- **Compatibilité avec les frameworks** : Il prend en charge des bibliothèques populaires comme **Spring** (avec [[Il était une fois... Spring Boot|spring-boot]] ou spring-cloud pour OpenFeign), ce qui facilite son intégration dans des projets existants.
+- **Compatibilité avec les frameworks** : Il prend en charge des bibliothèques populaires comme **Spring** (avec [spring-boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) ou spring-cloud pour OpenFeign), ce qui facilite son intégration dans des projets existants.
 - **Personnalisation** : Grâce à des options de configuration et des templates personnalisés, il est possible d’adapter le code généré à des besoins spécifiques.
 - **Fiabilité** : Le code produit est basé sur une spécification validée, réduisant les risques d’erreurs humaines comme des fautes de frappe ou des incohérences dans les types de données.
 - **Évolutivité** : Les mises à jour de l’API nécessitent simplement une nouvelle génération, sans réécrire tout le code.
@@ -155,7 +155,7 @@ Le fichier _books.json_ dans `src/main/resources/swagger` sert de spécificati
 
 ### Utilisation dans le code
 
-- **Génération** : Exécutez `mvn generate-sources`. Cela crée une interface `BookManagementApi` [[Comprendre les annotations dans Spring Boot - guide et exemples|annotée]] avec `@FeignClient` dans `fr.eletutour.book.consumer.api`.
+- **Génération** : Exécutez `mvn generate-sources`. Cela crée une interface `BookManagementApi` [annotée](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) avec `@FeignClient` dans `fr.eletutour.book.consumer.api`.
 - **Service Spring** :
 
 ```java

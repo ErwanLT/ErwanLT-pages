@@ -14,10 +14,10 @@ J'adore les jeux de société, et la ludothèque commence à prendre une place t
 
 Le problème, c’est qu’avec l’accumulation des boîtes, on finit par hésiter sur des détails de règles en pleine partie. Et dans ce moment-là, on veut une réponse rapide, sourcée, et sans débat infini autour de la table.
 
-Dans [[De la question naturelle à la requête JPA : tool calling avec Spring AI]], nous avons vu comment connecter un LLM à des tools métier.
+Dans [De la question naturelle à la requête JPA : tool calling avec Spring AI](/back/java/spring-boot/ia/de-la-question-naturelle-a-la-requete-jpa-tool-calling-avec-spring-ai/), nous avons vu comment connecter un LLM à des tools métier.
 Ici, nous changeons d’angle : les réponses ne viennent plus d’une base relationnelle, mais d’un corpus documentaire de règles.
 
-Objectif : construire une API [[REST - définition|REST]] qui répond à des questions en langage naturel sur des jeux de société avec un pipeline **RAG** local.
+Objectif : construire une API [REST](/definition/rest-definition/) qui répond à des questions en langage naturel sur des jeux de société avec un pipeline **RAG** local.
 
 ## Le besoin réel
 
@@ -38,7 +38,7 @@ Le RAG répond à ce besoin :
 
 ## Stack technique
 
-- [[Il était une fois... Spring Boot|Spring Boot]]
+- [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/)
 - Spring AI (`ollama` + `vector-store-chroma`)
 - Ollama local (chat + embeddings)
 - Chroma pour le stockage vectoriel
@@ -398,7 +398,7 @@ Cette traçabilité est essentielle pour la confiance utilisateur.
 - gérer une déduplication inter-chunks plus stricte,
 - ajouter un mode "citation stricte" (réponse uniquement appuyée sur extraits),
 - historiser les questions pour identifier les zones de règles ambiguës,
-- exposer des métriques via [[Découverte des Actuators dans Spring Boot]] et [[Superviser votre application Spring Boot grâce à Prometheus et Grafana]].
+- exposer des métriques via [Découverte des Actuators dans Spring Boot](/back/java/spring-boot/decouverte-des-actuators-dans-spring-boot/) et [Superviser votre application Spring Boot grâce à Prometheus et Grafana](/back/java/spring-boot/superviser-votre-application-spring-boot-grace-a-prometheus-et-grafana/).
 
 ## Conclusion
 

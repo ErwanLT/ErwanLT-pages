@@ -11,15 +11,15 @@ published_at: "2024-07-05"
 sfeir_slug: "les-design-patterns-structurels-pont"
 sfeir_tags: [Back, Java, Design pattern]
 ---
-[[Les Design Patterns]] en programmation, se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus faciles à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.
+[Les Design Patterns](/definition/les-design-patterns/) en programmation, se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus faciles à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.
 
 Les design patterns structurels les plus utilisés sont les suivants :
-- [[Adaptateur]]
-- [[Composite]]
-- [[Décorateur]]
-- [[Façade]]
+- [Adaptateur](/back/java/design-patterns/structurel/adaptateur/)
+- [Composite](/back/java/design-patterns/structurel/composite/)
+- [Décorateur](/back/java/design-patterns/structurel/decorateur/)
+- [Façade](/back/java/design-patterns/structurel/facade/)
 - **Pont**
-- [[Proxy]]
+- [Proxy](/back/java/design-patterns/structurel/proxy/)
 ## Le design pattern Pont
 
 ### Définition
@@ -48,7 +48,7 @@ Le pattern **Pont** utilise la composition plutôt que l'héritage, permettant
 
 ### Exemple d'implémentation
 
-Dans mes articles précédents sur les design patterns [[Décorateur]] et [[Façade]], j'ai utilisé l'exemple de types de cafés différents ainsi que d'une boutique spécialisée dans la vente de ce dernier. Généralement dans ce genre d'établissement nous avons aussi la possibilité de choisir la taille de notre boisson. C'est ce que nous verrons dans notre exemple d'implémentation.
+Dans mes articles précédents sur les design patterns [Décorateur](/back/java/design-patterns/structurel/decorateur/) et [Façade](/back/java/design-patterns/structurel/facade/), j'ai utilisé l'exemple de types de cafés différents ainsi que d'une boutique spécialisée dans la vente de ce dernier. Généralement dans ce genre d'établissement nous avons aussi la possibilité de choisir la taille de notre boisson. C'est ce que nous verrons dans notre exemple d'implémentation.
 
 [![diagramme de classe](https://www.sfeir.dev/content/images/2024/06/bridge.drawio.png)](https://www.sfeir.dev/content/images/2024/06/bridge.drawio.png)
 

@@ -61,7 +61,7 @@ La première borne est installée dans un bar californien en 1972. Quelques jour
 
 "Sa place est dans un musée", dirait un célèbre archéologue
 
-## Construire PONG en [[Il était une fois... Java|Java]] - comprendre le programme bloc par bloc
+## Construire PONG en [Java](/back/java/il-etait-une-fois-java/) - comprendre le programme bloc par bloc
 
 ### La fenêtre et le panneau principal
 

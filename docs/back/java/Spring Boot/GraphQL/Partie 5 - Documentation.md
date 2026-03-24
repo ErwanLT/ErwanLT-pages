@@ -15,7 +15,7 @@ _our 5 : le vent souffle dans les voiles et nous arrivons en vue de l'île de la
 
 ---
 
-Le vent souffle doucement dans les voiles, et aujourd'hui, notre quête nous mène à l'île de la Documentation. Après avoir [[Réussir sa migration de Swagger 2 à OpenApi 3|navigué avec succès entre les récifs de Swagger et OpenAPI]] pour cartographier nos [API REST](https://www.sfeir.dev/rest-definition/), il est temps de dresser la carte de nos [[GraphQL - définition|API GraphQL]].  
+Le vent souffle doucement dans les voiles, et aujourd'hui, notre quête nous mène à l'île de la Documentation. Après avoir [navigué avec succès entre les récifs de Swagger et OpenAPI](/back/java/spring-boot/reussir-sa-migration-de-swagger-2-a-openapi-3/) pour cartographier nos [API REST](https://www.sfeir.dev/rest-definition/), il est temps de dresser la carte de nos [API GraphQL](/definition/graphql-definition/).  
 À ma grande surprise, pas besoin de dépendances supplémentaires pour documenter notre trésor cette fois-ci !
 
 ## **Observation initiale : le schéma brut**
@@ -291,7 +291,7 @@ Et voici le butin :
 
 ### Problèmes évités avec GraphQL
 
-Contrairement à REST, où j’aurais dû jongler avec des objets intermédiaires ou des [[Comprendre les annotations dans Spring Boot - guide et exemples|annotations]]pour éviter des boucles infinies (comme `Author > Article > Author`), GraphQL gère tout cela avec élégance.
+Contrairement à REST, où j’aurais dû jongler avec des objets intermédiaires ou des [annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/)pour éviter des boucles infinies (comme `Author > Article > Author`), GraphQL gère tout cela avec élégance.
 
 ## Conclusion
 
@@ -302,8 +302,8 @@ GraphQL, avec son outil **GraphiQL**, est un vent favorable pour naviguer dans 
 _Nous remettons le cap vers le large, où une tempête se prépare, le cyclone Gestion des erreurs est devant nous._
 
 ## Précédemment
-[[Partie 4 - Tests unitaires]]
+[Partie 4 - Tests unitaires](/back/java/spring-boot/graphql/partie-4-tests-unitaires/)
 
 ## Prochainement
 
-[[Partie 6 - Gestion des erreurs]]
+[Partie 6 - Gestion des erreurs](/back/java/spring-boot/graphql/partie-6-gestion-des-erreurs/)

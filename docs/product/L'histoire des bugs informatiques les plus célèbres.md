@@ -38,7 +38,7 @@ Cependant l'utilisation du mot bug pour exprimer des problème remonte vers 1870
 lancement d'ariane 5
 
 Le **vol 501** est le vol inaugural du [lanceur](https://fr.wikipedia.org/wiki/Lanceur_\(astronautique\)?ref=sfeir.dev) [européen](https://fr.wikipedia.org/wiki/Europe?ref=sfeir.dev) [Ariane 5](https://fr.wikipedia.org/wiki/Ariane_5?ref=sfeir.dev), qui a eu lieu le 4 juin 1996. Il s'est soldé par un échec, causé par un dysfonctionnement informatique, qui vit la fusée se briser et exploser en vol seulement 36,7 secondes après le décollage.  
-La cause : une erreur logicielle liée à la conversion d'une donnée en virgule flottante en entier. Cette erreur [[Pourquoi tester son code ?|n’avait pas été détectée lors des tests]], car elle ne se manifestait pas dans la version précédente (Ariane 4). Ce bug coûta près de **370 millions de dollars**.
+La cause : une erreur logicielle liée à la conversion d'une donnée en virgule flottante en entier. Cette erreur [n’avait pas été détectée lors des tests](/product/pourquoi-tester-son-code/), car elle ne se manifestait pas dans la version précédente (Ariane 4). Ce bug coûta près de **370 millions de dollars**.
 
 ## Le bug du **millénaire** : le plus célèbre
 
@@ -68,7 +68,7 @@ Toutefois, certains incidents continuent de marquer l'industrie informatique :
 
 Malgré les progrès constants dans les pratiques de développement logiciel, les bugs persistent pour plusieurs raisons :
 
-1. **Complexité croissante** : les logiciels modernes sont extrêmement complexes, intégrant des millions de lignes de code. Plus un logiciel est grand, [[Test paramétrés - un test pour les gouverner tous|plus il est difficile de tout anticiper et de tester]].
+1. **Complexité croissante** : les logiciels modernes sont extrêmement complexes, intégrant des millions de lignes de code. Plus un logiciel est grand, [plus il est difficile de tout anticiper et de tester](/back/java/tests/test-parametres-un-test-pour-les-gouverner-tous/).
 2. **Erreurs humaines** : les développeurs sont humains, et même avec les meilleures pratiques, des erreurs peuvent se glisser dans le code.
 3. **Conflits matériels** : un logiciel peut interagir avec une multitude de matériels différents (ordinateurs, téléphones, serveurs), rendant difficile l’anticipation de toutes les configurations possibles.
 

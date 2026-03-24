@@ -6,8 +6,8 @@ tags: [back, java]
 status: "Draft"
 ---
 Dans les précédents chapitres, nous avons exploré le monde du son numérique sous deux angles :  
-d’abord ****[[Tutoriel Java Sound - transformer le son du microphone en images temps réel|l’écoute]]****, en capturant les ondes à travers un microphone ;  
-puis ****[[Créons un synthétiseur en Java|la création]]****, en donnant forme à ces ondes grâce à un petit synthétiseur.
+d’abord ****[l’écoute](/back/java/tutoriel-java-sound-transformer-le-son-du-microphone-en-images-temps-reel/)****, en capturant les ondes à travers un microphone ;  
+puis ****[la création](/back/java/creons-un-synthetiseur-en-java/)****, en donnant forme à ces ondes grâce à un petit synthétiseur.
 
 Aujourd’hui, notre aventure musicale prend une tournure plus instrumentale.  
 Nous allons concevoir une ****guitare virtuelle****, un instrument à six cordes, fidèle dans son comportement aux lois physiques du son, mais animé dans le monde numérique par Java.
@@ -29,7 +29,7 @@ Nous allons nous inspirer de ce principe pour donner à notre guitare un son ***
 
 Je vous passe toute la partie sur la définition du son, vous pouvez la retrouver dans cet article
 
-[[Créons un synthétiseur en Java]]
+[Créons un synthétiseur en Java](/back/java/creons-un-synthetiseur-en-java/)
 
 ## La classe principale : `VirtualGuitar`
 

@@ -13,7 +13,7 @@ sfeir_tags: [Back, Java, Spring Boot, API]
 ---
 # Spring Data REST - créer des API sans controllers
 
-Créer une [[REST - définition|API REST]] en [[Il était une fois... Spring Boot|Spring Boot]], c'est souvent une succession de contrôleurs, DTO, services, tests, documentation. C'est robuste, mais pas toujours nécessaire.
+Créer une [API REST](/definition/rest-definition/) en [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), c'est souvent une succession de contrôleurs, DTO, services, tests, documentation. C'est robuste, mais pas toujours nécessaire.
 
 Spring Data REST propose une alternative simple : exposer directement les repositories Spring Data sous forme d'API REST, sans écrire un seul controller. Le gain de temps est réel, à condition d'accepter un contrat plus implicite.
 
@@ -25,7 +25,7 @@ Dans cet article, on construit un exemple complet, puis on pose clairement les l
 - admin technique d'un domaine métier stable
 - API simple de type CRUD où la logique métier est faible
 
-Et à l'inverse : dès que le contrat API doit être très précis, [[Versioning des API dans Spring Boot - Guide Complet|versionné]] ou fortement sécurisé, on bascule plus souvent sur des controllers et des DTO.
+Et à l'inverse : dès que le contrat API doit être très précis, [versionné](/back/java/spring-boot/versioning-des-api-dans-spring-boot-guide-complet/) ou fortement sécurisé, on bascule plus souvent sur des controllers et des DTO.
 
 ## Mise en place minimale
 
@@ -268,13 +268,13 @@ Oui, c'est compatible. Il suffit d'ajouter le starter Springdoc qui comprend Spr
 
 On retrouve ensuite les endpoints dans Swagger UI (`/swagger-ui.html`).
 
-C'est particulièrement utile si on a déjà lu [[Réussir sa migration de Swagger 2 à OpenApi 3]].
+C'est particulièrement utile si on a déjà lu [Réussir sa migration de Swagger 2 à OpenApi 3](/back/java/spring-boot/reussir-sa-migration-de-swagger-2-a-openapi-3/).
 
 ## Ce que Spring Data REST ne fait pas bien
 
 - **Contrat API explicite** : tout change dès qu'on renomme un repository ou un champ.
-- **Versioning** : possible, mais moins naturel que dans un controller dédié. Voir [[Versioning des API dans Spring Boot - Guide Complet]].
-- **Validation fine** : on peut brancher la validation, mais le contrôle sur le cycle HTTP est plus limité qu'un controller classique. Voir [[Validation Spring Boot - du standard au sur-mesure]].
+- **Versioning** : possible, mais moins naturel que dans un controller dédié. Voir [Versioning des API dans Spring Boot - Guide Complet](/back/java/spring-boot/versioning-des-api-dans-spring-boot-guide-complet/).
+- **Validation fine** : on peut brancher la validation, mais le contrôle sur le cycle HTTP est plus limité qu'un controller classique. Voir [Validation Spring Boot - du standard au sur-mesure](/back/java/spring-boot/validation-spring-boot-du-standard-au-sur-mesure/).
 - **Sécurité granulaire** : faisable, mais nécessite de bien connaître les événements repository et les `@PreAuthorize`.
 - **Ergonomie des réponses** : le format HAL est puissant, mais pas toujours désiré côté front.
 

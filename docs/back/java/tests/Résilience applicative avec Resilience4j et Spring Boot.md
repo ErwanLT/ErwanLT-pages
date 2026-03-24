@@ -17,10 +17,10 @@ Pour faire face à ces défis, les frameworks modernes proposent des solutions r
 
 Deux approches complémentaires existent :
 
-- **Tolérance aux pannes** : savoir comment l’application réagit lorsqu’une anomalie survient. C’est ce que l’on peut explorer avec des outils comme [[Introduisez du chaos dans votre application Spring Boot|**Chaos Monkey for Spring Boot**]], qui injecte volontairement des pannes pour tester la robustesse d’un système.
+- **Tolérance aux pannes** : savoir comment l’application réagit lorsqu’une anomalie survient. C’est ce que l’on peut explorer avec des outils comme [**Chaos Monkey for Spring Boot**](/back/java/tests/introduisez-du-chaos-dans-votre-application-spring-boot/), qui injecte volontairement des pannes pour tester la robustesse d’un système.
 - **Résilience applicative** : mettre en place des mécanismes de protection qui permettent de continuer à fonctionner malgré des défaillances. C’est précisément ce que propose **Resilience4j**, avec des patterns tels que le _Circuit Breaker_, le _Retry_ ou encore le _Time Limiter_.
 
-Dans cet article, nous allons nous concentrer sur **Resilience4j** et voir comment l’intégrer dans une application [[Il était une fois... Spring Boot|**Spring Boot**]], avec des exemples concrets pour chacun de ses principaux modules.
+Dans cet article, nous allons nous concentrer sur **Resilience4j** et voir comment l’intégrer dans une application [**Spring Boot**](/back/java/spring-boot/il-etait-une-fois-spring-boot/), avec des exemples concrets pour chacun de ses principaux modules.
 
 ## Présentation de Resilience4j
 
@@ -32,7 +32,7 @@ Resilience4j est une bibliothèque légère de résilience inspirée de [**Hyst
 - **Bulkhead** : cloisonner les ressources pour éviter qu’un composant saturé ne bloque tout le système.
 - **Time Limiter** : imposer une durée maximale à un appel.
 
-L’intégration avec [Spring Boot](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/) est facilitée grâce [[Comprendre les annotations dans Spring Boot - guide et exemples|aux annotations]] (`@CircuitBreaker`, `@Retry`, etc.) et une configuration centralisée via `application.properties`.
+L’intégration avec [Spring Boot](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/) est facilitée grâce [aux annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) (`@CircuitBreaker`, `@Retry`, etc.) et une configuration centralisée via `application.properties`.
 
 ## ⚖️ Avantages et inconvénients
 
@@ -40,7 +40,7 @@ L’intégration avec [Spring Boot](https://www.sfeir.dev/back/back-pourquoi-ut
 
 - Léger et modulaire (on utilise uniquement les modules nécessaires).
 - Intégration native avec Spring Boot et Spring Cloud.
-- Compatible avec les outils de monitoring (Actuator, [[Superviser votre application Spring Boot grâce à Prometheus et Grafana|Prometheus, Grafana]]).
+- Compatible avec les outils de monitoring (Actuator, [Prometheus, Grafana](/back/java/spring-boot/superviser-votre-application-spring-boot-grace-a-prometheus-et-grafana/)).
 - Fallbacks explicites permettant d’assurer un retour fonctionnel.
 
 ### ➖ Inconvénients
@@ -193,7 +193,7 @@ Pour des cas d’usage plus avancés, on peut se tourner vers **Bucket4j**, une
 
 J’ai d’ailleurs écrit un article complet sur **Bucket4j**, disponible ici :
 
-[[Limiter les appels à son API REST avec Bucket4j]]
+[Limiter les appels à son API REST avec Bucket4j](/back/java/spring-boot/limiter-les-appels-a-son-api-rest-avec-bucket4j/)
 
 ### Bulkhead
 

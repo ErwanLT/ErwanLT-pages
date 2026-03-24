@@ -13,13 +13,13 @@ sfeir_tags: [Back, Java, Design pattern]
 ---
 # Les designs patterns de création c'est quoi ?
 
-[[Les Design Patterns]] de Création sont un ensemble de design patterns qui permettent de créer des objets d'une manière qui soit flexible, modulaire et qui facilite leur réutilisation. Ils sont utilisés pour résoudre des problèmes de conception liés à la création d'objets.  
+[Les Design Patterns](/definition/les-design-patterns/) de Création sont un ensemble de design patterns qui permettent de créer des objets d'une manière qui soit flexible, modulaire et qui facilite leur réutilisation. Ils sont utilisés pour résoudre des problèmes de conception liés à la création d'objets.  
 Les designs pattern de création les plus utilisés sont les suivants :
 
-- [[Factory]]
-- [[Builder]]
+- [Factory](/back/java/design-patterns/creation/factory/)
+- [Builder](/back/java/design-patterns/creation/builder/)
 - **Prototype**
-- [[Singleton]]
+- [Singleton](/back/java/design-patterns/creation/singleton/)
 
 Ici nous nous attaquerons au **design pattern prototype**.
 ## Le design pattern Prototype

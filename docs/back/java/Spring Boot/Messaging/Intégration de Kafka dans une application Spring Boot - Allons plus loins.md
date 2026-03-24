@@ -5,7 +5,7 @@ permalink: "/back/java/spring-boot/messaging/integration-de-kafka-dans-une-appli
 tags: [back, java, spring-boot, messaging]
 status: "Draft"
 ---
-Dans [[Intégration de Kafka dans une application Spring Boot|l'article précédent]], nous avons vu comment intégré facilement [Kafka](https://www.sfeir.dev/data/kesaco-apache-kafka/) dans une application [[Il était une fois... Spring Boot|spring boot]].
+Dans [l'article précédent](/back/java/spring-boot/messaging/integration-de-kafka-dans-une-application-spring-boot/), nous avons vu comment intégré facilement [Kafka](https://www.sfeir.dev/data/kesaco-apache-kafka/) dans une application [spring boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/).
 
 Et à la fin je vous avais donné des pistes pour aller plus loins :
 

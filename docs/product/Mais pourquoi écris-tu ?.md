@@ -23,7 +23,7 @@ Nous sommes au début du 5ème mois de l'an de grâce 0 après la COVID-19 (déb
 
 [![](https://media.tenor.com/Srxefbf6AscAAAAC/lotr-why-shouldnt-i.gif)](https://media.tenor.com/Srxefbf6AscAAAAC/lotr-why-shouldnt-i.gif)
 
-Je code, [[Pourquoi tester son code ?|elle teste]], je corrige, bref elle arborait la casquette de product owner, et moi celle du développeur.
+Je code, [elle teste](/product/pourquoi-tester-son-code/), je corrige, bref elle arborait la casquette de product owner, et moi celle du développeur.
 
 Une fois l'interface utilisateur finie et les services back opérationnels, se pose la question du format d'exportation des informations qu'elle a renseignées plus tôt.  
 Au départ, j'avais opté pour renseigner tout dans un document Word, mais le rendu de l'IHM était plus satisfaisant que le rendu du document.  

@@ -11,7 +11,7 @@ published_at: "2024-11-14"
 sfeir_slug: "comprendre-les-annotations-dans-spring-boot"
 sfeir_tags: [Back, Java, Spring Boot]
 ---
-[[Il était une fois... Spring Boot|Spring Boot, en tant que framework basé sur Spring]], repose lourdement sur les annotations pour [réduire la complexité de la configuration](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/) et simplifier le développement d'applications [[Il était une fois... Java|Java]].  
+[Spring Boot, en tant que framework basé sur Spring](/back/java/spring-boot/il-etait-une-fois-spring-boot/), repose lourdement sur les annotations pour [réduire la complexité de la configuration](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/) et simplifier le développement d'applications [Java](/back/java/il-etait-une-fois-java/).  
 Les annotations permettent de déclarer des comportements, de configurer des composants et de mapper les requêtes HTTP sans besoin d’un lourd fichier de configuration XML.  
 Cet article explore les principales annotations de Spring Boot, pourquoi les utiliser, et comment elles facilitent le développement d'applications robustes.
 
@@ -300,7 +300,7 @@ public class WebLayerTest {
 }
 ```
 
-L'option `WebEnvironment.RANDOM_PORT` permet de démarrer un serveur Web sur un port aléatoire, ce qui est utile pour tester des contrôleurs [[REST - définition|REST]] dans un environnement d'intégration réel.
+L'option `WebEnvironment.RANDOM_PORT` permet de démarrer un serveur Web sur un port aléatoire, ce qui est utile pour tester des contrôleurs [REST](/definition/rest-definition/) dans un environnement d'intégration réel.
 
 ### @MockBean
 

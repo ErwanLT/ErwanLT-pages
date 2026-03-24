@@ -36,14 +36,14 @@ Ce ****“mur de lave”**** n’est pas un gadget décoratif : c’est un rappe
 
 ## Une lampe à lave virtuelle
 
-Ce mur de lave, gardien silencieux de l’aléa chez Cloudflare, illustre à merveille la ****rencontre entre l’art et la science****. Là où SGI utilisait la photographie, et où Cloudflare filme la lumière réelle pour nourrir la [[Sécurisez vos API avec Spring Security - Basic Auth|sécurité]]d’Internet, nous pouvons aujourd’hui ****recréer cet esprit dans le monde numérique****.
+Ce mur de lave, gardien silencieux de l’aléa chez Cloudflare, illustre à merveille la ****rencontre entre l’art et la science****. Là où SGI utilisait la photographie, et où Cloudflare filme la lumière réelle pour nourrir la [sécurité](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-basic-auth/)d’Internet, nous pouvons aujourd’hui ****recréer cet esprit dans le monde numérique****.
 
-C’est précisément l’ambition de ce projet : faire renaître une lampe à lave dans le [[Il était une fois... Java|langage java]], en lui conférant une âme algorithmique.  
+C’est précisément l’ambition de ce projet : faire renaître une lampe à lave dans le [langage java](/back/java/il-etait-une-fois-java/), en lui conférant une âme algorithmique.  
 Ici, la cire devient ****particule virtuelle****, la chaleur une ****équation****, et la lumière une ****fenêtre graphique****.  
 Le mouvement, lui, reste fidèle à l’original : lent, hypnotique, imprévisible.
 
 Chaque instant de cette simulation devient une image unique, un motif fugace de pixels et de calculs — un équivalent numérique du hasard physique.  
-Comme Cloudflare avec son mur de verre et de cire, notre lampe à lave virtuelle rappelle que le ****vrai aléa**** naît toujours du [[Introduisez du chaos dans votre application Spring Boot|****chaos maîtrisé****]], qu’il soit dans la matière… ou dans le code.
+Comme Cloudflare avec son mur de verre et de cire, notre lampe à lave virtuelle rappelle que le ****vrai aléa**** naît toujours du [****chaos maîtrisé****](/back/java/tests/introduisez-du-chaos-dans-votre-application-spring-boot/), qu’il soit dans la matière… ou dans le code.
 
 ### EntropyUtils — utilitaires de hachage et de concaténation
 

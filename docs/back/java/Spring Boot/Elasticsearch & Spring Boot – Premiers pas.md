@@ -11,13 +11,13 @@ published_at: "2026-03-13"
 sfeir_slug: "elasticsearch-spring-boot-premiers-pas-partie-1"
 sfeir_tags: [Back, Java, Spring Boot, ELK]
 ---
-Dans un monde où les utilisateurs exigent des recherches rapides et pertinentes, [[ELK - définition|Elasticsearch]] se distingue comme une solution de choix pour la recherche full-text et l’analyse de données. Associé à [[Il était une fois... Spring Boot|Spring Boot]], il permet de créer des applications performantes avec une intégration fluide.
+Dans un monde où les utilisateurs exigent des recherches rapides et pertinentes, [Elasticsearch](/definition/elk-definition/) se distingue comme une solution de choix pour la recherche full-text et l’analyse de données. Associé à [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), il permet de créer des applications performantes avec une intégration fluide.
 
 ## Présentation d’Elasticsearch
 
 Elasticsearch est un moteur de recherche et d’analyse open-source, basé sur [Apache Lucene](https://lucene.apache.org/), conçu pour traiter de gros volumes de données avec une faible latence. Il excelle dans les recherches full-text, les agrégations, et les analyses complexes, grâce à une architecture distribuée qui facilite la scalabilité. Contrairement aux bases de données relationnelles classiques (MySQL, PostgreSQL), Elasticsearch stocke les données sous forme de documents JSON dans des index, avec une structure flexible et configurable via des mappings.
 
-Avec [Spring Boot](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/), l’intégration se fait via Spring Data Elasticsearch, qui offre une abstraction similaire à Spring Data JPA. Les repositories et [[Comprendre les annotations dans Spring Boot - guide et exemples|annotations]] simplifient la gestion des index, permettant aux développeurs de se concentrer sur la logique métier tout en exploitant la puissance d’Elasticsearch.
+Avec [Spring Boot](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/), l’intégration se fait via Spring Data Elasticsearch, qui offre une abstraction similaire à Spring Data JPA. Les repositories et [annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) simplifient la gestion des index, permettant aux développeurs de se concentrer sur la logique métier tout en exploitant la puissance d’Elasticsearch.
 ## Configuration
 
 Pour commencer, nous avons besoin d'ajouter la dépendance Spring Data ****Elasticsearch**** à notre projet.

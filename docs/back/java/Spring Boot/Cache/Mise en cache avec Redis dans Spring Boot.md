@@ -5,8 +5,8 @@ permalink: "/back/java/spring-boot/cache/mise-en-cache-avec-redis-dans-spring-bo
 tags: [back, java, spring-boot, cache]
 status: "Draft"
 ---
-[[Mise en place du cache dans une application Spring Boot|La mise en cache]] est une pratique incontournable pour améliorer les performances d’une application en réduisant les accès coûteux à la base de données ou à une API externe.  
-Dans un précédent article, nous avons exploré [[Améliorer son cache Spring Boot avec Caffeine|**Caffeine**]], une solution de cache **local** en mémoire. Cette fois-ci, intéressons-nous à **Redis**, un cache **distribué** particulièrement adapté aux environnements **scalables** où plusieurs instances de l’application doivent partager les mêmes données en mémoire.
+[La mise en cache](/back/java/spring-boot/cache/mise-en-place-du-cache-dans-une-application-spring-boot/) est une pratique incontournable pour améliorer les performances d’une application en réduisant les accès coûteux à la base de données ou à une API externe.  
+Dans un précédent article, nous avons exploré [**Caffeine**](/back/java/spring-boot/cache/ameliorer-son-cache-spring-boot-avec-caffeine/), une solution de cache **local** en mémoire. Cette fois-ci, intéressons-nous à **Redis**, un cache **distribué** particulièrement adapté aux environnements **scalables** où plusieurs instances de l’application doivent partager les mêmes données en mémoire.
 
 ## Présentation de Redis
 
@@ -79,7 +79,7 @@ Dans votre fichier pom.xml, ajoutez les dépendances suivantes :
 
 ### Configuration dans Spring Boot
 
-Pour un démarrage rapide, on peut se contenter des properties suivantes, et laisser faire [[Il était une fois... Spring Boot|la magie de l'auto-configuration de Spring Boot]].
+Pour un démarrage rapide, on peut se contenter des properties suivantes, et laisser faire [la magie de l'auto-configuration de Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/).
 
 ```properties
 spring.data.redis.host=localhost
@@ -170,7 +170,7 @@ public class BookService {
 }
 ```
 
-#### Explication des [[Comprendre les annotations dans Spring Boot - guide et exemples|annotations]]
+#### Explication des [annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/)
 
 - `@Cacheable`
     - Met en cache le résultat d’une méthode.

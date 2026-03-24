@@ -5,7 +5,7 @@ permalink: "/back/java/spring-boot/ia/et-si-on-integrait-langchain-dans-spring-b
 tags: [back, java, spring-boot, ia]
 status: "Draft"
 ---
-Dans la [[Et si on intégrait LangChain dans Spring Boot ? Partie 1|première partie]], nous avons découvert comment **LangChain4j** permet d’interagir avec les modèles de langage à travers une intégration manuelle et structurée dans une application [[Il était une fois... Spring Boot|Spring Boot]].  
+Dans la [première partie](/back/java/spring-boot/ia/et-si-on-integrait-langchain-dans-spring-boot-partie-1/), nous avons découvert comment **LangChain4j** permet d’interagir avec les modèles de langage à travers une intégration manuelle et structurée dans une application [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/).  
 Aujourd’hui, nous allons franchir une nouvelle étape : **simplifier drastiquement l’intégration** grâce aux [**Spring Boot Starters**](https://www.sfeir.dev/back/how-to-trouver-ses-starters-springboot/) officiels de LangChain4j et de Mistral.
 
 Et comme nous sommes attachés à notre patrimoine technologique, nous continuerons à faire honneur à [**Mistral**, l’IA française](https://www.sfeir.dev/ia/arthur-mensch-le-visionnaire-de-la-tech-qui-place-la-france-sur-la-carte-mondiale-de-lia/) qui n’a rien à envier à ses équivalentes étrangères.
@@ -105,7 +105,7 @@ public class IAController {
 ## Les assistants : donner une personnalité à l’IA
 
 LangChain4j permet d’annoter des interfaces Java avec `@AiService`.  
-Chaque méthode annotée devient une interaction avec le modèle, et [[Comprendre les annotations dans Spring Boot - guide et exemples|l’annotation]] `@SystemMessage` définit le **rôle** et le **comportement global** de l’assistant.
+Chaque méthode annotée devient une interaction avec le modèle, et [l’annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) `@SystemMessage` définit le **rôle** et le **comportement global** de l’assistant.
 
 ### un assistant poli
 

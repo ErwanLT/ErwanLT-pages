@@ -11,13 +11,13 @@ published_at: "2025-06-18"
 sfeir_slug: "maitrisez-les-tests-de-charge-avec-gatling-pour-spring-boot"
 sfeir_tags: [Back, Java, Spring Boot, Test, Performance, Gatling]
 ---
-Dans le développement d’applications web, la performance est un facteur clé pour garantir une expérience utilisateur optimale. Les applications développées avec [[Il était une fois... Spring Boot|Spring Boot]], framework populaire pour sa simplicité et sa robustesse, doivent souvent supporter un volume important de requêtes simultanées. Les tests de performance permettent de simuler ces conditions pour évaluer la capacité de l’application à répondre efficacement en termes de temps de réponse et de fiabilité.
+Dans le développement d’applications web, la performance est un facteur clé pour garantir une expérience utilisateur optimale. Les applications développées avec [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), framework populaire pour sa simplicité et sa robustesse, doivent souvent supporter un volume important de requêtes simultanées. Les tests de performance permettent de simuler ces conditions pour évaluer la capacité de l’application à répondre efficacement en termes de temps de réponse et de fiabilité.
 
-Pour cela, Gatling se positionne comme [un outil open-source](https://www.sfeir.dev/tag/open-source/) puissant et adapté aux tests de charge et de performance. Dans cet article, nous allons explorer comment utiliser Gatling pour [[Pourquoi tester son code ?|tester une API Spring Boot]], en nous appuyant sur un exemple concret de simulation de création d’auteurs via une requête `POST`. Cet exemple servira de base pour illustrer chaque étape du processus.
+Pour cela, Gatling se positionne comme [un outil open-source](https://www.sfeir.dev/tag/open-source/) puissant et adapté aux tests de charge et de performance. Dans cet article, nous allons explorer comment utiliser Gatling pour [tester une API Spring Boot](/product/pourquoi-tester-son-code/), en nous appuyant sur un exemple concret de simulation de création d’auteurs via une requête `POST`. Cet exemple servira de base pour illustrer chaque étape du processus.
 
 ## Présentation de Gatling
 
-Gatling est un outil de test de performance conçu pour simuler des charges importantes sur des applications web. Écrit en Scala, il est néanmoins parfaitement utilisable dans des projets [[Il était une fois... Java|Java]], ce qui le rend idéal pour les développeurs travaillant avec [Spring Boot](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/).  
+Gatling est un outil de test de performance conçu pour simuler des charges importantes sur des applications web. Écrit en Scala, il est néanmoins parfaitement utilisable dans des projets [Java](/back/java/il-etait-une-fois-java/), ce qui le rend idéal pour les développeurs travaillant avec [Spring Boot](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/).  
 Gatling excelle dans la création de scénarios de charge réalistes, en envoyant des requêtes simultanées à une application et en analysant ses performances via des rapports détaillés.
 
 Ses principales caractéristiques incluent :
@@ -102,7 +102,7 @@ Vous pouvez également ajouter les dépendances suivantes :
 Les dépendances utiles
 
 - **javafaker** : Génère des données fictives pour les tests.
-- **lombok** : Simplifie le code avec [[Comprendre les annotations dans Spring Boot - guide et exemples|des annotations]] comme `@Getter` ou `@Slf4j`.
+- **lombok** : Simplifie le code avec [des annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) comme `@Getter` ou `@Slf4j`.
 
 Avec cette configuration, le projet est prêt à exécuter des tests de performance avec Gatling.
 

@@ -47,7 +47,7 @@ __El Ajedrecista__
 
 Au XIXe siècle, la littérature commence à poser les bases des débats modernes sur l’intelligence artificielle.
 
-[[De Frankenstein à l’IA générative - la leçon de Mary Shelley]]
+[De Frankenstein à l’IA générative - la leçon de Mary Shelley](/ia/de-frankenstein-a-l-ia-generative-la-lecon-de-mary-shelley/)
 
 ![](https://www.sfeir.dev/content/images/thumbnail/20251017_0848_Shelley-and-Creature_simple_compose_01k7rer9t8eqrapkq3gzhp5w60.png)
 

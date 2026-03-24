@@ -7,9 +7,9 @@ status: "Draft"
 source: "sfeir.dev"
 ---
 Depuis l’apparition des [**modèles de langage de grande taille (LLM)**](https://www.sfeir.dev/data/comment-demarer-un-projet-llm/), le monde du développement logiciel vit une transformation profonde. Ces modèles — capables de comprendre et de générer du texte de manière cohérente, contextualisée, et souvent bluffante — ont ouvert la voie à une nouvelle génération d’applications dites “intelligentes”.  
-Dans l’écosystème [[Il était une fois... Java|**Java**]], réputé pour sa robustesse et sa pérennité, cette révolution se traduit par l’apparition de bibliothèques dédiées à l’orchestration et à la manipulation des LLM, dont **LangChain4j** est aujourd’hui la référence incontournable.
+Dans l’écosystème [**Java**](/back/java/il-etait-une-fois-java/), réputé pour sa robustesse et sa pérennité, cette révolution se traduit par l’apparition de bibliothèques dédiées à l’orchestration et à la manipulation des LLM, dont **LangChain4j** est aujourd’hui la référence incontournable.
 
-Certes, [[Il était une fois... Spring Boot|**Spring Boot**]] propose déjà un **starter officiel, Spring AI**, qui facilite l’intégration de modèles tels qu’[OpenAI, Azure OpenAI, ou encore Anthropic Claude](https://www.sfeir.dev/ia/quel-modele-dia-choisir-gpt-claude-gemini-mistral-llama-falcon-le-comparatif-indispensable/). Mais soyons honnêtes : la majorité de ces solutions reposent sur des modèles étrangers, souvent hébergés et régulés outre-Atlantique.  
+Certes, [**Spring Boot**](/back/java/spring-boot/il-etait-une-fois-spring-boot/) propose déjà un **starter officiel, Spring AI**, qui facilite l’intégration de modèles tels qu’[OpenAI, Azure OpenAI, ou encore Anthropic Claude](https://www.sfeir.dev/ia/quel-modele-dia-choisir-gpt-claude-gemini-mistral-llama-falcon-le-comparatif-indispensable/). Mais soyons honnêtes : la majorité de ces solutions reposent sur des modèles étrangers, souvent hébergés et régulés outre-Atlantique.  
 Or, pour qui tient à la souveraineté technologique et à l’excellence française, il est naturel de se tourner vers une alternative **nationale**. C’est ici qu’entre en scène [**Mistral AI**](https://www.sfeir.dev/ia/il-etait-une-fois-le-chat-de-mistral-ai/), jeune entreprise française devenue en quelques mois un symbole de l’innovation européenne dans le domaine de l’intelligence artificielle.
 
 Le choix que nous faisons ici est donc volontairement **chauvin** : utiliser un **modèle français**, performant et ouvert, au sein d’un environnement [**Spring Boot** — pilier du développement d’applications Java modernes](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/). Et pour cela, **LangChain4j** nous sert de passerelle, souple et parfaitement intégrée à l’écosystème Java.
@@ -72,7 +72,7 @@ Pourquoi LangChain est le framework incontournable pour débuter votre projet de
 ## Présentation de LangChain4j
 
 Le succès de LangChain a naturellement inspiré un portage vers d’autres langages. C’est ainsi qu’est né **LangChain4j**, projet [open-source](https://www.sfeir.dev/tag/open-source/) qui apporte la même philosophie au monde **Java**.  
-LangChain4j transpose les grands concepts de LangChain dans un cadre familier aux développeurs Java : typage fort, [[Comprendre les annotations dans Spring Boot - guide et exemples|configuration par annotations]], injection de dépendances, compatibilité Spring Boot, etc.
+LangChain4j transpose les grands concepts de LangChain dans un cadre familier aux développeurs Java : typage fort, [configuration par annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/), injection de dépendances, compatibilité Spring Boot, etc.
 
 Concrètement, **LangChain4j** fournit une série d’interfaces et de classes qui encapsulent les principales briques nécessaires pour construire des applications intelligentes :
 

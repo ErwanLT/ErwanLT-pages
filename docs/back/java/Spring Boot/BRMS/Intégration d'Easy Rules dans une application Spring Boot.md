@@ -12,13 +12,13 @@ sfeir_slug: "integration-deasy-rules-dans-une-application-spring-boot"
 sfeir_tags: [Back, Java, Spring Boot, BRMS]
 ---
 Dans le développement d'applications modernes, la gestion des règles métier est une tâche cruciale, surtout dans des domaines comme la finance où des conditions complexes doivent être validées dynamiquement.  
-Les moteurs de règles permettent de découpler la logique métier du code principal, rendant les applications plus flexibles et maintenables. Cet article explore l'intégration d'**Easy Rules**, un moteur de règles léger, dans une application [[Il était une fois... Spring Boot|Spring Boot]].
+Les moteurs de règles permettent de découpler la logique métier du code principal, rendant les applications plus flexibles et maintenables. Cet article explore l'intégration d'**Easy Rules**, un moteur de règles léger, dans une application [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/).
 
 ## Présentation d'Easy Rules
 
 **Easy Rules** est une bibliothèque Java [open-source](https://www.sfeir.dev/tag/opensource/) conçue pour simplifier la définition et l'exécution de règles métier.  
-Contrairement à des moteurs de règles plus complexes, Easy Rules adopte une approche minimaliste, avec une [API](https://www.sfeir.dev/kesaco-api/) intuitive basée sur des [[Comprendre les annotations dans Spring Boot - guide et exemples|annotations]] comme `@Rule`, `@Condition`, et `@Action`.  
-**Une règle dans Easy Rules** est une classe [[Il était une fois... Java|Java]]qui encapsule une **condition** (évaluée sur des faits) et une **action** (exécutée si la condition est remplie).
+Contrairement à des moteurs de règles plus complexes, Easy Rules adopte une approche minimaliste, avec une [API](https://www.sfeir.dev/kesaco-api/) intuitive basée sur des [annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) comme `@Rule`, `@Condition`, et `@Action`.  
+**Une règle dans Easy Rules** est une classe [Java](/back/java/il-etait-une-fois-java/)qui encapsule une **condition** (évaluée sur des faits) et une **action** (exécutée si la condition est remplie).
 
 ### ⚖️ Avantages et inconvénients
 
@@ -26,7 +26,7 @@ Contrairement à des moteurs de règles plus complexes, Easy Rules adopte une ap
 
 - **Simplicité** : L'API d'Easy Rules est intuitive, réduisant la courbe d'apprentissage pour les développeurs Java.
 - **Légèreté** : Avec une empreinte mémoire réduite, Easy Rules convient aux applications où la performance est critique.
-- **Intégration facile avec Spring** : Les règles et le moteur peuvent être configurés comme des beans Spring, et [[Spring AOP - comprendre la programmation orientée aspect dans Spring | l'AOP]] permet d'appliquer les règles de manière déclarative.
+- **Intégration facile avec Spring** : Les règles et le moteur peuvent être configurés comme des beans Spring, et [l'AOP](/back/java/spring-boot/spring-aop-comprendre-la-programmation-orientee-aspect-dans-spring/) permet d'appliquer les règles de manière déclarative.
 - **Flexibilité** : Les règles sont des classes Java, ce qui permet d'utiliser toute la puissance du langage (héritage, composition, etc.).
 - **Extensibilité** : Il est facile d'ajouter de nouvelles règles ou de personnaliser le comportement via des listeners.
 
@@ -92,7 +92,7 @@ public enum TransactionType {
 
 ### Annotation personnalisée
 
-Une [[Comprendre les annotations dans Spring Boot - guide et exemples|annotation]] `@TransactionRule` marque les méthodes où les règles RuleBook doivent s'appliquer pour valider les transcation.
+Une [annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) `@TransactionRule` marque les méthodes où les règles RuleBook doivent s'appliquer pour valider les transcation.
 
 ```java
 @Retention(RetentionPolicy.RUNTIME)
@@ -303,7 +303,7 @@ public class AccountService {
 }
 ```
 
-Le controller expose nos endpoints à notre [[REST - définition|API REST]]
+Le controller expose nos endpoints à notre [API REST](/definition/rest-definition/)
 
 ```java
 @RestController

@@ -11,9 +11,9 @@ published_at: "2026-03-19"
 sfeir_slug: "gerer-des-requetes-dynamiques-avec-spring-boot-et-les-sealed-interfaces"
 sfeir_tags: [Back, Java, Spring Boot]
 ---
-Dans le développement d'[[REST - définition|API REST]], il est courant de rencontrer des scénarios où un point d'entrée unique doit pouvoir accepter des charges utiles (payloads) JSON de structures différentes. Par exemple, un système de commande pourrait recevoir des commandes passées en ligne et des commandes effectuées en magasin, chacune avec des informations spécifiques.
+Dans le développement d'[API REST](/definition/rest-definition/), il est courant de rencontrer des scénarios où un point d'entrée unique doit pouvoir accepter des charges utiles (payloads) JSON de structures différentes. Par exemple, un système de commande pourrait recevoir des commandes passées en ligne et des commandes effectuées en magasin, chacune avec des informations spécifiques.
 
-Ce tutoriel explore une solution pour gérer ce type de corps de requête dynamique en utilisant les ****Sealed Interfaces**** de [[Il était une fois... Java|Java]] et les fonctionnalités de ****polymorphisme de Jackson**** dans une application Spring Boot.
+Ce tutoriel explore une solution pour gérer ce type de corps de requête dynamique en utilisant les ****Sealed Interfaces**** de [Java](/back/java/il-etait-une-fois-java/) et les fonctionnalités de ****polymorphisme de Jackson**** dans une application Spring Boot.
 
 ## Le problème : un endpoint, plusieurs structures
 
@@ -32,7 +32,7 @@ La clé de notre solution réside dans la manière dont nous allons indiquer à 
 
 Nous définissons une interface `Command`. Le mot-clé `sealed` nous assure que seules les classes déclarées dans `permits` pourront l'implémenter, ce qui renforce la robustesse de notre modèle.
 
-Grâce [[Comprendre les annotations dans Spring Boot - guide et exemples|aux annotations]] Jackson, nous mettons en place le mécanisme de polymorphisme :
+Grâce [aux annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) Jackson, nous mettons en place le mécanisme de polymorphisme :
 
 - `@JsonTypeInfo`: Indique que l'information de type est contenue dans le JSON lui-même, via une propriété nommée `type`.
 - `@JsonSubTypes`: Énumère les correspondances entre les valeurs de la propriété `type` (ex: "online") and les classes Java concrètes (ex: `OnlineCommand.class`).
@@ -74,7 +74,7 @@ public record StoreCommand(
 
 Le contrôleur devient remarquablement simple. Le endpoint `createOrder` attend un `Command` en `@RequestBody`. Spring Boot et Jackson s'occupent de la désérialisation, et nous n'avons pas à nous soucier du type concret à ce niveau.
 
-Les annotations SpringDoc (`@Operation`, etc.) sont utilisées pour [[Réussir sa migration de Swagger 2 à OpenApi 3|générer une documentation d'API]] claire, qui reflète bien la nature polymorphique de l'objet attendu.
+Les annotations SpringDoc (`@Operation`, etc.) sont utilisées pour [générer une documentation d'API](/back/java/spring-boot/reussir-sa-migration-de-swagger-2-a-openapi-3/) claire, qui reflète bien la nature polymorphique de l'objet attendu.
 
 ```java
 @Operation(summary = "Create a new order, which can be an online order or a store order.",

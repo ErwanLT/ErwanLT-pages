@@ -54,7 +54,7 @@ Jacob Elordi dans le rôle de la Créature
 
 Dans la tradition romantique, le monstre est souvent le miroir de l’homme.  
 Chez Shelley, la créature n’est pas un être de pure destruction : elle apprend seule, observe, imite, raisonne. Elle découvre le langage en écoutant parler les autres, lit _Les souffrances du jeune Werther_ et _Le Paradis perdu_, médite sur sa condition.  
-Elle incarne, avant l’heure, [[IA dégénérative - quand l'algorithme est malade|**le processus d’apprentissage non supervisé**]] : une conscience qui se construit par l’expérience, sans guide ni maître.
+Elle incarne, avant l’heure, [**le processus d’apprentissage non supervisé**](/ia/ia-degenerative-quand-l-algorithme-est-malade/) : une conscience qui se construit par l’expérience, sans guide ni maître.
 
 Ainsi, la créature de Shelley préfigure nos intelligences artificielles les plus avancées. Comme elle, elles apprennent par exposition à des données, sans compréhension morale de ce qu’elles assimilent. Et, comme elle, elles reflètent l’humanité dans toute sa complexité — nos savoirs, mais aussi nos préjugés et nos violences.
 

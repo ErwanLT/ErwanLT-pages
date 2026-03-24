@@ -97,7 +97,7 @@ Swagger IHM
 
 - Valider les données en entrée de votre API
 
-Si vous partez d'un projet existant, vous trouverez probablement des anciennes [[Comprendre les annotations dans Spring Boot - guide et exemples|annotations]] Swagger 2 et une configuration Swagger désormais obsolètes, ce qui peut causer des problèmes de compilation. Ne vous inquiétez pas, nous allons corriger cela.
+Si vous partez d'un projet existant, vous trouverez probablement des anciennes [annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) Swagger 2 et une configuration Swagger désormais obsolètes, ce qui peut causer des problèmes de compilation. Ne vous inquiétez pas, nous allons corriger cela.
 
 ## Etape 2 : Corriger la classe de configuration
 

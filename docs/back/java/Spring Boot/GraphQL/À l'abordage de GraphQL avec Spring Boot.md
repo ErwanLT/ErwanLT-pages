@@ -22,39 +22,39 @@ sfeir_tags: [Back, Spring Boot, GraphQL]
 
 Apprenez à initialiser GraphQL dans une application Spring Boot. En quelques étapes, configurez votre projet avec les dépendances nécessaires et préparez-vous à explorer les avantages de GraphQL pour une gestion de données efficace et ciblée.
 
-[[Partie 1 - Mise en place]]
+[Partie 1 - Mise en place](/back/java/spring-boot/graphql/partie-1-mise-en-place/)
 
 ## Partie 2
 
 Plongez au cœur du schéma GraphQL et découvrez comment il définit la structure, les règles et la sécurité de vos données dans une API. Apprenez pourquoi ce contrat entre client et serveur est essentiel, et préparez-vous à configurer votre propre schéma dans Spring Boot.
 
-[[Partie 2 - le schéma dans GraphQL]]
+[Partie 2 - le schéma dans GraphQL](/back/java/spring-boot/graphql/partie-2-le-schema-dans-graphql/)
 
 ## Partie 3
 
 Dans cette section, nous allons donner vie à notre schéma GraphQL en créant les entités Java correspondantes. Nous mettrons en place des contrôleurs adaptés pour gérer les requêtes et mutations via les annotations de Spring for GraphQL.
 
-[[Partie 3 - Controllers]]
+[Partie 3 - Controllers](/back/java/spring-boot/graphql/partie-3-controllers/)
 
 ## Partie 4
 
 Il est maintenant l'heure de tester notre API via des tests unitaires, mais comment les mettre en place dans Spring Boot ?
 
-[[Partie 4 - Tests unitaires]]
+[Partie 4 - Tests unitaires](/back/java/spring-boot/graphql/partie-4-tests-unitaires/)
 
 ## Partie 5
 
 Mais comment documenter mon API GraphQL ? Et surtout comment puis-je la tester via l'équivalent d'un swagger ?  
 C'est ce que nous allons voir dans cet article.
 
-[[Partie 5 - Documentation]]
+[Partie 5 - Documentation](/back/java/spring-boot/graphql/partie-5-documentation/)
 
 ## Partie 6
 
 Comment gérer efficacement les erreurs dans une API GraphQL avec Spring Boot ?  
 En utilisant `DataFetcherExceptionResolver`, qui centralise la gestion des erreurs, et c'est ce que nous allons mettre en place dans cet article.
 
-[[Partie 6 - Gestion des erreurs]]
+[Partie 6 - Gestion des erreurs](/back/java/spring-boot/graphql/partie-6-gestion-des-erreurs/)
 
 ---
 

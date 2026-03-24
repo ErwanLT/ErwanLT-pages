@@ -11,8 +11,8 @@ published_at: "2026-03-16"
 sfeir_slug: "elasticsearch-spring-boot-premiers-pas-partie-2"
 sfeir_tags: [Back, Java, Spring Boot, ELK, Kibana, Elasticsearch, Logstash]
 ---
-Dans le [[Elasticsearch & Spring Boot – Premiers pas|précédent article]], nous avons découvert comment intégrer Elasticsearch avec [[Il était une fois... Spring Boot|Spring Boot]] pour profiter de ses capacités de recherche full-text.  
-Mais dans les environnements professionnels, Elasticsearch prend toute sa dimension lorsqu’il est intégré à la [[ELK - définition|**stack ELK**]] : Elasticsearch, Logstash, et Kibana.  
+Dans le [précédent article](/back/java/spring-boot/elasticsearch-spring-boot-premiers-pas/), nous avons découvert comment intégrer Elasticsearch avec [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) pour profiter de ses capacités de recherche full-text.  
+Mais dans les environnements professionnels, Elasticsearch prend toute sa dimension lorsqu’il est intégré à la [**stack ELK**](/definition/elk-definition/) : Elasticsearch, Logstash, et Kibana.  
 Cet ensemble d’outils open-source est devenu incontournable pour centraliser, analyser et visualiser des données massives, souvent issues de logs applicatifs ou systèmes.
 
 ## Présentation de la stack ELK

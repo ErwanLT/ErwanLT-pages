@@ -13,7 +13,7 @@ sfeir_tags: [Késaco, Back, Vaadin, Java]
 ---
 ## Qu'est-ce que Vaadin ?
 
-[Vaadin](https://vaadin.com/?ref=sfeir.dev) est un framework open-source de développement d'applications web en [[Il était une fois... Java|Java]], conçu pour simplifier la création d'interfaces utilisateur modernes et réactives.  
+[Vaadin](https://vaadin.com/?ref=sfeir.dev) est un framework open-source de développement d'applications web en [Java](/back/java/il-etait-une-fois-java/), conçu pour simplifier la création d'interfaces utilisateur modernes et réactives.  
 Contrairement à de nombreux autres frameworks basés sur JavaScript ou HTML, Vaadin permet aux développeurs d'écrire des interfaces utilisateur entièrement en Java, sans avoir à manipuler directement du HTML, du [CSS](https://www.sfeir.dev/front/state-of-css/) ou du JavaScript. Il fonctionne côté serveur, mais génère une interface utilisateur entièrement interactive qui fonctionne côté client (dans le navigateur).
 
 ## ⚖️ Avantages et inconvénients de Vaadin

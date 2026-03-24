@@ -11,18 +11,18 @@ published_at: "2024-03-15"
 sfeir_slug: "design-patterns-comportementaux-chaine-responsabilite"
 sfeir_tags: [Back, Design pattern]
 ---
-[[Les Design Patterns]] comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
+[Les Design Patterns](/definition/les-design-patterns/) comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
 Les designs patterns comportementaux les plus utilisés sont les suivants :
 
-- [[Stratégie]]
-- [[Mémento]]
-- [[Médiateur]]
-- [[Observateur]]
+- [Stratégie](/back/java/design-patterns/comportementaux/strategie/)
+- [Mémento](/back/java/design-patterns/comportementaux/memento/)
+- [Médiateur](/back/java/design-patterns/comportementaux/mediateur/)
+- [Observateur](/back/java/design-patterns/comportementaux/observateur/)
 - **Chaine de responsabilité**
-- [[Commande]]
-- [[Etat]]
-- [[Visiteur]]
-- [[Interpréteur]]
+- [Commande](/back/java/design-patterns/comportementaux/commande/)
+- [Etat](/back/java/design-patterns/comportementaux/etat/)
+- [Visiteur](/back/java/design-patterns/comportementaux/visiteur/)
+- [Interpréteur](/back/java/design-patterns/comportementaux/interpreteur/)
 
 Dans cet article, nous nous attaquerons au **design Chaine de responsabilité.
 ## Le design pattern **Chaîne de responsabilité**

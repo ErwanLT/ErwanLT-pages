@@ -26,7 +26,7 @@ Car comme le dirait le capitaine Crochet :
 
 Pas certain de la fin de la citation
 
-En cette journée, notre mission est claire : vérifier que chaque requête et chaque mutation fonctionnent sans faillir. Nous testerons la logique dans nos services et nous nous assurerons que nos contrôleurs manœuvrent les données et gèrent les erreurs avec précision. Nous savons bien ce qu’il advient de ceux qui osent naviguer sans tester leurs canons… et [[L'histoire des bugs informatiques les plus célèbres|ce n’est guère glorieux]].
+En cette journée, notre mission est claire : vérifier que chaque requête et chaque mutation fonctionnent sans faillir. Nous testerons la logique dans nos services et nous nous assurerons que nos contrôleurs manœuvrent les données et gèrent les erreurs avec précision. Nous savons bien ce qu’il advient de ceux qui osent naviguer sans tester leurs canons… et [ce n’est guère glorieux](/product/l-histoire-des-bugs-informatiques-les-plus-celebres/).
 
 ## Armer le POM pour les tests
 
@@ -94,7 +94,7 @@ Que pouvons nous voir dans cette classe ?
 
 ##### Décodage des symboles sur la carte
 
-Dans notre classe de test, [[Comprendre les annotations dans Spring Boot - guide et exemples|plusieurs annotations]] nous servent de balises dans cette aventure :
+Dans notre classe de test, [plusieurs annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) nous servent de balises dans cette aventure :
 
 - **@GraphQlTest** : Elle fait office de phare, nous guidant pour tester notre `AuthorController`. Elle réduit notre chargement en incluant seulement les composants utiles, rendant nos tests aussi rapides qu’une frégate en pleine tempête.
 - **@Autowired** : Injecte notre boussole, **GraphQlTester**, permettant d’envoyer des requêtes GraphQL et de valider les réponses sans hésitation.
@@ -151,8 +151,8 @@ Avec cette structure, nos tests sont modulaires et peuvent facilement évoluer a
 _Après avoir franchi le Cap des bons Tests sans embûches, nous mettons le cap sur l’île de la Documentation, prêts à partager nos exploits avec le monde._
 
 ## Précédemment
-[[Partie 3 - Controllers]]
+[Partie 3 - Controllers](/back/java/spring-boot/graphql/partie-3-controllers/)
 
 ## Prochainement
 
-[[Partie 5 - Documentation]]
+[Partie 5 - Documentation](/back/java/spring-boot/graphql/partie-5-documentation/)

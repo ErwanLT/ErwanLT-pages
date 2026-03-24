@@ -255,6 +255,6 @@ Dans tous les cas, les deux approches sont **valides**, **modernes** et compatib
 
 ## Liens utiles dans le vault
 
-- générer des clients depuis OpenAPI : [[Générer vos clients d'API à partir de leur spécification OpenAPI]]
-- gérer les erreurs correctement : [[Vers un standard des erreurs HTTP]]
-- résilience : [[Résilience applicative avec Resilience4j et Spring Boot]]
+- générer des clients depuis OpenAPI : [Générer vos clients d'API à partir de leur spécification OpenAPI](/back/java/spring-boot/generer-vos-clients-d-api-a-partir-de-leur-specification-openapi/)
+- gérer les erreurs correctement : [Vers un standard des erreurs HTTP](/back/java/spring-boot/vers-un-standard-des-erreurs-http/)
+- résilience : [Résilience applicative avec Resilience4j et Spring Boot](/back/java/tests/resilience-applicative-avec-resilience4j-et-spring-boot/)

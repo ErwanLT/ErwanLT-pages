@@ -16,14 +16,14 @@ Les interfaces en ligne de commande (CLI) représentent depuis longtemps un outi
 Avec l’essor des frameworks modernes, il est devenu plus simple d’enrichir ces CLI de mécanismes avancés tout en restant proche des bonnes pratiques du développement d’applications. C’est dans ce contexte que ****Spring Shell**** prend toute sa place.  
 Ce projet de l’écosystème Spring permet de concevoir des interfaces en ligne de commande en conservant le modèle de développement déjà bien connu : gestion des composants, injection de dépendances, configuration via propriétés, intégration avec les autres briques de Spring, et bien sûr la possibilité d’écrire des tests unitaires et d’intégration.
 
-L’association avec [[Il était une fois... Spring Boot|Spring Boot]]renforce encore l’intérêt de cette approche. En effet, [Spring Boot simplifie la mise en place d’applications](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/) non web, en fournissant une configuration par défaut efficace, un support natif pour la gestion des dépendances, ainsi qu’une structure de projet claire et extensible.  
+L’association avec [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/)renforce encore l’intérêt de cette approche. En effet, [Spring Boot simplifie la mise en place d’applications](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/) non web, en fournissant une configuration par défaut efficace, un support natif pour la gestion des dépendances, ainsi qu’une structure de projet claire et extensible.  
 En partant d’un projet Spring Boot minimal, il est ainsi possible d’activer Spring Shell et de bénéficier rapidement d’une CLI robuste, extensible et intégrée à l’écosystème Spring.
 
 ## Présentation de Spring Shell
 
 ****Spring Shell**** est une bibliothèque de l’écosystème Spring conçue pour faciliter la création d’interfaces en ligne de commande modernes et robustes. Elle met à disposition plusieurs fonctionnalités clés qui simplifient grandement le travail du développeur :
 
-- une infrastructure permettant de définir des commandes à l’aide [[Comprendre les annotations dans Spring Boot - guide et exemples|d’annotations dédiées]] (`@ShellComponent`, `@ShellMethod`), avec le support de l’injection de dépendances propre à Spring,
+- une infrastructure permettant de définir des commandes à l’aide [d’annotations dédiées](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) (`@ShellComponent`, `@ShellMethod`), avec le support de l’injection de dépendances propre à Spring,
 - un environnement interactif de type ****REPL**** (Read–Eval–Print Loop), activable par simple configuration (`spring-shell.interactive.enabled=true`),
 - un ensemble de composants TUI (tableaux, sélecteurs, flux, vues de progression, etc.) pour enrichir l’expérience utilisateur directement dans le terminal,
 - une intégration naturelle avec les autres briques Spring, qu’il s’agisse de la configuration centralisée, des beans métiers ou encore des mécanismes de tests.

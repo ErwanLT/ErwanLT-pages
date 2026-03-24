@@ -11,7 +11,7 @@ published_at: "2026-03-17"
 sfeir_slug: "validation-spring-boot-du-standard-au-sur-mesure"
 sfeir_tags: [Back, Java, Spring Boot, Validation, Jakarta]
 ---
-Dans [[Il était une fois... Java|l’univers Java]] — et plus particulièrement avec [[Il était une fois... Spring Boot|Spring Boot]] — la ****validation déclarative**** par annotations est une pratique ancrée dans les traditions des projets robustes et maintenables.  
+Dans [l’univers Java](/back/java/il-etait-une-fois-java/) — et plus particulièrement avec [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) — la ****validation déclarative**** par annotations est une pratique ancrée dans les traditions des projets robustes et maintenables.  
 Elle permet d’exprimer, proche du modèle de données, des règles simples et lisibles : « ce champ ne doit pas être vide », « cet e-mail doit être valide », « ce nombre doit être ≥ 18 », etc.
 
 Dans cet article, nous explorons en profondeur les annotations de validation avec [Spring Boot](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/) (Jakarta Bean Validation / Hibernate Validator).  
@@ -42,7 +42,7 @@ Vous découvrirez les annotations les plus courantes, leurs forces et limites, u
 
 Pour en savoir plus, n'hésitez pas à lire notre article sur les annotations :
 
-[[Comprendre les annotations dans Spring Boot - guide et exemples]]
+[Comprendre les annotations dans Spring Boot - guide et exemples](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/)
 
 ## ⚖️ Avantages et inconvénients
 

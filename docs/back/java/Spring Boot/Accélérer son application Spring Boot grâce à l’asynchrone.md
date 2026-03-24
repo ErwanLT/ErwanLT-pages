@@ -12,11 +12,11 @@ sfeir_slug: "accelerer-son-application-spring-boot-grace-a-lasynchrone"
 sfeir_tags: [Back, Java, Spring Boot, Asynchrone]
 ---
 Dans les applications modernes, la réactivité est devenue essentielle. Qu’il s’agisse de lancer des calculs intensifs ou d’interroger des API externes, il est préférable de ne pas bloquer le fil principal.  
-[[Il était une fois... Spring Boot|Spring Boot]], combiné avec `CompletableFuture`, offre un moyen simple et efficace pour gérer ces traitements asynchrones. Contrairement à l’utilisation d’un système de messagerie comme Kafka ou RabbitMQ, cette approche reste légère et parfaitement adaptée pour des scénarios internes.
+[Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), combiné avec `CompletableFuture`, offre un moyen simple et efficace pour gérer ces traitements asynchrones. Contrairement à l’utilisation d’un système de messagerie comme Kafka ou RabbitMQ, cette approche reste légère et parfaitement adaptée pour des scénarios internes.
 
 ## Prérequis
 
-Il est nécessaire d'activer d’activer l’asynchronisme dans la classe principale ou dans une configuration via [[Comprendre les annotations dans Spring Boot - guide et exemples|l'annotation]] `@EnableAsync`.
+Il est nécessaire d'activer d’activer l’asynchronisme dans la classe principale ou dans une configuration via [l'annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) `@EnableAsync`.
 
 ```java
 @SpringBootApplication
@@ -205,7 +205,7 @@ Ici les 2 méthodes font la même chose ou presque :
 
 - `getFullProductDetails` est une implémentation de **succès partiel**, si une opération échoue, ce n'est pas grave on continue avec les autres
 - `getFullProductDetailsOrFailFast` est une implémentation de type t**out ou rien**, Si un seul des appels asynchrones échoue, on considère que l'opération globale a échoué et on retourne une erreur globale.
-    - Pas de `exceptionally` ici, le `CompletableFuture` qui sera renvoyé au controller sera dans un état d'exception et sera géré par notre [[Comment bien gérer ses exceptions dans Spring Boot|controller advice qui renverra le code erreur adéquat]].
+    - Pas de `exceptionally` ici, le `CompletableFuture` qui sera renvoyé au controller sera dans un état d'exception et sera géré par notre [controller advice qui renverra le code erreur adéquat](/back/java/spring-boot/comment-bien-gerer-ses-exceptions-dans-spring-boot/).
 
 ---
 
@@ -264,4 +264,4 @@ Il nous reste maintenant plus qu'à tester nos 2 appels :
 L’utilisation de `CompletableFuture` avec Spring Boot et `@Async` permet de gérer efficacement des tâches longues ou parallèles sans complexité excessive.  
 Cette approche convient parfaitement aux scénarios où un **asynchronisme léger** est suffisant.
 
-Pour des cas plus poussés (streams massifs, événements distribués), il conviendra d’examiner des alternatives comme **Spring WebFlux** ou l’intégration avec des systèmes de messagerie ([[Intégration de Kafka dans une application Spring Boot|Kafka]], RabbitMQ).
+Pour des cas plus poussés (streams massifs, événements distribués), il conviendra d’examiner des alternatives comme **Spring WebFlux** ou l’intégration avec des systèmes de messagerie ([Kafka](/back/java/spring-boot/messaging/integration-de-kafka-dans-une-application-spring-boot/), RabbitMQ).

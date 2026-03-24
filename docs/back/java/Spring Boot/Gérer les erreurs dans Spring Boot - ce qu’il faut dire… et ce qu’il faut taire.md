@@ -13,14 +13,14 @@ sfeir_tags: [Back, Java, Spring Boot, Exceptions]
 ---
 ## Quand “bien structuré” ne suffit plus
 
-Dans les articles précédents, nous avons appris à [[Comment bien gérer ses exceptions dans Spring Boot|ne plus mentir avec les codes HTTP]], puis à [[Vers un standard des erreurs HTTP|structurer nos erreurs à l’aide d’un format standard grâce à la RFC 9457]] et `ProblemDetail`.
+Dans les articles précédents, nous avons appris à [ne plus mentir avec les codes HTTP](/back/java/spring-boot/comment-bien-gerer-ses-exceptions-dans-spring-boot/), puis à [structurer nos erreurs à l’aide d’un format standard grâce à la RFC 9457](/back/java/spring-boot/vers-un-standard-des-erreurs-http/) et `ProblemDetail`.
 
 Nos réponses d’erreur sont désormais propres, cohérentes et compréhensibles.  
 Elles respectent les standards, parlent le bon [langage HTTP](https://www.sfeir.dev/back/vers-un-standard-des-erreurs-http/) et évitent les bricolages approximatifs.
 
 Pourtant, un piège demeure : croire que ****toutes les erreurs méritent d’être exposées de la même façon****.
 
-Car une [[REST - définition|API]] ne se contente pas de décrire ce qui s’est mal passé.  
+Car une [API](/definition/rest-definition/) ne se contente pas de décrire ce qui s’est mal passé.  
 Elle ****choisit ce qu’elle révèle****, à qui et dans quel but.
 
 Une erreur n’est jamais neutre :  
@@ -140,7 +140,7 @@ Le système reste discret.
 
 Pour garder la maîtrise de ce qui est exposé, encore faut-il maîtriser ****le type d’exceptions que l’on propage****.
 
-Dans une [[Il était une fois... Spring Boot|application Spring Boot]], les exceptions métier héritent presque toujours de `RuntimeException`.  
+Dans une [application Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), les exceptions métier héritent presque toujours de `RuntimeException`.  
 Ce choix n’est pas anodin : contrairement aux exceptions vérifiées (`Exception`), une `RuntimeException` peut remonter librement la pile d’appels sans imposer de `try/catch` ni polluer les signatures de méthodes.
 
 Elle exprime un état invalide du domaine, pas un problème technique local à traiter immédiatement.

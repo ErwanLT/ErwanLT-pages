@@ -11,7 +11,7 @@ published_at: "2026-03-01"
 sfeir_slug: "les-profils-dans-spring-boot"
 sfeir_tags: [Back, Java, Spring Boot]
 ---
-Dans toute application [[Il était une fois... Spring Boot|Spring Boot]] un tant soit peu sérieuse, une question finit toujours par se poser :
+Dans toute application [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) un tant soit peu sérieuse, une question finit toujours par se poser :
 
 > Comment adapter le comportement de l’application selon l’environnement ?
 
@@ -118,7 +118,7 @@ java -jar my-app.jar --spring.profiles.active=test
 
 ## Profils et beans conditionnels
 
-C'est ici que les profils deviennent vraiment puissants. Ils permettent de conditionner l'existence même d'un composant Java grâce à [[Comprendre les annotations dans Spring Boot - guide et exemples|l'annotation]] `@Profile`.
+C'est ici que les profils deviennent vraiment puissants. Ils permettent de conditionner l'existence même d'un composant Java grâce à [l'annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) `@Profile`.
 
 ### ****Exemple : Le service d'envoi d'emails****
 

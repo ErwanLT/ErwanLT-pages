@@ -11,7 +11,7 @@ published_at: "2025-11-18"
 sfeir_slug: "tutoriel-java-sound-transformer-le-son-du-microphone-en-images-temps-reel"
 sfeir_tags: [Back, Java, Music]
 ---
-Le son dans une application n'est pas toujours qu'une simple lecture d'un fichier MP3. Et si on pouvait voir la musique ? Ou analyser les bruits ambiants captés par notre micro ? La bonne nouvelle, c'est que [[Il était une fois... Java|Java]], via son API **Java Sound**, nous donne tous les outils nécessaires pour le faire.
+Le son dans une application n'est pas toujours qu'une simple lecture d'un fichier MP3. Et si on pouvait voir la musique ? Ou analyser les bruits ambiants captés par notre micro ? La bonne nouvelle, c'est que [Java](/back/java/il-etait-une-fois-java/), via son API **Java Sound**, nous donne tous les outils nécessaires pour le faire.
 
 Dans cet article, nous allons construire une application Swing qui capture le son du microphone en temps réel et affiche son **spectre de fréquences**. C'est ce que l'on appelle un visualiseur de spectre audio.
 

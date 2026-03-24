@@ -19,7 +19,7 @@ Musique de fond pour l'article
 
 ### Rôle du schéma GraphQL
 
-Aujourd'hui, nous abordons une pierre angulaire de notre expédition : le **schéma [[GraphQL - définition|GraphQL]]**.  
+Aujourd'hui, nous abordons une pierre angulaire de notre expédition : le **schéma [GraphQL](/definition/graphql-definition/)**.  
 Cet artefact précieux établit les règles du jeu entre le client et le serveur, agissant tel un **contrat** qui fixe :
 
 - les types de données
@@ -91,7 +91,7 @@ Cela impose une valeur obligatoire pour ce champ, garantissant ainsi des requêt
 _Fin de l’entrée. Prochaine étape : mettons en œuvre ces trésors et préparons-nous à exposer nos données via des controllers_
 
 ## Précédemment
-[[Partie 1 - Mise en place]]
+[Partie 1 - Mise en place](/back/java/spring-boot/graphql/partie-1-mise-en-place/)
 
 ## Prochainement
-[[Partie 3 - Controllers]]
+[Partie 3 - Controllers](/back/java/spring-boot/graphql/partie-3-controllers/)

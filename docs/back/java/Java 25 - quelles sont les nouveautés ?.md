@@ -19,7 +19,7 @@ Cette version introduit **18 propositions d’amélioration (JEPs)**, dont cert
 
 Depuis sa création, [Java](https://www.sfeir.dev/back/le-langage-java-definition/) s'est toujours efforcé de concilier simplicité, portabilité et robustesse. Java 25 poursuit cette tradition en introduisant des fonctionnalités qui simplifient le développement tout en renforçant la performance et la sécurité.
 
-[[Il était une fois... Java]]
+[Il était une fois... Java](/back/java/il-etait-une-fois-java/)
 
 ## Nouvelles fonctionnalités de Java 25
 

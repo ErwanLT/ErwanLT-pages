@@ -7,7 +7,7 @@ status: "Draft"
 ---
 Dans le monde des architectures distribuées et des applications orientées événements, [**Apache Kafka**](https://www.sfeir.dev/data/kesaco-apache-kafka/) s’est imposé comme l’une des technologies de messagerie les plus fiables et performantes.  
 Il est particulièrement adapté aux scénarios nécessitant **une forte résilience**, **une haute capacité de traitement** et **un échange de données en temps réel**.  
-Dans cet article, nous allons voir comment intégrer Kafka dans une application [[Il était une fois... Spring Boot|Spring Boot]] à travers un exemple concret comprenant un **producer** (émetteur de messages) et un **consumer** (lecteur de messages).
+Dans cet article, nous allons voir comment intégrer Kafka dans une application [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) à travers un exemple concret comprenant un **producer** (émetteur de messages) et un **consumer** (lecteur de messages).
 
 ## Présentation de Kafka
 
@@ -218,7 +218,7 @@ public class KafkaConsumerConfig {
 ```
 
 - **ConcurrentKafkaListenerContainerFactory** :
-    - Fabrique les conteneurs qui gèrent l’exécution [[Comprendre les annotations dans Spring Boot - guide et exemples|des méthodes annotées]] avec `@KafkaListener`.
+    - Fabrique les conteneurs qui gèrent l’exécution [des méthodes annotées](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) avec `@KafkaListener`.
     - Permet de configurer le mode d’accusé de réception (acknowledgment).
 - **AckMode.MANUAL** : désactive le commit automatique des offsets pour laisser le consommateur valider manuellement après traitement. C’est essentiel pour éviter la perte ou la duplication de messages lors d’erreurs.
 
@@ -230,7 +230,7 @@ L’exemple précédent illustre la base de l’intégration de **Kafka** avec
 - **Idempotence & transactions** : éviter doublons et garantir la cohérence des traitements.
 - **Sécurité (SASL/SSL, ACL)** : protéger l’accès aux topics et aux données.
 - **Schema Registry** : valider et versionner la structure des messages.
-- **Monitoring** : suivre lag, performances et santé du cluster via [[Superviser votre application Spring Boot grâce à Prometheus et Grafana|Prometheus/Grafana]].
+- **Monitoring** : suivre lag, performances et santé du cluster via [Prometheus/Grafana](/back/java/spring-boot/superviser-votre-application-spring-boot-grace-a-prometheus-et-grafana/).
 
 ## Conclusion
 

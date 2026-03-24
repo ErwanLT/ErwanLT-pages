@@ -19,7 +19,7 @@ L’un des outils les plus emblématiques de cette philosophie est **Chaos Monk
 
 ## Origine
 
-Le concept de **Chaos Monkey** trouve ses racines chez Netflix, pionnier du **Chaos Engineering**. Face à l’essor du cloud et des architectures distribuées, Netflix a rapidement compris que la robustesse de son infrastructure [[Pourquoi tester son code ?|ne pouvait pas se limiter aux seuls tests unitaires et d’intégration classiques]].
+Le concept de **Chaos Monkey** trouve ses racines chez Netflix, pionnier du **Chaos Engineering**. Face à l’essor du cloud et des architectures distribuées, Netflix a rapidement compris que la robustesse de son infrastructure [ne pouvait pas se limiter aux seuls tests unitaires et d’intégration classiques](/product/pourquoi-tester-son-code/).
 
 En 2011, [**Yury Izrailevsky**](https://www.linkedin.com/in/yuryizrailevsky/?ref=sfeir.dev) et [**Ariel Tseitlin**](https://www.linkedin.com/in/atseitlin/?ref=sfeir.dev) alors ingénieurs chez Netflix, ont eu l'idée de mettre en place un outil qui provoquerait des pannes dans l’environnement de production.  
 L'idée ? Passer d'un modèle où les équipes construisent un logiciel en espérant qu'il n'y aura pas de pannes à un modèle où elles sauront qu'il y aura une panne.  

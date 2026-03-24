@@ -13,12 +13,12 @@ sfeir_tags: [Back, Java, Spring Boot, rulebook, BRMS]
 ---
 Dans le développement d'applications modernes, la gestion des règles métier est une problématique clé pour garantir la robustesse et la flexibilité des systèmes.  
 Les règles métier, telles que la validation des transactions bancaires ou les restrictions sur la création de comptes, doivent être bien structurées, maintenables et évolutives.  
-**RuleBook** est une bibliothèque [[Il était une fois... Java|Java]] légère et flexible qui permet de définir et d'exécuter des règles métier de manière déclarative. Lorsqu'elle est intégrée à [[Il était une fois... Spring Boot]], RuleBook offre une solution puissante pour externaliser la logique de validation tout en s'appuyant sur l'écosystème Spring, notamment [[Spring AOP - comprendre la programmation orientée aspect dans Spring|Spring AOP]] pour une application modulaire des règles.
+**RuleBook** est une bibliothèque [Java](/back/java/il-etait-une-fois-java/) légère et flexible qui permet de définir et d'exécuter des règles métier de manière déclarative. Lorsqu'elle est intégrée à [Il était une fois... Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), RuleBook offre une solution puissante pour externaliser la logique de validation tout en s'appuyant sur l'écosystème Spring, notamment [Spring AOP](/back/java/spring-boot/spring-aop-comprendre-la-programmation-orientee-aspect-dans-spring/) pour une application modulaire des règles.
 
 ## Qu'est ce que RuleBook ?
 
 **RuleBook** est une [bibliothèque open-source](https://www.sfeir.dev/tag/opensource/) Java conçue pour implémenter des règles métier de manière simple et intuitive.  
-Contrairement à des moteurs de règles complexes comme [[Maîtrisez vos règles métier - Intégrez Drools dans Spring Boot|Drools]], RuleBook adopte une approche légère basée sur [[Comprendre les annotations dans Spring Boot - guide et exemples|des annotations]] et une API fluide. Les règles sont définies dans des classes Java annotées avec des métadonnées telles que `@Rule`, `@Given`, `@When`, `@Then`, et `@Result`, ce qui les rend lisibles et faciles à maintenir.
+Contrairement à des moteurs de règles complexes comme [Drools](/back/java/spring-boot/brms/maitrisez-vos-regles-metier-integrez-drools-dans-spring-boot/), RuleBook adopte une approche légère basée sur [des annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) et une API fluide. Les règles sont définies dans des classes Java annotées avec des métadonnées telles que `@Rule`, `@Given`, `@When`, `@Then`, et `@Result`, ce qui les rend lisibles et faciles à maintenir.
 
 Dans une application Spring Boot, **RuleBook** peut être intégré via le module `rulebook-spring`, qui fournit des beans comme **SpringAwareRuleBookRunner** pour charger automatiquement les règles d'un package donné. Les règles peuvent être appliquées à des méthodes spécifiques grâce à Spring AOP, ce qui permet de séparer la logique de validation de la logique métier principale.
 
@@ -30,7 +30,7 @@ Dans une application Spring Boot, **RuleBook** peut être intégré via le mod
 - **Intégration avec Spring** : Grâce au module `rulebook-spring`, RuleBook s'intègre parfaitement à Spring Boot, notamment avec Spring AOP pour appliquer les règles de manière non intrusive.
 - **Modularité** : Les règles sont définies dans des classes indépendantes, ce qui facilite leur maintenance et leur réutilisation.
 - **Flexibilité** : RuleBook permet de combiner plusieurs règles avec un ordre d'exécution défini, et les résultats peuvent être personnalisés (par exemple, retourner une liste d'erreurs).
-- **Testabilité** : Les règles étant des classes Java, elles [[Test paramétrés - un test pour les gouverner tous|peuvent être testées]] avec des outils comme **JUnit** ou **Mockito**.
+- **Testabilité** : Les règles étant des classes Java, elles [peuvent être testées](/back/java/tests/test-parametres-un-test-pour-les-gouverner-tous/) avec des outils comme **JUnit** ou **Mockito**.
 
 #### ➖ Inconvénients
 
@@ -127,7 +127,7 @@ public enum TransactionType {
 
 ### Annotation personnalisée
 
-Une [[Comprendre les annotations dans Spring Boot - guide et exemples|annotation]]`@TransactionRule` marque les méthodes où les règles RuleBook doivent s'appliquer pour valider les transactions.
+Une [annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/)`@TransactionRule` marque les méthodes où les règles RuleBook doivent s'appliquer pour valider les transactions.
 
 ```java
 @Retention(RetentionPolicy.RUNTIME)

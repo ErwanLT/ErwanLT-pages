@@ -13,7 +13,7 @@ sfeir_tags: [Back, Java, jeux-vidéos, Tetris]
 ---
 Dans notre [série estivale](https://www.sfeir.dev/front/demineur-angular/) où l'on démonte les jeux de notre enfance pour les reconstruire pièce par pièce en explorant les frameworks modernes, on retrouve TETRIS !
 
-Parmi les jeux vidéo les plus iconiques de l’histoire, Tetris occupe, évidemment une place à part. Derrière sa mécanique simple et son esthétique minimaliste, se cache un jeu captivant, capable de fasciner aussi bien les joueurs que les programmeurs. Aujourd’hui, je vous propose une incursion dans le code de Tetris, à travers une implémentation en [[Il était une fois... Java|Java]] avec Swing.  
+Parmi les jeux vidéo les plus iconiques de l’histoire, Tetris occupe, évidemment une place à part. Derrière sa mécanique simple et son esthétique minimaliste, se cache un jeu captivant, capable de fasciner aussi bien les joueurs que les programmeurs. Aujourd’hui, je vous propose une incursion dans le code de Tetris, à travers une implémentation en [Java](/back/java/il-etait-une-fois-java/) avec Swing.  
 Ce sera l’occasion de mêler histoire du jeu vidéo et développement.
 
 ## Une brève histoire de Tetris

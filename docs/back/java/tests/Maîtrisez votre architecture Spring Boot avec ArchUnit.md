@@ -12,9 +12,9 @@ sfeir_slug: "maitrisez-votre-architecture-spring-boot-avec-archunit"
 sfeir_tags: [Back, Java, Spring Boot, Test, Architecture, ArchUnit]
 ---
 Dans le développement d'applications modernes, maintenir une architecture logicielle claire et cohérente est un défi constant.  
-[[Il était une fois... Spring Boot|Les applications Spring Boot]], avec leur flexibilité et leur richesse fonctionnelle, peuvent rapidement devenir complexes si les règles architecturales ne sont pas respectées.
+[Les applications Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), avec leur flexibilité et leur richesse fonctionnelle, peuvent rapidement devenir complexes si les règles architecturales ne sont pas respectées.
 
-C'est là qu'intervient **ArchUnit**, une bibliothèque [[Il était une fois... Java|Java]] qui permet de tester et de valider l'architecture de votre code de manière automatisée.
+C'est là qu'intervient **ArchUnit**, une bibliothèque [Java](/back/java/il-etait-une-fois-java/) qui permet de tester et de valider l'architecture de votre code de manière automatisée.
 
 ## Présentation d'ArchUnit
 
@@ -22,7 +22,7 @@ C'est là qu'intervient **ArchUnit**, une bibliothèque [[Il était une fois..
 
 Par exemple, il peut vérifier que les contrôleurs ne dépendent que des services ou que les couches de persistance n'accèdent pas aux couches supérieures. **ArchUnit** est particulièrement adapté aux [projets Spring Boot](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/), car il permet de valider des conventions architecturales courantes, comme [la séparation des responsabilités](https://www.sfeir.dev/single-responsibility-principle-les-niveaux-dabstraction/) entre contrôleurs, services et repositories.
 
-Avec une API fluide et intuitive, il s'intègre facilement dans [[Test paramétrés - un test pour les gouverner tous|des environnements de test comme JUnit]].
+Avec une API fluide et intuitive, il s'intègre facilement dans [des environnements de test comme JUnit](/back/java/tests/test-parametres-un-test-pour-les-gouverner-tous/).
 
 ## L'intérêt de tester son architecture
 
@@ -42,7 +42,7 @@ En résumé, tester son architecture avec ArchUnit garantit que votre codebase r
 - **Automatisation** : Les règles architecturales sont vérifiées automatiquement dans vos tests, intégrables dans un pipeline CI/CD.
 - **Flexibilité** : L'API d'ArchUnit permet de définir des règles spécifiques adaptées à votre projet (par exemple, vérifier les annotations ou les dépendances).
 - **Intégration simple** : ArchUnit s'intègre facilement dans des projets Spring Boot via Maven ou Gradle.
-- [[Pourquoi tester son code ?|**Détection précoce des erreurs**]] : Les violations architecturales sont identifiées dès les tests unitaires, avant même le déploiement.
+- [**Détection précoce des erreurs**](/product/pourquoi-tester-son-code/) : Les violations architecturales sont identifiées dès les tests unitaires, avant même le déploiement.
 
 ### ➖ Inconvénients
 

@@ -49,7 +49,7 @@ Cela rend **REST** flexible, permettant aux applications web et mobiles de ré
 **REST** s'est imposé pour sa simplicité et son indépendance vis-à-vis des langages et technologies. Cette flexibilité en a fait une norme pour la création d’APIs sur le web et a contribué à l’expansion rapide des applications web et mobiles :
 
 - **Simplicité et standardisation** : Chaque ressource a une adresse unique, et les verbes HTTP permettent d'interagir sans ambiguïté.
-- **Indépendance technologique** : REST fonctionne avec de nombreuses technologies ([[Il était une fois... Java|Java]], [Python](https://www.sfeir.dev/kesaco-python/), [Node.js](https://www.sfeir.dev/back/node-js-definition/)) et peut être utilisé pour des clients variés (navigateur, applications mobiles).
+- **Indépendance technologique** : REST fonctionne avec de nombreuses technologies ([Java](/back/java/il-etait-une-fois-java/), [Python](https://www.sfeir.dev/kesaco-python/), [Node.js](https://www.sfeir.dev/back/node-js-definition/)) et peut être utilisé pour des clients variés (navigateur, applications mobiles).
 - **Stateless** : Chaque requête contient toutes les informations nécessaires pour être comprise et exécutée, permettant une échelle plus large.
 
 **REST** est aujourd’hui l’architecture la plus courante des APIs web, et son impact sur le développement des applications modernes est immense.

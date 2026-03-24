@@ -17,7 +17,7 @@ musique de fond pour l'article
 
 ---
 
-Aujourd’hui, je note dans ce journal les mystères d'une île que l’on nomme **_[[GraphQL - définition|GraphQL]]_**). Une alternative intrigante aux contrées de [**REST**](https://www.sfeir.dev/rest-definition/), elle promet bien des trésors en permettant aux clients d'exiger exactement les données qu'ils souhaitent, ni plus ni moins.  
+Aujourd’hui, je note dans ce journal les mystères d'une île que l’on nomme **_[GraphQL](/definition/graphql-definition/)_**). Une alternative intrigante aux contrées de [**REST**](https://www.sfeir.dev/rest-definition/), elle promet bien des trésors en permettant aux clients d'exiger exactement les données qu'ils souhaitent, ni plus ni moins.  
 Une trouvaille qui pourrait bien réduire la surcharge de données, rendant notre navigation plus efficace et agile.
 
 ## Pourquoi mettre le cap sur GraphQL ?
@@ -70,7 +70,7 @@ Cette dépendance est notre première arme, apportant le support pour bâtir des
 
 starter graphql
 
-L’arme qui donne à notre équipage tout le pouvoir de GraphQL ! Elle simplifie grandement l’intégration de GraphQL dans Spring Boot, en nous permettant de définir des schémas GraphQL et [[Comprendre les annotations dans Spring Boot - guide et exemples|d’utiliser des annotations]] comme `@QueryMapping` et `@MutationMapping`.  
+L’arme qui donne à notre équipage tout le pouvoir de GraphQL ! Elle simplifie grandement l’intégration de GraphQL dans Spring Boot, en nous permettant de définir des schémas GraphQL et [d’utiliser des annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) comme `@QueryMapping` et `@MutationMapping`.  
 Elle donne accès à une interface interactive nommée GraphiQL, qui permet de tester facilement les API GraphQL. Un trésor pour tout explorateur technique.
 
 ---
@@ -79,4 +79,4 @@ _Journal de bord, fin de l'entrée du jour. Demain, nous mettrons les voiles ver
 
 ## Prochainement
 
-[[Partie 2 - le schéma dans GraphQL]]
+[Partie 2 - le schéma dans GraphQL](/back/java/spring-boot/graphql/partie-2-le-schema-dans-graphql/)

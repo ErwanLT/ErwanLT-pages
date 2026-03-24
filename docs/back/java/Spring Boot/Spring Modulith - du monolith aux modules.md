@@ -14,7 +14,7 @@ sfeir_tags: [Back, Java, Spring Boot, Architecture, Modulith]
 Dans le développement Java, de nombreuses applications commencent comme des monolithes simples, mais deviennent rapidement difficiles à maintenir à mesure qu’elles grandissent.  
 La modularisation est alors une étape clé pour améliorer la lisibilité, la testabilité et la maintenabilité.
 
-**Spring Modulith** est une solution qui permet de découper un monolithe en modules logiques tout en restant dans le cadre d’un [[Il était une fois... Spring Boot|projet Spring Boot]] classique.
+**Spring Modulith** est une solution qui permet de découper un monolithe en modules logiques tout en restant dans le cadre d’un [projet Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) classique.
 
 ## Présentation de Spring Modulith
 
@@ -33,7 +33,7 @@ Les concepts principaux :
 - **Découpage clair** du monolithe en modules logiques.
 - **Réduction du couplage** via des événements.
 - **Documentation automatique** (PlantUML, Canvas).
-- [[Il était une fois... Spring Boot|Compatible avec Spring Boot]], donc aucune surcouche complexe.
+- [Compatible avec Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), donc aucune surcouche complexe.
 - Facilite la transition vers une architecture microservices si nécessaire.
 
 ### ➖ Inconvénients
@@ -47,7 +47,7 @@ Les concepts principaux :
 Spring Modulith s’appuie sur **ArchUnit** pour analyser les dépendances entre modules. Même si Java autorise les imports directs, Modulith détectera grâce à ArchUnit toute utilisation interdite (par exemple l’accès à une classe située dans un package `internal`).  
 Cela permet d’automatiser la vérification de la modularité et de garantir le respect des règles d’architecture au fil des évolutions du code.
 
-[[Maîtrisez votre architecture Spring Boot avec ArchUnit]]
+[Maîtrisez votre architecture Spring Boot avec ArchUnit](/back/java/tests/maitrisez-votre-architecture-spring-boot-avec-archunit/)
 
 ## Mise en place
 
@@ -199,7 +199,7 @@ Exemple de documentation générée
 
 ## Liaison avec la méthodologie DDD
 
-Spring Modulith s’intègre naturellement avec [[DDD - Définition|**Domain-Driven Design**]] **(DDD)** :
+Spring Modulith s’intègre naturellement avec [**Domain-Driven Design**](/definition/ddd-definition/) **(DDD)** :
 
 - Chaque module peut représenter un **Bounded Context**, encapsulant ses entités, services et événements.
 - Les événements Modulith (`NotificationDTO`) correspondent aux **Domain Events** en DDD.

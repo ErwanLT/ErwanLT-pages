@@ -5,7 +5,7 @@ permalink: "/back/java/spring-boot/cache/mise-en-place-du-cache-dans-une-applica
 tags: [back, java, spring-boot, cache]
 status: "Draft"
 ---
-Dans toute application moderne, la performance et la réactivité sont des enjeux majeurs. Les utilisateurs s’attendent à obtenir des réponses rapides, même lorsque les traitements sous-jacents sont coûteux. Le **cache** constitue un outil essentiel pour répondre à ce besoin. Avec [[Il était une fois... Spring Boot|Spring Boot]], il est possible de mettre en place une stratégie de cache efficace en utilisant uniquement des [[Comprendre les annotations dans Spring Boot - guide et exemples|**annotations**]].
+Dans toute application moderne, la performance et la réactivité sont des enjeux majeurs. Les utilisateurs s’attendent à obtenir des réponses rapides, même lorsque les traitements sous-jacents sont coûteux. Le **cache** constitue un outil essentiel pour répondre à ce besoin. Avec [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), il est possible de mettre en place une stratégie de cache efficace en utilisant uniquement des [**annotations**](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/).
 
 ## Qu’est-ce que le cache ?
 

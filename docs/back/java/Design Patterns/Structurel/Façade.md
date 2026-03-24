@@ -11,15 +11,15 @@ published_at: "2024-07-03"
 sfeir_slug: "les-design-patterns-structurels-facade"
 sfeir_tags: [Back, Java, Design pattern]
 ---
-[[Les Design Patterns]] en programmation, se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus faciles à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.
+[Les Design Patterns](/definition/les-design-patterns/) en programmation, se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus faciles à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.
 
 Les design patterns structurels les plus utilisés sont les suivants :
-- [[Adaptateur]]
-- [[Composite]]
-- [[Décorateur]]
+- [Adaptateur](/back/java/design-patterns/structurel/adaptateur/)
+- [Composite](/back/java/design-patterns/structurel/composite/)
+- [Décorateur](/back/java/design-patterns/structurel/decorateur/)
 - **Façade**
-- [[Pont]]
-- [[Proxy]]
+- [Pont](/back/java/design-patterns/structurel/pont/)
+- [Proxy](/back/java/design-patterns/structurel/proxy/)
 ## Le design pattern Façade
 
 ### Définition
@@ -48,7 +48,7 @@ Ce pattern est particulièrement utile lorsque vous avez un système complexe av
 
 ### Exemple d'implémentation
 
-Dans mon précédent article sur le design pattern [[Décorateur]], nous avons utilisé l'exemple du café. Ici nous utiliserons l'exemple d'une boutique d'une grande enseigne en vente de boisson caféinée.
+Dans mon précédent article sur le design pattern [Décorateur](/back/java/design-patterns/structurel/decorateur/), nous avons utilisé l'exemple du café. Ici nous utiliserons l'exemple d'une boutique d'une grande enseigne en vente de boisson caféinée.
 
 [![](https://www.sfeir.dev/content/images/2024/06/facade.drawio.png)](https://www.sfeir.dev/content/images/2024/06/facade.drawio.png)
 

@@ -50,7 +50,7 @@ dépendance spring boot starter batch
 
 dépendance spring boot starter JPA
 
-- **Pourquoi l'ajouter ?** Spring Data JPA est un autre module de Spring qui simplifie l'accès et la gestion des données relationnelles dans les applications [[Il était une fois... Java|Java]]. Nous l'utilisons ici pour interagir avec notre base de données et récupérer les utilisateurs. Grâce à JPA, il devient simple d'effectuer des requêtes SQL complexes via des interfaces en Java, sans avoir à écrire du SQL manuel.
+- **Pourquoi l'ajouter ?** Spring Data JPA est un autre module de Spring qui simplifie l'accès et la gestion des données relationnelles dans les applications [Java](/back/java/il-etait-une-fois-java/). Nous l'utilisons ici pour interagir avec notre base de données et récupérer les utilisateurs. Grâce à JPA, il devient simple d'effectuer des requêtes SQL complexes via des interfaces en Java, sans avoir à écrire du SQL manuel.
 - **Quand l'utiliser ?** Chaque fois que votre application interagit avec une base de données relationnelle, JPA vous permet de manipuler les entités en tant qu'objets Java sans vous soucier des détails de bas niveau liés à la gestion des connexions à la base de données.
 
 ### com.h2database:h2
@@ -285,7 +285,7 @@ public class BatchScheduler {
 
 ### Planification avec `@Scheduled`
 
-[[Comprendre les annotations dans Spring Boot - guide et exemples|L'annotation]]`@Scheduled(cron = "*/10 * * * * ?")` indique que la méthode `runJob()` sera exécutée toutes les 10 secondes. Le format cron utilisé ici signifie :
+[L'annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/)`@Scheduled(cron = "*/10 * * * * ?")` indique que la méthode `runJob()` sera exécutée toutes les 10 secondes. Le format cron utilisé ici signifie :
 
 - `*/10` : Toutes les 10 secondes (dans un vrai contexte métier, jouer ce job toute les 10 secondes n'aurait pas grand intérêt, il faudrait plutôt le jouer 1 fois par jour)
 - `* * * * ?` : Chaque minute, chaque heure, chaque jour, chaque mois, indépendamment du jour de la semaine.

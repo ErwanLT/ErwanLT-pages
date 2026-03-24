@@ -11,9 +11,9 @@ published_at: "2026-03-04"
 sfeir_slug: "et-si-vos-prochaines-migrations-etaient-simples"
 sfeir_tags: ""
 ---
-La migration technique, c’est l’art de quitter le confort douillet de Java 11 pour partir à la chasse aux [Virtual Threads de Java 21](https://www.sfeir.dev/back/quoi-de-neuf-dans-lapi-java-21/), en trébuchant sur chaque `record` de Java 17, tout en sachant pertinemment que [[Java 25 - quelles sont les nouveautés ?|Java 25 sera sorti]] avant que tu aies terminé.
+La migration technique, c’est l’art de quitter le confort douillet de Java 11 pour partir à la chasse aux [Virtual Threads de Java 21](https://www.sfeir.dev/back/quoi-de-neuf-dans-lapi-java-21/), en trébuchant sur chaque `record` de Java 17, tout en sachant pertinemment que [Java 25 sera sorti](/back/java/java-25-quelles-sont-les-nouveautes/) avant que tu aies terminé.
 
-C’est une épopée où [[Il était une fois... Spring Boot|Spring Boot]] t’explique soudainement que tes imports `javax` sont devenus indésirables, presque honteux. [[JUnit 6 - le successeur de JUnit 5 est là !|Mais la palme du sadisme revient à JUnit]] : passer de la v4 à la v5 ne sert qu’à te rappeler ta condition. Tu perds tes `@Rules`, tu renommes `@Before` en `@BeforeEach`, et tu finis par activer le moteur Vintage en pleurant, admettant ainsi que ton code — comme toi — refuse fondamentalement de grandir.
+C’est une épopée où [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) t’explique soudainement que tes imports `javax` sont devenus indésirables, presque honteux. [Mais la palme du sadisme revient à JUnit](/back/java/junit-6-le-successeur-de-junit-5-est-la/) : passer de la v4 à la v5 ne sert qu’à te rappeler ta condition. Tu perds tes `@Rules`, tu renommes `@Before` en `@BeforeEach`, et tu finis par activer le moteur Vintage en pleurant, admettant ainsi que ton code — comme toi — refuse fondamentalement de grandir.
 
 Et si tout cela appartenait au passé ?  
 Et si les futures migrations techniques étaient simples, répétables et surtout… prévisibles ?
@@ -31,7 +31,7 @@ Le problème, c’est qu’elle n’est ni outillée ni capitalisée.
 - Les mêmes remplacements,
 - Les mêmes ajustements subtils que seul le compilateur finit par révéler.
 
-Et surtout, une fois la migration terminée, tout ce savoir disparaît avec la branche [[Les commandes git essentielles démystifiées|Git]].
+Et surtout, une fois la migration terminée, tout ce savoir disparaît avec la branche [Git](/product/les-commandes-git-essentielles-demystifiees/).
 
 ## OpenRewrite : transformer la migration en savoir-faire
 
@@ -184,7 +184,7 @@ Dans ce projet, j'ai une application avec les critères suivants :
 - Springboot 3.5.9
 - Java 21
 - Des tests en JUnit 5 et même certains encore en JUnit 4
-- Des méthodes et [[Comprendre les annotations dans Spring Boot - guide et exemples|annotations]] marquées comme deprecated
+- Des méthodes et [annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) marquées comme deprecated
 
 Bref, un terrain de jeu idéal pour démontrer l'utilité de l'outil.
 

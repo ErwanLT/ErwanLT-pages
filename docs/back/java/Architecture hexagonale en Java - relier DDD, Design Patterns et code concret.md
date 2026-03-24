@@ -15,8 +15,8 @@ sfeir_tags: [Back, Java, Design pattern, Architecture]
 
 Quand on parle de conception logicielle, on croise souvent deux mondes qui se regardent de loin :
 
-- le monde de la modélisation métier, avec [[DDD - Définition|DDD]] ;
-- le monde des solutions de code, avec [[Les Design Patterns|les design patterns]].
+- le monde de la modélisation métier, avec [DDD](/definition/ddd-definition/) ;
+- le monde des solutions de code, avec [les design patterns](/definition/les-design-patterns/).
 
 En pratique, ces deux approches ne s’opposent pas. Elles se complètent.
 
@@ -95,7 +95,7 @@ C’est ici que les patterns deviennent utiles, sans sur-ingénierie.
 
 ### 1) `Factory` pour créer des agrégats valides
 
-Au lieu d’instancier les objets métier n’importe comment, on centralise la création avec [[Factory]].
+Au lieu d’instancier les objets métier n’importe comment, on centralise la création avec [Factory](/back/java/design-patterns/creation/factory/).
 
 ```java
 public final class OrderFactory {
@@ -115,7 +115,7 @@ La factory protège les invariants dès l’entrée.
 
 ### 2) `Strategy` pour les règles variables
 
-Quand un comportement peut changer (tarification, remise, taxation), [[Stratégie]] évite les `if/else` infinis.
+Quand un comportement peut changer (tarification, remise, taxation), [Stratégie](/back/java/design-patterns/comportementaux/strategie/) évite les `if/else` infinis.
 
 ```java
 public interface PricingStrategy {
@@ -136,7 +136,7 @@ Tu gardes un domaine extensible sans le complexifier.
 
 ### 3) `Adapter` pour l’infrastructure
 
-Le port d’application définit un contrat ; l’infrastructure l’implémente avec [[Adaptateur]].
+Le port d’application définit un contrat ; l’infrastructure l’implémente avec [Adaptateur](/back/java/design-patterns/structurel/adaptateur/).
 
 ```java
 public interface OrderRepository {
@@ -164,7 +164,7 @@ Le cas d’usage ne dépend ni de JPA, ni d’un framework.
 
 ### 4) `Facade` pour exposer un point d’entrée clair
 
-Une [[Façade]] peut simplifier l’accès aux use cases côté client (CLI, REST, batch).
+Une [Façade](/back/java/design-patterns/structurel/facade/) peut simplifier l’accès aux use cases côté client (CLI, REST, batch).
 
 ```java
 public class OrderFacade {
@@ -214,7 +214,7 @@ class CreateOrderUseCaseTest {
 }
 ```
 
-Ce niveau de testabilité va dans le même sens que [[Maîtrisez votre architecture Spring Boot avec ArchUnit]] : rendre les limites de l’architecture explicites et vérifiables.
+Ce niveau de testabilité va dans le même sens que [Maîtrisez votre architecture Spring Boot avec ArchUnit](/back/java/tests/maitrisez-votre-architecture-spring-boot-avec-archunit/) : rendre les limites de l’architecture explicites et vérifiables.
 
 ## Cas d’usage complet
 
@@ -297,14 +297,14 @@ L’architecture hexagonale fournit la structure.
 
 En Java pur, ce trio permet de construire un code qui tient dans le temps.
 
-Si tu veux approfondir la logique derrière chaque pattern, commence par [[Pourquoi utiliser les Design Patterns ?]], puis traverse les patterns de création, structurels et comportementaux pour voir lesquels répondent à tes vrais besoins.
+Si tu veux approfondir la logique derrière chaque pattern, commence par [Pourquoi utiliser les Design Patterns ?](/back/java/design-patterns/pourquoi-utiliser-les-design-patterns/), puis traverse les patterns de création, structurels et comportementaux pour voir lesquels répondent à tes vrais besoins.
 
 ## Maillage interne
 
-- [[DDD - Définition]]
-- [[Les Design Patterns]]
-- [[Pourquoi utiliser les Design Patterns ?]]
-- [[Factory]]
-- [[Stratégie]]
-- [[Adaptateur]]
-- [[Façade]]
+- [DDD - Définition](/definition/ddd-definition/)
+- [Les Design Patterns](/definition/les-design-patterns/)
+- [Pourquoi utiliser les Design Patterns ?](/back/java/design-patterns/pourquoi-utiliser-les-design-patterns/)
+- [Factory](/back/java/design-patterns/creation/factory/)
+- [Stratégie](/back/java/design-patterns/comportementaux/strategie/)
+- [Adaptateur](/back/java/design-patterns/structurel/adaptateur/)
+- [Façade](/back/java/design-patterns/structurel/facade/)

@@ -14,7 +14,7 @@ sfeir_tags: [Back, Java, Spring Boot, Messaging, JMS]
 Dans le monde de l’entreprise, la communication asynchrone entre applications est essentielle pour garantir la résilience, la scalabilité et le découplage des systèmes. Les files de messages jouent ici un rôle primordial en permettant d’échanger des informations de manière fiable, même lorsque les applications ne sont pas disponibles simultanément.
 
   
-L’API **JMS (Java Message Service)** est une spécification standard qui offre un cadre pour cette communication basée sur la messagerie. Dans cet article, nous allons découvrir JMS, ses avantages et ses limites, avant de voir comment l’intégrer concrètement dans une [[Il était une fois... Spring Boot|application **Spring Boot**]] avec **ActiveMQ**.
+L’API **JMS (Java Message Service)** est une spécification standard qui offre un cadre pour cette communication basée sur la messagerie. Dans cet article, nous allons découvrir JMS, ses avantages et ses limites, avant de voir comment l’intégrer concrètement dans une [application **Spring Boot**](/back/java/spring-boot/il-etait-une-fois-spring-boot/) avec **ActiveMQ**.
 
 ## Présentation de JMS
 
@@ -39,7 +39,7 @@ Grâce à ce standard, les développeurs peuvent utiliser différents brokers JM
 
 - **Complexité accrue** : gestion des transactions, des redéliveries, des files mortes (DLQ).
 - **Coût opérationnel** : un broker JMS doit être installé, configuré et maintenu.
-- **Performances limitées** pour certains cas d’usage à très fort volume ([[Intégration de Kafka dans une application Spring Boot|Kafka]] sera alors plus adapté).
+- **Performances limitées** pour certains cas d’usage à très fort volume ([Kafka](/back/java/spring-boot/messaging/integration-de-kafka-dans-une-application-spring-boot/) sera alors plus adapté).
 
 ## Exemple d’intégration avec Spring Boot et ActiveMQ
 
@@ -277,4 +277,4 @@ Le choix dépend du contexte : JMS reste pertinent dans des environnements Java 
 
 ## Conclusion
 
-L’intégration de JMS dans une application **Spring Boot** permet de bénéficier d’une communication asynchrone fiable, reposant sur un standard éprouvé. Grâce à l’écosystème Spring, la mise en place est grandement simplifiée : quelques propriétés, une classe de configuration et des [[Comprendre les annotations dans Spring Boot - guide et exemples|services annotés]] suffisent pour envoyer et consommer des messages.
+L’intégration de JMS dans une application **Spring Boot** permet de bénéficier d’une communication asynchrone fiable, reposant sur un standard éprouvé. Grâce à l’écosystème Spring, la mise en place est grandement simplifiée : quelques propriétés, une classe de configuration et des [services annotés](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) suffisent pour envoyer et consommer des messages.

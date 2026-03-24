@@ -14,7 +14,7 @@ sfeir_tags: [Back, Java, Spring Boot, Exceptions, erreurs]
 Dans un article précédent, nous avons vu comment éviter l’erreur la plus courante et la plus dangereuse : renvoyer un **200 OK** accompagné d’un message d’erreur.  
 Nous avons également mis en place une gestion d’erreurs cohérente grâce à des exceptions personnalisées et à un `@ControllerAdvice`.
 
-[[Comment bien gérer ses exceptions dans Spring Boot]]
+[Comment bien gérer ses exceptions dans Spring Boot](/back/java/spring-boot/comment-bien-gerer-ses-exceptions-dans-spring-boot/)
 Mais une question demeure :
 
 > **Comment structurer nos réponses d’erreur de façon standard, lisible par les humains _et_ par les machines ?**
@@ -56,7 +56,7 @@ Exemple de réponse conforme :
 }
 ```
 
-## ProblemDetail : l’implémentation [[Il était une fois... Spring Boot|Spring Boot]]
+## ProblemDetail : l’implémentation [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/)
 
 Depuis **Spring Framework 6 / Spring Boot 3**, le framework fournit une implémentation native de ce standard via la classe **`ProblemDetail`**.
 
@@ -153,7 +153,7 @@ Tout en conservant le détail **dans les logs**.
 - documentée une fois
 - valable pour toute l’API
 
-[[Réussir sa migration de Swagger 2 à OpenApi 3]]
+[Réussir sa migration de Swagger 2 à OpenApi 3](/back/java/spring-boot/reussir-sa-migration-de-swagger-2-a-openapi-3/)
 
 ### Pourquoi c’est une évolution naturelle
 

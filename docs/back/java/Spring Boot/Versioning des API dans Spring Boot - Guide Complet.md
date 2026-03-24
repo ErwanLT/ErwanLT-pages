@@ -11,10 +11,10 @@ published_at: "2025-11-26"
 sfeir_slug: "versioning-des-api-dans-spring-boot-guide-complet"
 sfeir_tags: [Back, Java, Spring Boot, versioning, API]
 ---
-Le versioning des API est devenu un enjeu majeur dans l’évolution d’applications modernes. Les [[REST - définition|APIs REST]] assurent la communication entre services, applications front-end, mobiles ou tierces.  
+Le versioning des API est devenu un enjeu majeur dans l’évolution d’applications modernes. Les [APIs REST](/definition/rest-definition/) assurent la communication entre services, applications front-end, mobiles ou tierces.  
 Avec le temps, les besoins évoluent : nouveaux champs, formatage différent, amélioration de la structure des réponses… autant de changements qui risquent de casser les clients existants si aucune stratégie de versioning n’est en place.
 
-C’est pourquoi [[Il était une fois... Spring Boot|Spring Boot]] offre plusieurs mécanismes solides et complémentaires pour maintenir des APIs robustes et évolutives.
+C’est pourquoi [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) offre plusieurs mécanismes solides et complémentaires pour maintenir des APIs robustes et évolutives.
 
 ## Pourquoi versionner une API ?
 
@@ -144,7 +144,7 @@ public UserV1 getUserHeaderV1() { ... }
 |Query param|`/api/user?version=1`|URL stable|Moins RESTful|
 |Header|`X-API-VERSION: 1`|Propre, flexible|Test plus complexe|
 
-## Nouveauté : Versioning directement dans les [[Comprendre les annotations dans Spring Boot - guide et exemples|annotations]] Spring (Spring Boot 4 & Spring Framework 7)
+## Nouveauté : Versioning directement dans les [annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) Spring (Spring Boot 4 & Spring Framework 7)
 
 Depuis Spring Framework 7, une nouvelle approche a pointé le bout de son nez :  
 👉 **le versioning directement intégré dans les annotations de mapping**.

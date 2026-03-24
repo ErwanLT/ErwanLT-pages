@@ -11,14 +11,14 @@ published_at: "2024-07-09"
 sfeir_slug: "les-design-patterns-structurels-proxy"
 sfeir_tags: [Back, Java, Design pattern]
 ---
-[[Les Design Patterns]] en programmation, se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus faciles à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.
+[Les Design Patterns](/definition/les-design-patterns/) en programmation, se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus faciles à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.
 
 Les design patterns structurels les plus utilisés sont les suivants :
-- [[Adaptateur]]
-- [[Composite]]
-- [[Décorateur]]
-- [[Façade]]
-- [[Pont]]
+- [Adaptateur](/back/java/design-patterns/structurel/adaptateur/)
+- [Composite](/back/java/design-patterns/structurel/composite/)
+- [Décorateur](/back/java/design-patterns/structurel/decorateur/)
+- [Façade](/back/java/design-patterns/structurel/facade/)
+- [Pont](/back/java/design-patterns/structurel/pont/)
 - **Proxy**
 ## Le design pattern Proxy
 
@@ -50,9 +50,9 @@ En Java, un proxy peut être utilisé pour ajouter une couche d'indirection et d
 
 Dans mes précédents articles nous avons les exemples suivant :
 
-- [[Décorateur|Personnaliser son café]]
-- [[Façade|Le fonctionnement d'un coffee shop]]
-- [[Pont|Comment choisir la taille de son café]]
+- [Personnaliser son café](/back/java/design-patterns/structurel/decorateur/)
+- [Le fonctionnement d'un coffee shop](/back/java/design-patterns/structurel/facade/)
+- [Comment choisir la taille de son café](/back/java/design-patterns/structurel/pont/)
 
 Il nous reste à voir comment payer ce dernier afin de pouvoir en profiter.  
 Dans cet exemple, nous allons implémenter un système de paiement avec différents types de cartes de crédit. Nous aurons une interface `Payment`, une classe `RealPayment` qui représente l'objet réel, et une classe `PaymentProxy` qui agit comme un proxy pour `RealPayment`, en ajoutant des fonctionnalités telles que l'authentification et la journalisation.

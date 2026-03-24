@@ -23,7 +23,7 @@ sfeir_tags: [Retour d'expérience, Talk, Story]
 
 Il y a quelque temps, j'avais écrit un article sur pourquoi j'écris :
 
-[[Mais pourquoi écris-tu ?]]
+[Mais pourquoi écris-tu ?](/product/mais-pourquoi-ecris-tu/)
 
 J'y écrivais mes craintes par rapport au [syndrome de l'imposteur](https://www.sfeir.dev/tendances/le-syndrome-de-limposteur-dans-le-monde-de-lit/) et expliquais comment l’écriture m’avait aidé à les surmonter.
 
@@ -33,7 +33,7 @@ Cette étape, bien que cruciale, s’annonçait tout aussi difficile. Pourquoi ?
 
 Une fois ma décision prise, restait à trouver un sujet. Et quoi de mieux que celui d’un de mes articles pour débuter : **le chaos** !
 
-[[Introduisez du chaos dans votre application Spring Boot]]
+[Introduisez du chaos dans votre application Spring Boot](/back/java/tests/introduisez-du-chaos-dans-votre-application-spring-boot/)
 
 ## Les auditions à l’aveugle – Le comité de sélection
 

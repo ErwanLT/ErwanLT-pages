@@ -13,7 +13,7 @@ sfeir_tags: [Back, Java, Spring Boot, R2DBC, Reactive]
 ---
 Les applications réactives gagnent du terrain : elles permettent de mieux utiliser les ressources, d’avoir un comportement plus prévisible sous forte charge et d’aligner la pile bout-à-bout (API / traitement / IO) sur le paradigme non-bloquant.
 
-C’est dans ce contexte qu’apparaît **R2DBC**, une nouvelle manière de communiquer avec une base relationnelle au sein de [[Il était une fois... Spring Boot|Spring Boot]].
+C’est dans ce contexte qu’apparaît **R2DBC**, une nouvelle manière de communiquer avec une base relationnelle au sein de [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/).
 
 ## Présentation de R2DBC
 
@@ -188,7 +188,7 @@ public class PersonHandler {
 
 [![](https://media.tenor.com/ACBGhLB0v0gAAAAC/looney-tunes-telescope.gif)](https://media.tenor.com/ACBGhLB0v0gAAAAC/looney-tunes-telescope.gif)
 
-Dans une application Spring traditionnelle, on expose des [[REST - définition]] avec des classes [[Comprendre les annotations dans Spring Boot - guide et exemples|annotées]] `@RestController` et des méthodes annotées `@GetMapping`, `@PostMapping`, etc.  
+Dans une application Spring traditionnelle, on expose des [REST - définition](/definition/rest-definition/) avec des classes [annotées](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) `@RestController` et des méthodes annotées `@GetMapping`, `@PostMapping`, etc.  
 Chaque méthode retourne un objet ou une réponse HTTP, et Spring s’occupe de la sérialisation JSON et de la gestion des routes.
 
 Ici, nous utilisons **le routage fonctionnel de Spring WebFlux**, avec des objets `RouterFunction` et des `Handler` :

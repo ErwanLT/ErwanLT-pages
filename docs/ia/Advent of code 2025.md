@@ -18,7 +18,7 @@ Les coulisses de l'AoC
 
 Je ne vais pas non plus vous faire la description de comment fonctionne l'événement, ni vous dire qu'utiliser l'[IA](https://www.sfeir.dev/ia/chatgpt-a-3-ans-du-chatbot-viral-a-une-infrastructure-cle-de-lia-generative/) pour tenter de résoudre les problèmes est contraire au but du jeu, j'ai déjà écrit sur le sujet.
 
-[[IA generative vs Advent of code]]
+[IA generative vs Advent of code](/ia/ia-generative-vs-advent-of-code/)
 
 D'autant plus qu'Eric Wastl en remet une couche dans la section about du site :
 

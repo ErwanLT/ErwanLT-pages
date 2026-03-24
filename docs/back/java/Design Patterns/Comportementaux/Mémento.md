@@ -11,18 +11,18 @@ published_at: "2024-02-23"
 sfeir_slug: "design-patterns-comportementaux-memento"
 sfeir_tags: [Back, Java, Design pattern]
 ---
-[[Les Design Patterns]] comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
+[Les Design Patterns](/definition/les-design-patterns/) comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
 Les designs patterns comportementaux les plus utilisés sont les suivants :
 
-- [[Stratégie]]
+- [Stratégie](/back/java/design-patterns/comportementaux/strategie/)
 - **Mémento**
-- [[Médiateur]]
-- [[Observateur]]
-- [[Chaine de responsabilité]]
-- [[Commande]]
-- [[Etat]]
-- [[Visiteur]]
-- [[Interpréteur]]
+- [Médiateur](/back/java/design-patterns/comportementaux/mediateur/)
+- [Observateur](/back/java/design-patterns/comportementaux/observateur/)
+- [Chaine de responsabilité](/back/java/design-patterns/comportementaux/chaine-de-responsabilite/)
+- [Commande](/back/java/design-patterns/comportementaux/commande/)
+- [Etat](/back/java/design-patterns/comportementaux/etat/)
+- [Visiteur](/back/java/design-patterns/comportementaux/visiteur/)
+- [Interpréteur](/back/java/design-patterns/comportementaux/interpreteur/)
 
 Ici nous nous attaquerons au **design pattern** **Mémento**.
 ## Le design pattern Mémento
@@ -53,7 +53,7 @@ Le pattern Memento, un modèle de conception comportementale, offre la possibili
 
 ### Exemple d'implémentation
 
-Comme lors de [[Commande|l'article sur le design pattern Commande]] nous allons utiliser l'exemple d'un éditeur de texte et des actions de sauvegarde (Ctrl+S/Cmd+S) et de retour arrière (Ctrl+Z/Cmd+Z).
+Comme lors de [l'article sur le design pattern Commande](/back/java/design-patterns/comportementaux/commande/) nous allons utiliser l'exemple d'un éditeur de texte et des actions de sauvegarde (Ctrl+S/Cmd+S) et de retour arrière (Ctrl+Z/Cmd+Z).
 
 [![](https://www.sfeir.dev/content/images/2024/02/memento.png)](https://www.sfeir.dev/content/images/2024/02/memento.png)
 

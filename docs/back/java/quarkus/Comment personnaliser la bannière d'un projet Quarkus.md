@@ -11,8 +11,8 @@ published_at: "2025-04-07"
 sfeir_slug: "comment-personnaliser-la-banniere-dun-projet-quarkus"
 sfeir_tags: [Back, Java, quarkus]
 ---
-Il y a de cela quelque temps, nous avions pu voir [[Comment personnaliser la bannière d'un projet Spring Boot|comment personnaliser la bannière]] d'un projet [[Il était une fois... Spring Boot|Spring Boot]].  
-Ici, nous verrons comment arriver au même résultat, mais dans un projet [[Quarkus - définition|Quarkus]].
+Il y a de cela quelque temps, nous avions pu voir [comment personnaliser la bannière](/back/java/spring-boot/comment-personnaliser-la-banniere-d-un-projet-spring-boot/) d'un projet [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/).  
+Ici, nous verrons comment arriver au même résultat, mais dans un projet [Quarkus](/definition/quarkus-definition/).
 
 ## La bannière Quarkus par défaut
 

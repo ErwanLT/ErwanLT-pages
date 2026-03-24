@@ -11,7 +11,7 @@ published_at: "2025-03-03"
 sfeir_slug: "quarkus-definition"
 sfeir_tags: [Késaco, définition, Java, quarkus]
 ---
-Quarkus est un framework [open-source](https://www.sfeir.dev/tag/opensource/) conçu pour exécuter des applications [[Il était une fois... Java|Java]] avec des performances optimales dans des environnements cloud et [serverless](https://www.sfeir.dev/definition-le-serverless/). Développé par [Red Hat](https://www.redhat.com/en?ref=sfeir.dev) en 2019, il se distingue par sa rapidité de démarrage, sa faible empreinte mémoire et son intégration avec GraalVM pour la compilation native.
+Quarkus est un framework [open-source](https://www.sfeir.dev/tag/opensource/) conçu pour exécuter des applications [Java](/back/java/il-etait-une-fois-java/) avec des performances optimales dans des environnements cloud et [serverless](https://www.sfeir.dev/definition-le-serverless/). Développé par [Red Hat](https://www.redhat.com/en?ref=sfeir.dev) en 2019, il se distingue par sa rapidité de démarrage, sa faible empreinte mémoire et son intégration avec GraalVM pour la compilation native.
 
 [
 
@@ -45,4 +45,4 @@ Quarkus a été conçu pour répondre aux nouvelles exigences du cloud et des ar
 
 ## Conclusion
 
-Quarkus est une alternative performante à [[Il était une fois... Spring Boot|Spring Boot]], particulièrement adaptée aux architectures cloud et serverless. Grâce à son temps de démarrage rapide, sa faible empreinte mémoire et son intégration avec GraalVM, il se distingue comme un choix idéal pour les microservices et les applications natives du cloud.
+Quarkus est une alternative performante à [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), particulièrement adaptée aux architectures cloud et serverless. Grâce à son temps de démarrage rapide, sa faible empreinte mémoire et son intégration avec GraalVM, il se distingue comme un choix idéal pour les microservices et les applications natives du cloud.

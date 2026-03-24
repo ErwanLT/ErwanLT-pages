@@ -52,7 +52,7 @@ Quand on confit l'application aux utilisateurs.
 
 ### Maintenir la stabilité et la fiabilité
 
-Même en tant qu'experts, les développeurs peuvent faire des erreurs. Bien que nous nous efforcions de produire un code de haute qualité et de [[Test paramétrés - un test pour les gouverner tous|tester rigoureusement tous les cas possibles]], il est irréaliste de penser que notre code sera toujours exempt de défauts. C'est pourquoi une gestion efficace des exceptions est cruciale. Elle permet à l'application de continuer à fonctionner de manière contrôlée même lorsqu'une erreur survient, améliorant ainsi sa stabilité et sa fiabilité.
+Même en tant qu'experts, les développeurs peuvent faire des erreurs. Bien que nous nous efforcions de produire un code de haute qualité et de [tester rigoureusement tous les cas possibles](/back/java/tests/test-parametres-un-test-pour-les-gouverner-tous/), il est irréaliste de penser que notre code sera toujours exempt de défauts. C'est pourquoi une gestion efficace des exceptions est cruciale. Elle permet à l'application de continuer à fonctionner de manière contrôlée même lorsqu'une erreur survient, améliorant ainsi sa stabilité et sa fiabilité.
 
 ### Respecter les bonnes pratiques de développement
 
@@ -60,7 +60,7 @@ La gestion des exceptions est une part essentielle des bonnes pratiques de déve
 
 ## Créons un projet Spring Boot
 
-Je vous épargne la définition de [[Il était une fois... Spring Boot|Spring Boot]] et [pourquoi il est si utilisé](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/) en [[Il était une fois... Java|java]]. Un de mes collègues a déjà écrit de supers articles sur le sujet que je vous recommande vivement de lire.  
+Je vous épargne la définition de [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) et [pourquoi il est si utilisé](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/) en [java](/back/java/il-etait-une-fois-java/). Un de mes collègues a déjà écrit de supers articles sur le sujet que je vous recommande vivement de lire.  
 D'ailleurs je vous recommande également de lire l'article suivant :
 
 
@@ -236,7 +236,7 @@ Tout simplement car pour l'instant, nos exceptions sont throw mais pas intercept
 ### Interceptons nos exceptions
 
 Pour intercepter nos exceptions nous allons avoir recours à un ControllerAdvice.  
-`@ControllerAdvice` est une [[Comprendre les annotations dans Spring Boot - guide et exemples|annotation du framework Spring]] qui permet de définir une classe globale pour la gestion des exceptions et le traitement des réponses associées.
+`@ControllerAdvice` est une [annotation du framework Spring](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) qui permet de définir une classe globale pour la gestion des exceptions et le traitement des réponses associées.
 
 ##### Avantages de @ControllerAdvice
 

@@ -55,7 +55,7 @@ Tu laisses traîner des objets inutiles ? Pas grave, je les récupère et je lib
 ## **Mon futur ... où vais-je ?**
 
 - **Innovations continues** : Chaque version apporte de nouveaux outils pour simplifier le code et améliorer les performances.
-- **Cloud et** [**microservices**](https://www.sfeir.dev/cloud/microservices-les-fondations-de-nos-infrastructures-modernes-2/) : Je suis toujours à la pointe pour t’aider à conquérir le cloud, grâce à des frameworks comme [[Il était une fois... Spring Boot|**Spring Boot**]] et **Quarkus**.
+- **Cloud et** [**microservices**](https://www.sfeir.dev/cloud/microservices-les-fondations-de-nos-infrastructures-modernes-2/) : Je suis toujours à la pointe pour t’aider à conquérir le cloud, grâce à des frameworks comme [**Spring Boot**](/back/java/spring-boot/il-etait-une-fois-spring-boot/) et **Quarkus**.
 - **Java** [**21**](https://www.sfeir.dev/back/quoi-de-neuf-dans-lapi-java-21/)**, 22,** [**23**](https://www.sfeir.dev/back/java-23-insight-javadoc-en-markdown/)**… et au-delà** : Tant qu’il y aura [des développeurs](https://www.sfeir.dev/success-story/guillaume-laforge-maestro-de-java-et-esthete-du-code-propre/), je serai là, prêt à répondre à leurs besoins.
 
 ## **Petit guide pour m’utiliser comme un pro**

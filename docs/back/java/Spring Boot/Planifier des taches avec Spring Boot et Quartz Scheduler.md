@@ -12,9 +12,9 @@ sfeir_slug: "planifier-des-taches-avec-spring-boot-et-quartz-scheduler"
 sfeir_tags: [Back, Java, Spring Boot, Quartz Scheduler]
 ---
 Dans les applications modernes, la gestion de tâches planifiées est une nécessité : génération de rapports quotidiens, suppression de données obsolètes, envoi de notifications régulières, etc.  
-[[Comprendre les annotations dans Spring Boot - guide et exemples|Spring Boot fournit une annotation]] simple `@Scheduled`, mais lorsque les besoins deviennent plus complexes (persistance des tâches, clustering, exécutions dynamiques), **Quartz Scheduler** s’impose comme une solution robuste et éprouvée.
+[Spring Boot fournit une annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) simple `@Scheduled`, mais lorsque les besoins deviennent plus complexes (persistance des tâches, clustering, exécutions dynamiques), **Quartz Scheduler** s’impose comme une solution robuste et éprouvée.
 
-Dans cet article, nous allons explorer comment intégrer Quartz à [[Il était une fois... Spring Boot|un projet Spring Boot]], configurer un scheduler persistant, et mettre en place un exemple concret de suppression d’utilisateurs inactifs.
+Dans cet article, nous allons explorer comment intégrer Quartz à [un projet Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), configurer un scheduler persistant, et mettre en place un exemple concret de suppression d’utilisateurs inactifs.
 
 ## Installation
 
@@ -257,7 +257,7 @@ ce qui donnera la réponse suivante
 
 Dans un précédent article, nous avions vu comment planifier des tâches en utilisant Spring Batch
 
-[[Planifier des tâches avec Spring Batch]]
+[Planifier des tâches avec Spring Batch](/back/java/spring-boot/planifier-des-taches-avec-spring-batch/)
 
 Bien que Quartz et Spring Batch soient deux briques de l’écosystème Spring, leurs objectifs diffèrent.
 

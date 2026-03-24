@@ -5,8 +5,8 @@ permalink: "/back/java/spring-boot/ia/de-la-question-naturelle-a-la-requete-jpa-
 tags: [back, java, spring-boot, ia]
 status: "Draft"
 ---
-Dans [[Et si on intégrait LangChain dans Spring Boot ? Partie 1]], nous avons branché un [LLM](https://www.sfeir.dev/data/comment-demarer-un-projet-llm/).  
-Dans [[Et si on intégrait LangChain dans Spring Boot ? Partie 2]] nous avons commencé à parler de tools.
+Dans [Et si on intégrait LangChain dans Spring Boot ? Partie 1](/back/java/spring-boot/ia/et-si-on-integrait-langchain-dans-spring-boot-partie-1/), nous avons branché un [LLM](https://www.sfeir.dev/data/comment-demarer-un-projet-llm/).  
+Dans [Et si on intégrait LangChain dans Spring Boot ? Partie 2](/back/java/spring-boot/ia/et-si-on-integrait-langchain-dans-spring-boot-partie-2/) nous avons commencé à parler de tools.
 
 Mais entre “j’ai un chatbot qui répond” et “j’ai une IA utile dans mon API”, il y a un fossé.
 
@@ -17,11 +17,11 @@ Un modèle qui répond juste, c’est autre chose.
 
 Dans cet article, on va voir comment passer de la question naturelle à une requête métier réelle, avec :
 
-- [[Il était une fois... Spring Boot|Spring Boot]]
+- [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/)
 - Spring AI + [Ollama](https://www.sfeir.dev/back/votre-premier-llm-en-5-minutes-avec-ollama/)
 - une base H2
 - des tools backend annotés
-- une [[REST - définition|API REST]] simple (`/api/library/ask`)
+- une [API REST](/definition/rest-definition/) simple (`/api/library/ask`)
 
 Le principe est limpide :
 
@@ -36,7 +36,7 @@ Si on envoies juste un prompt au modèle :
 
 - il peut reformuler très bien,
 - il peut répondre vite,
-- [[IA dégénérative - quand l'algorithme est malade|il peut aussi inventer des données]].
+- [il peut aussi inventer des données](/ia/ia-degenerative-quand-l-algorithme-est-malade/).
 
 Dès que on lui demandes :
 
@@ -261,9 +261,9 @@ Parce qu’elle respecte les responsabilités :
 
 C’est aussi compatible avec :
 
-- [[Validation Spring Boot - du standard au sur-mesure|De la validation en entrée]] pour valider les entrées API,
-- [[Les profils dans Spring Boot|De la gestion de profil]] pour séparer config locale et environnements,
-- [[Superviser votre application Spring Boot grâce à Prometheus et Grafana|Du monitoring pour surveiller les instances]].
+- [De la validation en entrée](/back/java/spring-boot/validation-spring-boot-du-standard-au-sur-mesure/) pour valider les entrées API,
+- [De la gestion de profil](/back/java/spring-boot/les-profils-dans-spring-boot/) pour séparer config locale et environnements,
+- [Du monitoring pour surveiller les instances](/back/java/spring-boot/superviser-votre-application-spring-boot-grace-a-prometheus-et-grafana/).
 
 ## Limites à assumer
 

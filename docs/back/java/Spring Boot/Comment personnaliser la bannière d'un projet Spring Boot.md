@@ -13,7 +13,7 @@ sfeir_tags: [Back, Java, Spring Boot]
 ---
 # La bannière Spring par défaut
 
-La bannière Spring Boot est un élément distinctif de [[Il était une fois... Spring Boot|Spring Boot]], un framework [[Il était une fois... Java|Java]] populaire utilisé pour créer des applications web. La bannière est affichée au démarrage de chaque application Spring Boot et contient le logo Spring Boot, le nom de la version et un message personnalisable.
+La bannière Spring Boot est un élément distinctif de [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), un framework [Java](/back/java/il-etait-une-fois-java/) populaire utilisé pour créer des applications web. La bannière est affichée au démarrage de chaque application Spring Boot et contient le logo Spring Boot, le nom de la version et un message personnalisable.
 
 ```text
   .   ____          _            __ _ _

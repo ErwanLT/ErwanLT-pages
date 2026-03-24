@@ -49,7 +49,7 @@ La qualité des articles de Grokipedia est variable selon les sujets. Les pages 
 Un enjeu plus large concerne la multiplication des contenus générés par intelligence artificielle sur Internet. Ces contenus servant à leur tour de données d’entraînement pour de nouveaux modèles, certains chercheurs évoquent un phénomène de **modèle autophage**, dans lequel l’IA se nourrit de productions antérieures d’IA, entraînant une dégradation progressive de la qualité, de la diversité et de la fiabilité de l’information.  
 Ce phénomène, parfois qualifié d’« IA dégénérative », soulève des interrogations sur la survie à long terme de ce type d’encyclopédie automatisée.
 
-[[IA dégénérative - quand l'algorithme est malade]]
+[IA dégénérative - quand l'algorithme est malade](/ia/ia-degenerative-quand-l-algorithme-est-malade/)
 
 ### Hallucinations de l’intelligence artificielle
 

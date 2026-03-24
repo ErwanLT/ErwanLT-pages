@@ -11,7 +11,7 @@ published_at: "2026-03-06"
 sfeir_slug: "integration-de-ldap-dans-une-application-spring-boot-avec-spring-security"
 sfeir_tags: [Back, Java, Spring Boot, Spring Security, LDAP]
 ---
-De nombreuses applications modernes doivent gérer [[Sécurisez vos API avec Spring Security - Basic Auth|l’authentification des utilisateurs]] et leurs autorisations. Plutôt que de recréer un système interne, les entreprises centralisent souvent cette gestion via un **annuaire LDAP**. Dans cet article, nous allons voir comment configurer une [[Il était une fois... Spring Boot|application **Spring Boot**]] pour s’appuyer sur LDAP.  
+De nombreuses applications modernes doivent gérer [l’authentification des utilisateurs](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-basic-auth/) et leurs autorisations. Plutôt que de recréer un système interne, les entreprises centralisent souvent cette gestion via un **annuaire LDAP**. Dans cet article, nous allons voir comment configurer une [application **Spring Boot**](/back/java/spring-boot/il-etait-une-fois-spring-boot/) pour s’appuyer sur LDAP.  
 Nous utiliserons un annuaire LDAP embarqué avec **UnboundID** pour simplifier la mise en place, mais la configuration pourra facilement être adaptée à un annuaire d’entreprise (OpenLDAP, Active Directory, etc.).
 
 ## Qu’est-ce que LDAP ?
@@ -393,7 +393,7 @@ public class ApiController {
 ```
 
 Ici nous utilisons Thymeleaf comme moteur de template et de rendu de nos vues HTML.  
-Nous protégeons également nos endpoints `listUsers` et `createUser` aux [[Sécurisez vos API avec Spring Security - accès par rôle|utilisateurs ayant le rôle]] **ADMIN** via [[Comprendre les annotations dans Spring Boot - guide et exemples|l'annotation]] `@PreAuthorize("hasRole('ADMINS')")` .
+Nous protégeons également nos endpoints `listUsers` et `createUser` aux [utilisateurs ayant le rôle](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-acces-par-role/) **ADMIN** via [l'annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) `@PreAuthorize("hasRole('ADMINS')")` .
 
 ![](https://www.sfeir.dev/content/images/2025/09/Capture-d---e--cran-2025-09-01-a---17.41.30-1.png)
 

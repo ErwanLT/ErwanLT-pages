@@ -11,7 +11,7 @@ published_at: "2024-10-01"
 sfeir_slug: "hacktoberfest-et-toi-quest-ce-que-tu-code"
 sfeir_tags: [open source, hacktoberfest]
 ---
-[[Ouverture des inscriptions à l'Hacktoberfest !|L'hacktoberfest]] revient encore cette année, une nouvelle opportunité de participer à ce festival de [l'open source](https://www.sfeir.dev/tag/opensource/) !
+[L'hacktoberfest](/product/ouverture-des-inscriptions-a-l-hacktoberfest/) revient encore cette année, une nouvelle opportunité de participer à ce festival de [l'open source](https://www.sfeir.dev/tag/opensource/) !
 
 Que vous soyez :
 
@@ -41,7 +41,7 @@ La Constitution Belge. Contribute to geektortoise/La-Constitution-Belge developm
 - **technologie** : [Markdown](https://www.sfeir.dev/markdown-definition/)
 - **owner** : [Renaud Hoyoux](https://www.sfeir.dev/author/geektortoise/)
 
-Dans ce projet, [Renaud Hoyoux](https://www.sfeir.dev/author/geektortoise/) a pris le temps d'encoder _La Constitution Belge_ [[Markdown - définition|au format Markdown]]afin de la rendre disponible au plus grand nombre et de tracer l'évolution de cette dernière dans le temps.
+Dans ce projet, [Renaud Hoyoux](https://www.sfeir.dev/author/geektortoise/) a pris le temps d'encoder _La Constitution Belge_ [au format Markdown](/definition/markdown-definition/)afin de la rendre disponible au plus grand nombre et de tracer l'évolution de cette dernière dans le temps.
 
 Cela permet de replonger facilement dans le passé et de comprendre les évolutions de ce qui est considéré aujourd'hui comme fondamental.
 
@@ -57,7 +57,7 @@ custom components for Vaadin projects. Contribute to ErwanLT/vaadin-custom-compo
 
 ](https://github.com/ErwanLT/vaadin-custom-component?ref=sfeir.dev)
 
-- **technologie** : [[Il était une fois... Java|Java]]
+- **technologie** : [Java](/back/java/il-etait-une-fois-java/)
 - **owner** : [Erwan Le Tutour](https://www.sfeir.dev/author/erwan/)
 
 Vaadin propose de nombreux composants tant gratuits que payants. Malheureusement certains sont à créer soi-même puisqu'ils sont encore inexistants dans ce framework. Ce sont ces composants manquants que je propose dans ce projet.

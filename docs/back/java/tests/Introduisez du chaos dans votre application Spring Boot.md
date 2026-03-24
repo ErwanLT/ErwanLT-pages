@@ -13,7 +13,7 @@ sfeir_tags: [Back, Java, Spring Boot, chaos, Chaos Engineering]
 ---
 Mais pourquoi vouloir introduire du chaos **volontairement** dans mon application ?  
 C'est sans doute la question qui vous a traversé l'esprit en lisant le titre de cet article.  
-Et c'est ce que nous allons voir dans cet article en introduisant divers types de chaos dans une application [[Il était une fois... Spring Boot|Spring Boot]].
+Et c'est ce que nous allons voir dans cet article en introduisant divers types de chaos dans une application [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/).
 
 ## Le chaos engineering
 
@@ -28,7 +28,7 @@ Les systèmes modernes sont **distribués, complexes et dynamiques** (microser
 
 ### Exemple d'outils de chaos engineering
 
-Développé par Netflix, [[L'armée des singes du chaos - définition|**Chaos Monkey**]] injecte des pannes aléatoires dans un environnement pour tester sa robustesse.
+Développé par Netflix, [**Chaos Monkey**](/definition/l-armee-des-singes-du-chaos-definition/) injecte des pannes aléatoires dans un environnement pour tester sa robustesse.
 
 ## Chaos Monkey pour Spring Boot
 
@@ -40,7 +40,7 @@ GitHubcodecentric
 
 Chaos Monkey for Spring Boot est un projet [open source](https://www.sfeir.dev/open-source-et-au-dela/) inspiré de la Simian Army de [Netflix](https://www.sfeir.dev/tendances/netflix-fete-ses-10-ans-en-france/) mais centré sur ... Spring Boot.
 
-Le but du projet ? Après avoir mis en place pléthore de [[Pourquoi tester son code ?|tests unitaires et d'intégration]], avoir entre 70-80% de couverture de code, il reste encore une zone d'incertitude :
+Le but du projet ? Après avoir mis en place pléthore de [tests unitaires et d'intégration](/product/pourquoi-tester-son-code/), avoir entre 70-80% de couverture de code, il reste encore une zone d'incertitude :
 
 - Comment l'application fera-t-elle face à de la latence ?
 - Et si un service ne répondait plus ?
@@ -67,7 +67,7 @@ Et ensuite d'activer le profil adéquat dans votre fichier `application.propert
 spring.profiles.active=chaos-monkey
 ```
 
-Au démarrage de votre application, en plus de la traditionnelle bannière Spring ([[Comment personnaliser la bannière d'un projet Spring Boot|si vous n'avez pas personnalisé celle-ci]]) vous devriez voir dans vos logs ceci :
+Au démarrage de votre application, en plus de la traditionnelle bannière Spring ([si vous n'avez pas personnalisé celle-ci](/back/java/spring-boot/comment-personnaliser-la-banniere-d-un-projet-spring-boot/)) vous devriez voir dans vos logs ceci :
 
 ```log
      _____ _                       __  __             _
@@ -92,7 +92,7 @@ Enfin pas tout à fait.
 
 Chaos Monkey for Spring Boot est livré avec des APIs qui permettent de modifier la configuration de ce dernier au runtime de l'application.
 
-Pour profiter de cette fonctionnalité, il faut au préalable avoir inclus les actuators dans vos dépendances, et pour les plus curieux qui veulent avoir les différents contrats des APIs l'on peut également ajouter celle de l'UI de [[Réussir sa migration de Swagger 2 à OpenApi 3|swagger]]:
+Pour profiter de cette fonctionnalité, il faut au préalable avoir inclus les actuators dans vos dépendances, et pour les plus curieux qui veulent avoir les différents contrats des APIs l'on peut également ajouter celle de l'UI de [swagger](/back/java/spring-boot/reussir-sa-migration-de-swagger-2-a-openapi-3/):
 
 ```xml
 <dependency>

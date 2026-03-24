@@ -12,7 +12,7 @@ sfeir_slug: "soap-definition"
 sfeir_tags: [Késaco, Web]
 ---
 Imaginez un service de messagerie sécurisé, où chaque message doit respecter une structure stricte pour garantir qu'il est bien compris par le destinataire, peu importe où il se trouve.  
-C'est en partie l'idée derrière SOAP, un protocole qui, contrairement à [[REST - définition|REST]] ou [[GraphQL - définition|GraphQL]], repose sur une rigueur formelle pour garantir la fiabilité et la sécurité des échanges entre applications.
+C'est en partie l'idée derrière SOAP, un protocole qui, contrairement à [REST](/definition/rest-definition/) ou [GraphQL](/definition/graphql-definition/), repose sur une rigueur formelle pour garantir la fiabilité et la sécurité des échanges entre applications.
 
 ## Un protocole d'échange avec des origines solides
 

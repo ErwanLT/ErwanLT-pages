@@ -10,7 +10,7 @@ banner: ""
 ---
 # Transactional Outbox : la pièce manquante entre votre base et Kafka
 
-Dans [[Intégration de Kafka dans une application Spring Boot|l'article précédent sur Kafka]] puis dans [[Intégration de Kafka dans une application Spring Boot - Allons plus loins|la version avancée]], nous avons vu comment publier et consommer des messages de manière fiable.
+Dans [l'article précédent sur Kafka](/back/java/spring-boot/messaging/integration-de-kafka-dans-une-application-spring-boot/) puis dans [la version avancée](/back/java/spring-boot/messaging/integration-de-kafka-dans-une-application-spring-boot-allons-plus-loins/), nous avons vu comment publier et consommer des messages de manière fiable.
 
 Mais en production, une question finit toujours par arriver :
 
@@ -44,12 +44,12 @@ Tant que la transaction SQL n’est pas validée, aucun événement n’est cons
 - Garantit la cohérence **DB ↔ événement** sans 2PC.
 - Compatible avec les architectures event-driven.
 - Permet de rejouer/inspecter les événements non envoyés.
-- Se combine très bien avec [[Comment bien gérer ses exceptions dans Spring Boot|une gestion propre des erreurs]].
+- Se combine très bien avec [une gestion propre des erreurs](/back/java/spring-boot/comment-bien-gerer-ses-exceptions-dans-spring-boot/).
 
 ### ⚠️ Inconvénients
 
 - Ajoute une table et un composant de publication à maintenir.
-- Nécessite une stratégie d’observabilité (lag outbox, retries, backlog), voir [[Superviser votre application Spring Boot grâce à Prometheus et Grafana]].
+- Nécessite une stratégie d’observabilité (lag outbox, retries, backlog), voir [Superviser votre application Spring Boot grâce à Prometheus et Grafana](/back/java/spring-boot/superviser-votre-application-spring-boot-grace-a-prometheus-et-grafana/).
 - L’idempotence côté consumer reste nécessaire, même avec Outbox.
 
 ## Implémentation Spring Boot + Kafka
@@ -235,8 +235,8 @@ Ce n’est pas juste “du code qui compile”, c’est du code qui démontre le
 
 - Ajouter un mécanisme de retries/backoff côté publisher (et éventuellement DLQ applicative).
 - Exposer des métriques : nombre de `PENDING`, âge max d’un événement, taux d’échec publication.
-- Surveiller ces métriques via [[Gérer et superviser ses applications avec Spring Boot Admin]] et [[Superviser votre application Spring Boot grâce à Prometheus et Grafana]].
-- Garder des tests d’architecture avec [[Maîtrisez votre architecture Spring Boot avec ArchUnit|ArchUnit]] pour éviter les contournements (publication directe hors outbox).
+- Surveiller ces métriques via [Gérer et superviser ses applications avec Spring Boot Admin](/back/java/spring-boot/gerer-et-superviser-ses-applications-avec-spring-boot-admin/) et [Superviser votre application Spring Boot grâce à Prometheus et Grafana](/back/java/spring-boot/superviser-votre-application-spring-boot-grace-a-prometheus-et-grafana/).
+- Garder des tests d’architecture avec [ArchUnit](/back/java/tests/maitrisez-votre-architecture-spring-boot-avec-archunit/) pour éviter les contournements (publication directe hors outbox).
 
 ## Conclusion
 
@@ -245,4 +245,4 @@ Le Transactional Outbox ne rend pas un système “magique”.
 En revanche, il donne un cadre robuste pour résoudre un problème classique des architectures distribuées :
 **ne jamais laisser la base dire une chose pendant que le bus d’événements en raconte une autre.**
 
-Et si tu veux pousser encore plus loin la robustesse de la chaîne, combine ce pattern avec des tests de chaos via [[Introduisez du chaos dans votre application Spring Boot]] et une stratégie d’idempotence côté consumer.
+Et si tu veux pousser encore plus loin la robustesse de la chaîne, combine ce pattern avec des tests de chaos via [Introduisez du chaos dans votre application Spring Boot](/back/java/tests/introduisez-du-chaos-dans-votre-application-spring-boot/) et une stratégie d’idempotence côté consumer.

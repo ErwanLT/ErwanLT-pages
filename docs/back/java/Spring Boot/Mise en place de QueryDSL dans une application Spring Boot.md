@@ -43,7 +43,7 @@ Ici, la méthode `book.title.eq(...)` est ****sécurisée au moment de la compil
 - ****Configuration supplémentaire**** : génération des classes Q via annotation processor.
 - ****Verbosité pour les requêtes simples**** : un repository classique est parfois suffisant.
 
-## Installation dans un projet [[Il était une fois... Spring Boot|Spring Boot]]
+## Installation dans un projet [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/)
 
 Pour installer Query-dsl dans votre projet, il suffit d'ajouter les dépendances suivante dans votre fichier `pom.xml``
 
@@ -331,7 +331,7 @@ return new PageImpl<>(results, pageable, total);
 - `pageable` → contient les infos sur la pagination et le tri appliqués.
 - `total` → nombre total d’éléments correspondant aux filtres.
 
-L’objet `PageImpl` peut être retourné tel quel à un contrôleur Spring MVC ou utilisé directement dans une vue [[Vaadin - définition|Vaadin]], avec gestion automatique de la pagination.
+L’objet `PageImpl` peut être retourné tel quel à un contrôleur Spring MVC ou utilisé directement dans une vue [Vaadin](/definition/vaadin-definition/), avec gestion automatique de la pagination.
 
 ### Résumé
 

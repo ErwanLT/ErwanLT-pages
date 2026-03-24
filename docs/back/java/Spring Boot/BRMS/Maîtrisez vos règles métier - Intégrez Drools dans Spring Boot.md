@@ -13,12 +13,12 @@ sfeir_tags: [Back, Java, Spring Boot, drools, BRMS]
 ---
 Dans le développement d'applications modernes, la gestion des règles métier complexes peut devenir un défi, surtout lorsqu'elles doivent être fréquemment mises à jour sans modifier le code source.  
 **Drools**, un moteur de règles [open-source](https://www.sfeir.dev/tag/open-source/), offre une solution pratique pour externaliser la logique métier dans des fichiers de règles facilement modifiables.  
-Lorsqu'il est intégré à [[Il était une fois... Spring Boot|Spring Boot]], Drools permet de combiner la puissance d'un framework web robuste avec une gestion dynamique des règles.  
+Lorsqu'il est intégré à [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), Drools permet de combiner la puissance d'un framework web robuste avec une gestion dynamique des règles.  
 Cet article explore comment intégrer Drools dans une [application Spring Boot](https://www.sfeir.dev/back/creer-son-projet-spring-boot-de-zero/), en s'appuyant sur un cas pratique de gestion bancaire, et détaille les étapes, les avantages, et les pièges à éviter.
 
 ## Présentation de Drools
 
-**Drools** est un système de gestion de règles métier (**BRMS**) développé par Red Hat. Il permet de définir des règles dans un langage déclaratif (souvent en fichiers `.drl`) qui sont ensuite évaluées par un moteur d'inférence basé sur [l'algorithme Rete](https://fr.wikipedia.org/wiki/Algorithme_de_Rete?ref=sfeir.dev). Drools s'intègre parfaitement avec [[Il était une fois... Java|Java]], offrant une [API](https://www.sfeir.dev/kesaco-api/) pour manipuler les règles et les faits (objets métier).  
+**Drools** est un système de gestion de règles métier (**BRMS**) développé par Red Hat. Il permet de définir des règles dans un langage déclaratif (souvent en fichiers `.drl`) qui sont ensuite évaluées par un moteur d'inférence basé sur [l'algorithme Rete](https://fr.wikipedia.org/wiki/Algorithme_de_Rete?ref=sfeir.dev). Drools s'intègre parfaitement avec [Java](/back/java/il-etait-une-fois-java/), offrant une [API](https://www.sfeir.dev/kesaco-api/) pour manipuler les règles et les faits (objets métier).  
 Dans un contexte Spring Boot, **Drools** peut être utilisé pour appliquer des règles complexes, comme la validation de transactions bancaires ou la gestion de politiques de tarification, tout en restant découplé de la logique applicative.
 
 ### Fonctionnalités clés :
@@ -34,7 +34,7 @@ Dans un contexte Spring Boot, **Drools** peut être utilisé pour appliquer de
 
 1. **Modularité** : Les règles sont externalisées, permettant aux analystes métier de les modifier sans toucher au code Java.
 2. **Flexibilité** : Drools s'adapte à des cas d'usage variés, comme la validation, les calculs dynamiques, ou la détection de fraudes.
-3. **Intégration Spring** : Avec Spring Boot, Drools peut être configuré comme un bean, utilisé avec [[Spring AOP - comprendre la programmation orientée aspect dans Spring|**AOP**]]pour appliquer des règles de manière transparente.
+3. **Intégration Spring** : Avec Spring Boot, Drools peut être configuré comme un bean, utilisé avec [**AOP**](/back/java/spring-boot/spring-aop-comprendre-la-programmation-orientee-aspect-dans-spring/)pour appliquer des règles de manière transparente.
 4. **Performance** : Le moteur Rete optimise l'évaluation des règles, même pour des ensembles complexes.
 
 #### ➖ Inconvénients
@@ -115,7 +115,7 @@ public class Transaction implements DroolsFact {
 
 ### Annotation personnalisée
 
-Une [[Comprendre les annotations dans Spring Boot - guide et exemples|annotation]] `@DroolsRule` marque les méthodes où les règles Drools doivent s'appliquer.
+Une [annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) `@DroolsRule` marque les méthodes où les règles Drools doivent s'appliquer.
 
 ```java
 @Retention(RetentionPolicy.RUNTIME)

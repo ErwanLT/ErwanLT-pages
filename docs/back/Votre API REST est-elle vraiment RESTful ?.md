@@ -11,7 +11,7 @@ published_at: "2025-04-02"
 sfeir_slug: "votre-api-rest-est-elle-vraiment-restful"
 sfeir_tags: [Back, API, REST]
 ---
-Si je vous disais que la très grande majorité des [[REST - définition|API REST]] ne sont pas **RESTful**, seriez-vous surpris ?
+Si je vous disais que la très grande majorité des [API REST](/definition/rest-definition/) ne sont pas **RESTful**, seriez-vous surpris ?
 
 Avant de plonger dans les niveaux de maturité des API, il est essentiel de comprendre la différence entre **REST** et **RESTful**.
 
@@ -37,7 +37,7 @@ Le modèle de maturité de Richardson est un cadre défini par [Leonard Richard
 
 Ce niveau correspond aux API qui utilisent HTTP comme simple moyen de transport sans exploiter les conventions REST.  
 Les API de **niveau 0** exposent souvent une unique URI, par exemple `/api`, et toutes les opérations sont effectuées à l’aide de la même méthode HTTP (souvent `POST`) avec des actions spécifiques définies dans le corps de la requête.  
-Ce niveau peut également être appelé **Swamp of POX**, soit le « domaine du Plain Old XML » car c'est celui utilisé par [[SOAP - définition|SOAP]].
+Ce niveau peut également être appelé **Swamp of POX**, soit le « domaine du Plain Old XML » car c'est celui utilisé par [SOAP](/definition/soap-definition/).
 
 **Exemple :**
 

@@ -13,7 +13,7 @@ sfeir_tags: [Back, Spring Boot, Il etait une fois]
 ---
 ## Avant Spring Boot, il y avait… Spring ! 🌱
 
-Avant l’arrivée de Spring Boot, il y avait [**Spring**](https://spring.io/projects/spring-framework?ref=sfeir.dev), le framework incontournable qui a révolutionné le développement d’applications [[Il était une fois... Java|Java]]. Créé au début des années 2000, Spring avait une mission claire : rendre le code Java plus léger, mieux structuré et surtout plus facile à [[Test paramétrés - un test pour les gouverner tous|tester]].
+Avant l’arrivée de Spring Boot, il y avait [**Spring**](https://spring.io/projects/spring-framework?ref=sfeir.dev), le framework incontournable qui a révolutionné le développement d’applications [Java](/back/java/il-etait-une-fois-java/). Créé au début des années 2000, Spring avait une mission claire : rendre le code Java plus léger, mieux structuré et surtout plus facile à [tester](/back/java/tests/test-parametres-un-test-pour-les-gouverner-tous/).
 
 À cette époque, développer une application Java complète signifiait gérer soi-même une pléthore de configurations et de dépendances.  
 Spring a introduit deux concepts majeurs qui ont tout changé :
@@ -32,9 +32,9 @@ C’est ainsi que naquit Spring Boot, un véritable super-héros pour les dével
 ## Pourquoi moi, Spring Boot, je suis devenu incontournable ?
 
 - **Démarrage rapide** : Pas besoin de configurer un fichier XML long comme un roman : ajoute les bonnes dépendances, et c’est parti !
-- **Spring Boot Starter** : [Chaque fonctionnalité a son starter](https://www.sfeir.dev/back/how-to-trouver-ses-starters-springboot/) : [[REST - définition|REST]], JPA, sécurité, [[Pourquoi tester son code ?|tests]]… Un simple ajout dans le `pom.xml` et tout est prêt.
+- **Spring Boot Starter** : [Chaque fonctionnalité a son starter](https://www.sfeir.dev/back/how-to-trouver-ses-starters-springboot/) : [REST](/definition/rest-definition/), JPA, sécurité, [tests](/product/pourquoi-tester-son-code/)… Un simple ajout dans le `pom.xml` et tout est prêt.
 - **Serveur embarqué** : Tomcat, Jetty, ou Undertow, directement dans ton application. Pas besoin de te soucier d’un serveur externe.
-- **Production-ready** : Actuator pour la gestion des [[Superviser votre application Spring Boot grâce à Prometheus et Grafana|métriques, monitoring et santé de l’application]].
+- **Production-ready** : Actuator pour la gestion des [métriques, monitoring et santé de l’application](/back/java/spring-boot/superviser-votre-application-spring-boot-grace-a-prometheus-et-grafana/).
 
 ## Les grandes étapes de ma carrière 🚀
 

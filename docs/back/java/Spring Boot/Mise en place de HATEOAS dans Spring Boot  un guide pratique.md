@@ -19,16 +19,16 @@ Il vise à enrichir les réponses d'une API avec des liens hypermédias, permett
 En d'autres termes, **HATEOAS** transforme une API en une interface auto-descriptive, où chaque réponse indique au client les actions possibles et les ressources accessibles.
 
 Imaginez une API comme un site web : au lieu de devoir deviner les URLs des pages suivantes, vous suivez des liens (comme "Accueil" ou "Profil").  
-**HATEOAS** applique cette idée aux [[REST - définition|APIs REST]], rendant les interactions plus fluides et évolutives.
+**HATEOAS** applique cette idée aux [APIs REST](/definition/rest-definition/), rendant les interactions plus fluides et évolutives.
 
-Dans cet article, nous explorerons **HATEOAS** à travers le prisme de [[Il était une fois... Spring Boot|Spring Boot]], en nous appuyant sur le modèle de maturité de Richardson, ses avantages et inconvénients, son installation, et un exemple concret basé sur une gestion d'auteurs et d'articles.
+Dans cet article, nous explorerons **HATEOAS** à travers le prisme de [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), en nous appuyant sur le modèle de maturité de Richardson, ses avantages et inconvénients, son installation, et un exemple concret basé sur une gestion d'auteurs et d'articles.
 
 ## Rappel du modèle de maturité de Richardson
-[[Votre API REST est-elle vraiment RESTful ?]]
+[Votre API REST est-elle vraiment RESTful ?](/back/votre-api-rest-est-elle-vraiment-restful/)
 
 Leonard Richardson a proposé un modèle pour évaluer le niveau de maturité des APIs REST, composé de quatre niveaux (de 0 à 3). HATEOAS correspond au niveau le plus élevé :
 
-1. **Niveau 0 - Le marais du POX (Plain Old XML)** : Utilisation de HTTP comme simple transport pour des appels RPC, sans respecter les principes REST (ex. : [[SOAP - définition|SOAP]].
+1. **Niveau 0 - Le marais du POX (Plain Old XML)** : Utilisation de HTTP comme simple transport pour des appels RPC, sans respecter les principes REST (ex. : [SOAP](/definition/soap-definition/).
 2. **Niveau 1 - Ressources** : Introduction des ressources individuelles avec des URLs spécifiques (ex. : `/authors/1` au lieu de `/getAuthor?id=1`).
 3. **Niveau 2 - Verbes HTTP** : Utilisation appropriée des méthodes HTTP (**GET, POST, PUT, DELETE**) pour interagir avec les ressources, avec des codes de statut HTTP cohérents.
 4. **Niveau 3 - HATEOAS** : Ajout de liens hypermédias dans les réponses, permettant au client de découvrir dynamiquement les actions possibles (ex. : un lien "**self**" ou "**delete**").
@@ -50,7 +50,7 @@ Mais au fait, connaissez-vous la différence entre REST et RESTful ? Si non, je 
 
 - **Complexité accrue** : L'ajout de liens demande un effort supplémentaire dans le code serveur et peut compliquer la logique métier.
 - **Surcharge des réponses** : Les réponses JSON deviennent plus volumineuses avec les métadonnées des liens, ce qui peut affecter les performances.
-- **Adoption limitée** : Peu de clients exploitent pleinement **HATEOAS**, car beaucoup préfèrent des URLs statiques et une [[Réussir sa migration de Swagger 2 à OpenApi 3|documentation Swagger]].
+- **Adoption limitée** : Peu de clients exploitent pleinement **HATEOAS**, car beaucoup préfèrent des URLs statiques et une [documentation Swagger](/back/java/spring-boot/reussir-sa-migration-de-swagger-2-a-openapi-3/).
 - **Support des méthodes non-GET** : HATEOAS est principalement conçu pour les **GET** ; représenter des actions comme **DELETE** ou **POST** nécessite des conventions supplémentaires.
 
 **HATEOAS** est donc idéal pour les APIs publiques ou complexes, mais peut être excessif pour des projets internes simples.

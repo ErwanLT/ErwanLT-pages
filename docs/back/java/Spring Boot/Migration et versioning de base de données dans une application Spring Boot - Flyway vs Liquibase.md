@@ -48,7 +48,7 @@ Pour ajouter Flyway à une application [**Spring Boot**](https://www.sfeir.dev/
 </dependency>
 ```
 
-[[Il était une fois... Spring Boot|Spring Boot]] **auto-configure****Flyway** dès qu’il détecte cette dépendance. Ensuite, dans `application.properties` :
+[Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) **auto-configure****Flyway** dès qu’il détecte cette dépendance. Ensuite, dans `application.properties` :
 
 ```properties
 spring.flyway.enabled=true

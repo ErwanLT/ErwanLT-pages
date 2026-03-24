@@ -11,7 +11,7 @@ published_at: "2025-07-21"
 sfeir_slug: "limiter-les-appels-a-son-api-rest-avec-bucket4j"
 sfeir_tags: [Back, Java, Spring Boot, REST, API, Bucket]
 ---
-Une [[REST - définition|API REST]] bien conçue est comme une porte d’entrée : elle doit être accessible, mais pas grande ouverte. Trop d’appels, trop fréquents, peuvent nuire à la stabilité du service, qu’ils soient le fait d’un usage abusif ou simplement de clients mal configurés. Pour prévenir ces situations, on utilise ce qu’on appelle le **rate limiting** : une limitation du nombre de requêtes acceptées sur une période donnée.
+Une [API REST](/definition/rest-definition/) bien conçue est comme une porte d’entrée : elle doit être accessible, mais pas grande ouverte. Trop d’appels, trop fréquents, peuvent nuire à la stabilité du service, qu’ils soient le fait d’un usage abusif ou simplement de clients mal configurés. Pour prévenir ces situations, on utilise ce qu’on appelle le **rate limiting** : une limitation du nombre de requêtes acceptées sur une période donnée.
 
 Dans cet article, nous allons découvrir **Bucket4j**, une bibliothèque Java qui offre une solution pour implémenter ce mécanisme.
 
@@ -19,9 +19,9 @@ Dans cet article, nous allons découvrir **Bucket4j**, une bibliothèque Java q
 
 Instaurer une limitation de débit sur les appels [API](https://www.sfeir.dev/kesaco-api/) n’est pas une option, c’est une bonne pratique fondamentale. Voici pourquoi :
 
-- 🔒 [[Sécurisez vos API avec Spring Security - Basic Auth|**Sécurité**]] : éviter les abus, les attaques par déni de service ou les scripts malveillants.
+- 🔒 [**Sécurité**](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-basic-auth/) : éviter les abus, les attaques par déni de service ou les scripts malveillants.
 - ⚖️ **Équité** : garantir une répartition juste des ressources entre tous les utilisateurs.
-- ⚙️ **Robustesse** : protéger les [[Migration et versioning de base de données dans une application Spring Boot - Flyway vs Liquibase|bases de données]] et les serveurs d’un trop grand nombre de requêtes simultanées.
+- ⚙️ **Robustesse** : protéger les [bases de données](/back/java/spring-boot/migration-et-versioning-de-base-de-donnees-dans-une-application-spring-boot-flyway-vs-liquibase/) et les serveurs d’un trop grand nombre de requêtes simultanées.
 - 💰 **Optimisation des coûts** : éviter une facturation excessive sur des services cloud.
 - 📊 **Gestion des clients** : offrir différents niveaux de service selon le type de client (standard, premium, etc.).
 
@@ -32,13 +32,13 @@ Instaurer une limitation de débit sur les appels [API](https://www.sfeir.dev/k
 - Chaque client dispose d’un _bucket_ (seau) rempli de _tokens_ (jetons).
 - Chaque appel consomme un jeton.
 - Les jetons sont rechargés à intervalle régulier.
-- Si le bucket est vide, la requête est rejetée avec une [[Comment bien gérer ses exceptions dans Spring Boot|erreur 429 (Too Many Requests)]].
+- Si le bucket est vide, la requête est rejetée avec une [erreur 429 (Too Many Requests)](/back/java/spring-boot/comment-bien-gerer-ses-exceptions-dans-spring-boot/).
 
 Avantages de Bucket4j :
 
 - 📦 Aucune dépendance externe obligatoire.
 - 💡 Configuration flexible : par adresse IP, par utilisateur, par clé API, etc.
-- 🛠️ Intégration simple dans une [[Il était une fois... Spring Boot|application Spring Boot]].
+- 🛠️ Intégration simple dans une [application Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/).
 
 ## Implémentation "naïve"
 
@@ -166,9 +166,9 @@ Les 2 exemples ci-dessus sont dits naïfs car, dans le premier cas, nous devrons
 
 ## Implémentation avec Spring AOP
 
-Plutôt que d’intégrer la logique de limitation directement dans chaque contrôleur ou d’appeler systématiquement un service, une autre approche consiste à utiliser [[Spring AOP - comprendre la programmation orientée aspect dans Spring|**Spring AOP**]]. Cela permet de **centraliser** la vérification du quota et de l’appliquer à n’importe quelle méthode via une simple annotation.
+Plutôt que d’intégrer la logique de limitation directement dans chaque contrôleur ou d’appeler systématiquement un service, une autre approche consiste à utiliser [**Spring AOP**](/back/java/spring-boot/spring-aop-comprendre-la-programmation-orientee-aspect-dans-spring/). Cela permet de **centraliser** la vérification du quota et de l’appliquer à n’importe quelle méthode via une simple annotation.
 
-### [[Comprendre les annotations dans Spring Boot - guide et exemples|l’annotation]] `@RateLimited`
+### [l’annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) `@RateLimited`
 
 Nous définissons une annotation personnalisée, qui pourra être appliquée sur toute méthode des controller.  
 Elle permet de spécifier une stratégie de limitation : `"api-key"`, `"ip"`, ou `"global"` (valeur par défaut).
@@ -437,7 +437,7 @@ Chaque approche a ses mérites et répond à des besoins spécifiques. En voici 
 
 Ce que nous avons présenté ici constitue une **base solide**, mais reste une implémentation **monolithique et en mémoire**. Pour une montée en charge ou un déploiement distribué, plusieurs pistes s’ouvrent :
 
-- **Stockage distribué des buckets** : avec [[Mise en cache avec Redis dans Spring Boot|Redis]], [Hazelcast](https://hazelcast.com/?ref=sfeir.dev) ou [Ignite](https://ignite.apache.org/?ref=sfeir.dev), pour partager les quotas entre plusieurs instances.
+- **Stockage distribué des buckets** : avec [Redis](/back/java/spring-boot/cache/mise-en-cache-avec-redis-dans-spring-boot/), [Hazelcast](https://hazelcast.com/?ref=sfeir.dev) ou [Ignite](https://ignite.apache.org/?ref=sfeir.dev), pour partager les quotas entre plusieurs instances.
 - **Configuration dynamique** : chargement des quotas via une base de données ou une API de configuration (multi-tenancy, plans tarifaires...).
 - **Annotations personnalisées enrichies** : avec des stratégies injectables, des délais dynamiques, ou des policies par rôle.
 - **Intégration avec Spring Security** : pour combiner authentification/autorisation et limitation par utilisateur authentifié.

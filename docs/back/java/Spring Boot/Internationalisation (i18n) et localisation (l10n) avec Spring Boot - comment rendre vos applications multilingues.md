@@ -12,7 +12,7 @@ sfeir_slug: "internationalisation-i18n-et-localisation-l10n-avec-spring-boot-com
 sfeir_tags: [Back, Java, Spring Boot, i18n, internationalisation, l10n]
 ---
 La gestion du multilingue (ou __internationalisation__) est un aspect essentiel des applications modernes. Qu’il s’agisse d’une application web, d’un service backend ou d’un produit distribué à l’international, il est important que les messages affichés ou renvoyés soient adaptés à la langue de l’utilisateur.  
-Avec [[Il était une fois... Spring Boot|**Spring Boot**]], l’i18n se configure facilement grâce aux fichiers de propriétés et à la classe `MessageSource`.  
+Avec [**Spring Boot**](/back/java/spring-boot/il-etait-une-fois-spring-boot/), l’i18n se configure facilement grâce aux fichiers de propriétés et à la classe `MessageSource`.  
 Mais l’intérêt ne se limite pas à l’interface utilisateur : on peut également propager ces messages localisés dans la ****couche service****, notamment lors du lancement d’exceptions métiers.
 
 ## Internationalisation (i18n) et localisation (l10n)
@@ -105,7 +105,7 @@ Ainsi, au lieu de coder en dur un texte dans l’exception, on transmet une clé
 
 ## Gérer les exceptions globalement
 
-Spring met à disposition `@ControllerAdvice` pour [[Comment bien gérer ses exceptions dans Spring Boot|centraliser la gestion des erreurs]].  
+Spring met à disposition `@ControllerAdvice` pour [centraliser la gestion des erreurs](/back/java/spring-boot/comment-bien-gerer-ses-exceptions-dans-spring-boot/).  
 Voici un exemple concret de handler utilisant le ****MessageSource**** pour traduire les messages :
 
 ```java
@@ -203,7 +203,7 @@ public class UserDto {
   }
 ```
 
-Et pour transformer notre `User` en `UserDto` [[MapStruct - Dites adieu au code répétitif et boostez vos mappages Java !|nous utiliserons un mapper]] :
+Et pour transformer notre `User` en `UserDto` [nous utiliserons un mapper](/back/java/spring-boot/mapstruct-dites-adieu-au-code-repetitif-et-boostez-vos-mappages-java/) :
 
 ```java
 @Component

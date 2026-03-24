@@ -11,7 +11,7 @@ published_at: "2024-11-22"
 sfeir_slug: "papa-je-veux-un-pokedex-partie-3"
 sfeir_tags: [Back, Java, Vaadin, pokédex]
 ---
-[[Papa, je veux un Pokédex - partie 2|Précédemment]], nous avons vu comment créer un projet [[Il était une fois... Spring Boot|Springboot]] + [[Vaadin - définition|Vaadin]], et avoir notre première vue après démarrage de l'application, il est temps de voir ce que nous pouvons faire d'autre.
+[Précédemment](/back/java/spring-boot/papa-je-veux-un-pokedex-partie-2/), nous avons vu comment créer un projet [Springboot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) + [Vaadin](/definition/vaadin-definition/), et avoir notre première vue après démarrage de l'application, il est temps de voir ce que nous pouvons faire d'autre.
 
 ## Pimentons un peu les choses
 

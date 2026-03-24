@@ -11,7 +11,7 @@ published_at: "2025-12-11"
 sfeir_slug: "boostez-votre-application-spring-boot-grace-aux-design-patterns"
 sfeir_tags: [Back, Java, Spring Boot, Design pattern]
 ---
-[[Il était une fois... Spring Boot|Depuis ses débuts, **Spring Boot**]] s’est imposé comme une référence dans le monde [[Il était une fois... Java|Java]] pour sa capacité à simplifier la création d’applications robustes, maintenables et prêtes à l’emploi. Cependant, derrière cette simplicité apparente se cache une architecture pensée avec rigueur, reposant sur des [[Les Design Patterns|**design patterns**]] éprouvés — ces mêmes modèles de conception qui, depuis des décennies, guident les ingénieurs vers un code plus clair, plus souple et plus réutilisable.
+[Depuis ses débuts, **Spring Boot**](/back/java/spring-boot/il-etait-une-fois-spring-boot/) s’est imposé comme une référence dans le monde [Java](/back/java/il-etait-une-fois-java/) pour sa capacité à simplifier la création d’applications robustes, maintenables et prêtes à l’emploi. Cependant, derrière cette simplicité apparente se cache une architecture pensée avec rigueur, reposant sur des [**design patterns**](/definition/les-design-patterns/) éprouvés — ces mêmes modèles de conception qui, depuis des décennies, guident les ingénieurs vers un code plus clair, plus souple et plus réutilisable.
 
 Cet article a pour but de **montrer comment** [**les design patterns**](https://www.sfeir.dev/tag/design-pattern/) **peuvent être utilisés consciemment par le développeur** pour renforcer encore les qualités de Spring Boot, mais aussi de **rappeler que le framework lui-même est bâti sur ces principes**, souvent de manière invisible pour l’utilisateur.
 
@@ -20,14 +20,14 @@ Cet article a pour but de **montrer comment** [**les design patterns**](https:
 [Spring Boot n’est pas seulement un outil facilitant la configuration des projets Java](https://www.sfeir.dev/back/back-pourquoi-utiliser-spring-boot/), c’est avant tout une **application magistrale des design patterns**.  
 Prenons quelques exemples emblématiques :
 
-- [[Factory|**Le pattern Factory**]] : Lorsqu’on écrit `@Bean` ou `@Component`, on délègue à Spring la responsabilité d’instancier et de gérer les objets. Ce comportement découle directement du **pattern Factory**, où une fabrique centralisée (le _BeanFactory_ ou _ApplicationContext_) se charge de créer les instances nécessaires, tout en contrôlant leur cycle de vie.
-- [[Singleton|**Le pattern Singleton**]] : La majorité des beans Spring sont des _singletons_ par défaut. Cela garantit qu’une seule instance de chaque composant est partagée dans le contexte applicatif, favorisant ainsi la cohérence et la performance.
-- [[Proxy|**Le pattern Proxy**]] : Le mécanisme d’[AOP (programmation orientée aspects)](https://www.sfeir.dev/back/spring-aop-comprendre-la-programmation-orientee-aspect-dans-spring/) de Spring repose sur la génération de proxies dynamiques. Cela permet d’intercepter les appels de méthode pour y injecter des comportements transverses comme la [sécurité](https://www.sfeir.dev/tag/spring-security/), la gestion des transactions ou la journalisation, sans modifier le code métier.
+- [**Le pattern Factory**](/back/java/design-patterns/creation/factory/) : Lorsqu’on écrit `@Bean` ou `@Component`, on délègue à Spring la responsabilité d’instancier et de gérer les objets. Ce comportement découle directement du **pattern Factory**, où une fabrique centralisée (le _BeanFactory_ ou _ApplicationContext_) se charge de créer les instances nécessaires, tout en contrôlant leur cycle de vie.
+- [**Le pattern Singleton**](/back/java/design-patterns/creation/singleton/) : La majorité des beans Spring sont des _singletons_ par défaut. Cela garantit qu’une seule instance de chaque composant est partagée dans le contexte applicatif, favorisant ainsi la cohérence et la performance.
+- [**Le pattern Proxy**](/back/java/design-patterns/structurel/proxy/) : Le mécanisme d’[AOP (programmation orientée aspects)](https://www.sfeir.dev/back/spring-aop-comprendre-la-programmation-orientee-aspect-dans-spring/) de Spring repose sur la génération de proxies dynamiques. Cela permet d’intercepter les appels de méthode pour y injecter des comportements transverses comme la [sécurité](https://www.sfeir.dev/tag/spring-security/), la gestion des transactions ou la journalisation, sans modifier le code métier.
 - **Le pattern Dependency Injection (ou Inversion of Control)** : C’est le cœur même de Spring. Ce modèle consiste à inverser la responsabilité de création et de gestion des dépendances : ce n’est plus l’objet qui crée ses dépendances, mais le conteneur Spring qui les lui fournit. Ce principe renforce la testabilité, la modularité et la clarté du code.
 
 Ainsi, même sans en avoir conscience, tout développeur Spring Boot utilise quotidiennement ces patterns. Pourtant, **les intégrer consciemment dans son propre code** peut permettre de passer d’une application simplement fonctionnelle à une application élégante, évolutive et pérenne.
 
-## [[Pourquoi utiliser les Design Patterns ?|Pourquoi utiliser les design patterns]] dans vos projets Spring Boot ?
+## [Pourquoi utiliser les design patterns](/back/java/design-patterns/pourquoi-utiliser-les-design-patterns/) dans vos projets Spring Boot ?
 
 Les design patterns ne sont pas de simples artifices de style : ils offrent des **solutions éprouvées à des problèmes récurrents** du développement logiciel.  
 Appliqués dans un contexte Spring Boot, ils peuvent :
@@ -44,10 +44,10 @@ En somme, il s’agit d’un **retour aux fondations du génie logiciel** : co
 
 Avant de plonger dans un cas concret de CRUD enrichi, voici une sélection de patterns dont l’application dans un contexte Spring Boot est particulièrement féconde :
 
-- [[Builder|**Builder**]] : idéal pour construire des objets complexes de manière lisible et fluide, notamment dans les DTO ou les entités immuables.
-- [[Stratégie|**Strategy**]] : permet de remplacer les chaînes de `if/else` par des stratégies dynamiques injectées, très utile pour la gestion de comportements variés (validation, calculs, conversions…).
-- [[Observateur|**Observer**]] : facilite la mise en place de notifications ou d’événements internes à l’application (grâce à `ApplicationEventPublisher` de Spring).
-- [[Décorateur|**Decorator**]] : permet d’enrichir un service existant sans modifier son code source — par exemple pour ajouter du logging, de la mise en cache, ou des contrôles supplémentaires.
+- [**Builder**](/back/java/design-patterns/creation/builder/) : idéal pour construire des objets complexes de manière lisible et fluide, notamment dans les DTO ou les entités immuables.
+- [**Strategy**](/back/java/design-patterns/comportementaux/strategie/) : permet de remplacer les chaînes de `if/else` par des stratégies dynamiques injectées, très utile pour la gestion de comportements variés (validation, calculs, conversions…).
+- [**Observer**](/back/java/design-patterns/comportementaux/observateur/) : facilite la mise en place de notifications ou d’événements internes à l’application (grâce à `ApplicationEventPublisher` de Spring).
+- [**Decorator**](/back/java/design-patterns/structurel/decorateur/) : permet d’enrichir un service existant sans modifier son code source — par exemple pour ajouter du logging, de la mise en cache, ou des contrôles supplémentaires.
 - **Template Method** : souvent utilisé pour factoriser les étapes communes d’un traitement tout en laissant certaines étapes personnalisables (utile dans les services métiers).
 
 ## Vers un CRUD augmenté : l’application concrète des patterns
@@ -258,7 +258,7 @@ public class BookCoteStrategyFactory {
 
 **Grâce à Spring, les stratégies sont injectées automatiquement.**
 
-En effet, lorsqu’[[Comprendre les annotations dans Spring Boot - guide et exemples|une classe est annotée]] avec `@Component`, elle devient un **bean Spring** :
+En effet, lorsqu’[une classe est annotée](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) avec `@Component`, elle devient un **bean Spring** :
 
 - au démarrage, le conteneur Spring scanne le classpath à la recherche de toutes les classes marquées `@Component`, `@Service`, `@Repository` ou `@Controller`.
 - pour chaque bean trouvé qui implémente une interface (ici `BookCoteStrategy`), Spring en conserve **une instance unique (singleton par défaut)** et la référence dans le _contexte_.
@@ -338,7 +338,7 @@ public class BookService {
 
 le service
 
-#### Le controller [[REST - définition|REST]]
+#### Le controller [REST](/definition/rest-definition/)
 
 ```java
 @RestController

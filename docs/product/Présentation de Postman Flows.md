@@ -18,7 +18,7 @@ sfeir_tags: [Product]
 Dans les grandes lignes, Postman permet de :
 
 - **Définir ses API** : Postman permet aux développeurs de concevoir, de développer et de documenter des API de manière efficace. Son interface permet de créer et de configurer facilement des requêtes HTTP, des en-têtes, des paramètres et des corps de requête.
-- **Tester ses API** : Postman facilite également les tests des API. Les développeurs peuvent envoyer des requêtes HTTP aux API pour vérifier leur fonctionnement et leur comportement car il est [[Pourquoi tester son code ?|important de tester ce que l'on développe]].
+- **Tester ses API** : Postman facilite également les tests des API. Les développeurs peuvent envoyer des requêtes HTTP aux API pour vérifier leur fonctionnement et leur comportement car il est [important de tester ce que l'on développe](/product/pourquoi-tester-son-code/).
 - **Collaborer entre membres d'une même équipe** : Postman permet aux développeurs de collaborer efficacement sur des projets API. Ils peuvent partager des collections d'API avec leur équipe, commenter et annoter des requêtes spécifiques, et même travailler simultanément via la notion de workspace d'équipe.
 
 Globalement Postman est un outil collaboratif visant à faciliter le développement et les tests liés aux API.

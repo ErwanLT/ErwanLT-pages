@@ -15,7 +15,7 @@ Depuis les débuts du développement web avec Java, les développeurs se sont ap
 Toutefois, ces approches avaient souvent leurs limites : syntaxe peu intuitive, séparation incomplète entre logique et vue, ou encore difficulté à produire du HTML “propre” et conforme aux standards du web moderne.
 
 C’est dans ce contexte qu’est né [**Thymeleaf**](https://www.thymeleaf.org/), un moteur de template pensé pour la génération de pages HTML dynamiques.  
-Couplé à [[Il était une fois... Spring Boot|**Spring Boot**]], il permet d’allier la puissance et la flexibilité du framework Spring avec une approche simple et élégante de la couche “vue”. Contrairement à ses prédécesseurs, Thymeleaf génère du HTML parfaitement valide, lisible à la fois par un navigateur et par un développeur avant traitement côté serveur.
+Couplé à [**Spring Boot**](/back/java/spring-boot/il-etait-une-fois-spring-boot/), il permet d’allier la puissance et la flexibilité du framework Spring avec une approche simple et élégante de la couche “vue”. Contrairement à ses prédécesseurs, Thymeleaf génère du HTML parfaitement valide, lisible à la fois par un navigateur et par un développeur avant traitement côté serveur.
 
 ## Présentation de Thymeleaf
 
@@ -40,7 +40,7 @@ projet github Thymeleaf
 
 ### Thymeleaf et le modèle MVC
 
-[[Il était une fois... Spring Boot|Spring Boot]] repose largement sur le modèle **MVC (Model-View-Controller)**, une architecture qui sépare les responsabilités de l’application en trois couches distinctes :
+[Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) repose largement sur le modèle **MVC (Model-View-Controller)**, une architecture qui sépare les responsabilités de l’application en trois couches distinctes :
 
 - **Model** : représente les données et la logique métier (par exemple, une entité `Person` et les services qui la manipulent).
 - **View** : s’occupe de la présentation à l’utilisateur (dans notre cas, les pages HTML rendues avec **Thymeleaf**).
@@ -324,9 +324,9 @@ Je vous passe la logique de la page books, c'est exactement la même chose.
 
 Selon le projet et le style d’interface attendu, plusieurs voies existent :
 
-- [[Vaadin - définition|**Vaadin**]] **(serveur-side UI en Java) :** Un framework complet d’interface **orienté composants** : on écrit l’UI **en Java**, et Vaadin gère le rendu web (HTML/JS) et l’état côté serveur.
+- [**Vaadin**](/definition/vaadin-definition/) **(serveur-side UI en Java) :** Un framework complet d’interface **orienté composants** : on écrit l’UI **en Java**, et Vaadin gère le rendu web (HTML/JS) et l’état côté serveur.
 
-[[Papa, je veux un Pokédex - partie 2]]
+[Papa, je veux un Pokédex - partie 2](/back/java/spring-boot/papa-je-veux-un-pokedex-partie-2/)
 
 - **Mustache :** Minimaliste (logique réduite), rapide, bon pour des besoins simples. Moins de confort sur les formulaires/validation intégrés.
 - **FreeMarker :** Moteur de templates puissant, syntaxe différente, très flexible. Moins “HTML naturel” que Thymeleaf.

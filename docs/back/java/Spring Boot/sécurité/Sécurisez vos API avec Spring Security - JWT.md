@@ -82,7 +82,7 @@ Dépendance pour la gestion du token
 
 ### Base de données
 
-Contrairement à ce que nous avons pu faire [[Sécurisez vos API avec Spring Security - Basic Auth|précédemment lors de la mise en place de l'authentification par Basic Auth]], ici nous stockerons nos utilisateurs en base de données.
+Contrairement à ce que nous avons pu faire [précédemment lors de la mise en place de l'authentification par Basic Auth](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-basic-auth/), ici nous stockerons nos utilisateurs en base de données.
 
 ```xml
 <dependency>
@@ -406,7 +406,7 @@ Toutes les méthodes pour valider le token sont liés à `extractAllClaims`, ce
     2. Parse le token pour obtenir ses revendications.
 - Renvoie un objet `Claims`, qui contient toutes les informations du payload du token.
 
-Maintenant que nous avons nos méthode pour générer et valider nos tokens, il nous faut maintenant les mettre à profit, car pour l'instant la méthode d'authentification qui est en place, est celle par défaut de Spring security :[[Sécurisez vos API avec Spring Security - Basic Auth|Basic Authentification]].  
+Maintenant que nous avons nos méthode pour générer et valider nos tokens, il nous faut maintenant les mettre à profit, car pour l'instant la méthode d'authentification qui est en place, est celle par défaut de Spring security :[Basic Authentification](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-basic-auth/).  
 Nous allons donc maintenant modifier notre configuration relative à la sécurité afin d'utiliser nos token à la place.
 
 ## Configurer la sécurité
@@ -561,7 +561,7 @@ public class SecurityConfiguration {
 }
 ```
 
-Nous n'avons ici qu'une méthode securityFilterChain qui via un [[Builder|builder]] va nous permettre de définir les règles de sécurité pour gérer les requêtes HTTP.  
+Nous n'avons ici qu'une méthode securityFilterChain qui via un [builder](/back/java/design-patterns/creation/builder/) va nous permettre de définir les règles de sécurité pour gérer les requêtes HTTP.  
 Voyons comment elle fonctionne :
 
 - **Désactivation de CSRF :**
@@ -606,7 +606,7 @@ Ici l'on se sert du bean **`AuthenticationProvider`** défini dans notre class
 
 Je vous passe le laïus sur le fait qu'il est important de bien gérer ses erreurs dans spring boot, vous trouverez un article sur le sujet juste ici
 
-[[Comment bien gérer ses exceptions dans Spring Boot]]
+[Comment bien gérer ses exceptions dans Spring Boot](/back/java/spring-boot/comment-bien-gerer-ses-exceptions-dans-spring-boot/)
 
 Sachez cependant qu'en matière de sécurité, il ne faut pas non plus donner trop de détails.
 

@@ -31,7 +31,7 @@ Dans cet article, on construit cette forteresse en trois couches :
 
 Le fil rouge est une application Spring Boot de streaming vidéo (type Disney+/Netflix), basée sur le repo `chaos-monkey-application`.  
 On y retrouve un contrôleur MVC, des services métiers, des dépendances externes simulées, une base H2 et des endpoints REST.  
-Le front est en [[Intégration de Thymeleaf dans une application Spring Boot|Thymeleaf]], ce qui permet d’illustrer aussi la partie “expérience utilisateur dégradée”.
+Le front est en [Thymeleaf](/back/java/spring-boot/integration-de-thymeleaf-dans-une-application-spring-boot/), ce qui permet d’illustrer aussi la partie “expérience utilisateur dégradée”.
 
 Quelques briques clés du repo :  
 `CatalogService`, `StreamingService`, `RecommendationService`, `UserService`, des repositories JPA, une UI v1/v2, et des endpoints REST (`/api/catalog`, `/api/streaming`, `/api/recommendations`).  
@@ -70,9 +70,9 @@ flowchart LR
 
 L’article complète trois ressources existantes :
 
-- [[Introduisez du chaos dans votre application Spring Boot]]
-- [[Maîtrisez les Tests de Charge avec Gatling pour Spring Boot]]
-- [[Résilience applicative avec Resilience4j et Spring Boot]]
+- [Introduisez du chaos dans votre application Spring Boot](/back/java/tests/introduisez-du-chaos-dans-votre-application-spring-boot/)
+- [Maîtrisez les Tests de Charge avec Gatling pour Spring Boot](/back/java/tests/maitrisez-les-tests-de-charge-avec-gatling-pour-spring-boot/)
+- [Résilience applicative avec Resilience4j et Spring Boot](/back/java/tests/resilience-applicative-avec-resilience4j-et-spring-boot/)
 
 L’objectif ici est de **les relier dans un même parcours opérationnel**.
 
@@ -286,13 +286,13 @@ management:
         include: chaosmonkey, health, info, circuitbreakers, retries
 ```
 
-On lance l’application avec ce profil (voir [[Les profils dans Spring Boot]]) :
+On lance l’application avec ce profil (voir [Les profils dans Spring Boot](/back/java/spring-boot/les-profils-dans-spring-boot/)) :
 
 ```bash
 mvn -pl chaos-application -am spring-boot:run -Dspring-boot.run.profiles=chaos-monkey
 ```
 
-Ensuite, on contrôle Chaos Monkey via [[Découverte des Actuators dans Spring Boot|Actuator]] :
+Ensuite, on contrôle Chaos Monkey via [Actuator](/back/java/spring-boot/decouverte-des-actuators-dans-spring-boot/) :
 
 ```bash
 curl http://localhost:8080/actuator/chaosmonkey
@@ -471,7 +471,7 @@ Exemples de décisions concrètes :
 
 ### Instrumenter les patterns de résilience
 
-Les métriques Resilience4j sont exposées via [[Découverte des Actuators dans Spring Boot|Actuator]] :
+Les métriques Resilience4j sont exposées via [Actuator](/back/java/spring-boot/decouverte-des-actuators-dans-spring-boot/) :
 
 - `GET /actuator/circuitbreakers`
 - `GET /actuator/retries`

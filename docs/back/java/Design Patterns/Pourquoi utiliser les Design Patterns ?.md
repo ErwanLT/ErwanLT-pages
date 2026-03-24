@@ -11,7 +11,7 @@ published_at: "2024-03-05"
 sfeir_slug: "pourquoi-utiliser-design-pattern"
 sfeir_tags: [Késaco, Design pattern]
 ---
-Les **Design Patterns** en programmation, représentent des bonnes pratiques de conception de code qui offrent des solutions réutilisables pour résoudre des problèmes communs. Si vous souhaitez en savoir plus sur ce que c'est exactement, découvrez la [[Les Design Patterns | définition]]!
+Les **Design Patterns** en programmation, représentent des bonnes pratiques de conception de code qui offrent des solutions réutilisables pour résoudre des problèmes communs. Si vous souhaitez en savoir plus sur ce que c'est exactement, découvrez la [définition](/definition/les-design-patterns/)!
 
 ## Les défis de la conception logicielle
 
@@ -32,9 +32,9 @@ En utilisant des Design Patterns, vous pouvez structurer votre code de manière 
 
 Voici quelques exemples de cas pratique illustrant l'utilisation de certains Design Patterns :
 
-1. Vous avez besoin d'une classe qui ne peut avoir qu'une seule instance dans toute l'application ? Utilisez le **[[Singleton]]**.
-2. Vous devez pouvoir enregistrer l'état interne d'un objet à un moment donné et le restaurer ultérieurement ? Utilisez le design pattern [[Mémento]].
-3. Vous avez une série d'objets qui doivent traiter une requête, mais vous ne savez pas à l'avance lequel sera capable de la traiter ? Utilisez le design pattern [[Chaine de responsabilité]].
+1. Vous avez besoin d'une classe qui ne peut avoir qu'une seule instance dans toute l'application ? Utilisez le **[Singleton](/back/java/design-patterns/creation/singleton/)**.
+2. Vous devez pouvoir enregistrer l'état interne d'un objet à un moment donné et le restaurer ultérieurement ? Utilisez le design pattern [Mémento](/back/java/design-patterns/comportementaux/memento/).
+3. Vous avez une série d'objets qui doivent traiter une requête, mais vous ne savez pas à l'avance lequel sera capable de la traiter ? Utilisez le design pattern [Chaine de responsabilité](/back/java/design-patterns/comportementaux/chaine-de-responsabilite/).
 
 ## Pour conclure
 

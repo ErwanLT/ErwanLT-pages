@@ -11,10 +11,10 @@ published_at: "2026-01-14"
 sfeir_slug: "creation-dun-systeme-de-gestion-daudit-avec-spring-boot-et-spring-data-envers"
 sfeir_tags: [Back, Java, Spring Boot, Audit, Envers]
 ---
-Dans un précédent article, nous avons exploré la [[Migration et versioning de base de données dans une application Spring Boot - Flyway vs Liquibase|**gestion de l’évolution du schéma de base de données** à l’aide d’outils tels que **Flyway** et **Liquibase**]]. Ce travail garantissait la cohérence et la reproductibilité des structures de tables.  
+Dans un précédent article, nous avons exploré la [**gestion de l’évolution du schéma de base de données** à l’aide d’outils tels que **Flyway** et **Liquibase**](/back/java/spring-boot/migration-et-versioning-de-base-de-donnees-dans-une-application-spring-boot-flyway-vs-liquibase/). Ce travail garantissait la cohérence et la reproductibilité des structures de tables.  
 Nous nous intéressons aujourd’hui à un autre aspect tout aussi crucial : **le suivi de l’évolution des données elles-mêmes**.  
-Cet article montre comment utiliser [[Il était une fois... Spring Boot|**Spring Boot**]] et **Spring Data Envers**, une extension d’Hibernate Envers, afin de mettre en place un système d’audit des entités.  
-Nous verrons la configuration, la gestion des révisions, et la mise en place d’une [[REST - définition|API REST]] pour interroger l’historique des modifications.
+Cet article montre comment utiliser [**Spring Boot**](/back/java/spring-boot/il-etait-une-fois-spring-boot/) et **Spring Data Envers**, une extension d’Hibernate Envers, afin de mettre en place un système d’audit des entités.  
+Nous verrons la configuration, la gestion des révisions, et la mise en place d’une [API REST](/definition/rest-definition/) pour interroger l’historique des modifications.
 
 ## Introduction
 
@@ -26,14 +26,14 @@ Avec **Spring Data Envers**, cette fonctionnalité s’intègre élégamment da
 
 Nous n'allons pas partir d'un nouveau projet, mais plutôt de l'état final de l'article sur le Basic Auth :
 
-[[Sécurisez vos API avec Spring Security - Basic Auth]]
+[Sécurisez vos API avec Spring Security - Basic Auth](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-basic-auth/)
 
 authentification par Basic auth
 
 Notez que vous pouvez également repartir des autres article de cette série sur la sécurité :
 
-[[Sécurisez vos API avec Spring Security - JWT]]
-[[Sécurisez vos API avec Spring Security - accès par rôle]]
+[Sécurisez vos API avec Spring Security - JWT](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-jwt/)
+[Sécurisez vos API avec Spring Security - accès par rôle](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-acces-par-role/)
 
 
 Pour commencer, il faut ajouter la dépendance suivante dans le `pom.xml` :

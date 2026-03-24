@@ -12,7 +12,7 @@ sfeir_slug: "deboguer-lintuition-chronique-technique-dun-futur-ou-le-code-secrit
 sfeir_tags: [calendrier de l'avent, Tendances]
 ---
 En 2030, le développement logiciel s’est transformé en profondeur. La majorité du code applicatif est désormais générée automatiquement par des modèles spécialisés, capables de produire en quelques secondes ce qui nécessitait autrefois des jours de conception, de revue et d’itération.  
-Cette automatisation, portée par le « [vibe coding](https://www.sfeir.dev/front/quest-ce-que-le-vibe-coding/) » ou le « [[Oubliez le vibe coding, passez au SDD !|SDD]]», a permis une accélération considérable des projets numériques.
+Cette automatisation, portée par le « [vibe coding](https://www.sfeir.dev/front/quest-ce-que-le-vibe-coding/) » ou le « [SDD](/ia/oubliez-le-vibe-coding-passez-au-sdd/)», a permis une accélération considérable des projets numériques.
 
 Pourtant, cette évolution s’accompagne d’un phénomène paradoxal : **les rares incidents critiques nécessitent toujours une intervention humaine**, souvent dans des situations où la lisibilité et l’intention originelle du code généré ne sont pas immédiatement évidentes.
 

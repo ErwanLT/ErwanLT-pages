@@ -17,7 +17,7 @@ Musique de fond pour l'article
 
 ---
 
-L’heure est venue de bâtir les fondations de notre [[GraphQL - définition|API GraphQL]] avec Spring Boot. Ce jour, nous allons forger nos entités [Java](https://www.sfeir.dev/back/le-langage-java-definition/), qui se dresseront fièrement en miroir des types définis dans notre schéma. Nous érigerons ensuite nos contrôleurs, équipés des [[Comprendre les annotations dans Spring Boot - guide et exemples|annotations puissantes]] que Spring for GraphQL met à notre disposition.
+L’heure est venue de bâtir les fondations de notre [API GraphQL](/definition/graphql-definition/) avec Spring Boot. Ce jour, nous allons forger nos entités [Java](https://www.sfeir.dev/back/le-langage-java-definition/), qui se dresseront fièrement en miroir des types définis dans notre schéma. Nous érigerons ensuite nos contrôleurs, équipés des [annotations puissantes](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) que Spring for GraphQL met à notre disposition.
 
 ## Retour au schéma
 
@@ -196,7 +196,7 @@ Notre levier principal dans cette opération repose sur des annotations clé :
 _Ainsi s’achève notre avancée du jour. L'ossature de notre API GraphQL est en place, et demain, nous soumettrons ces éléments à l'épreuve des terribles tests unitaires afin de garantir que tout fonctionne comme prévu._
 
 ## Précédémment
-[[Partie 2 - le schéma dans GraphQL]]
+[Partie 2 - le schéma dans GraphQL](/back/java/spring-boot/graphql/partie-2-le-schema-dans-graphql/)
 
 ## Prochainement
-[[Partie 4 - Tests unitaires]]
+[Partie 4 - Tests unitaires](/back/java/spring-boot/graphql/partie-4-tests-unitaires/)

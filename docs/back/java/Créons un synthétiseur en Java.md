@@ -11,10 +11,10 @@ published_at: "2026-02-25"
 sfeir_slug: "creons-un-synthetiseur-en-java"
 sfeir_tags: [Back, Java, musique]
 ---
-Dans un [[Tutoriel Java Sound - transformer le son du microphone en images temps réel|précédent article]], nous avions exploré la ****capture et l’analyse du son**** dans un programme Java. Nous avions vu comment récupérer un signal audio via un microphone et l’afficher sous forme d’onde, ouvrant ainsi la voie à des applications d’enregistrement, de détection de fréquence ou de visualisation en temps réel.
+Dans un [précédent article](/back/java/tutoriel-java-sound-transformer-le-son-du-microphone-en-images-temps-reel/), nous avions exploré la ****capture et l’analyse du son**** dans un programme Java. Nous avions vu comment récupérer un signal audio via un microphone et l’afficher sous forme d’onde, ouvrant ainsi la voie à des applications d’enregistrement, de détection de fréquence ou de visualisation en temps réel.
 
 Aujourd’hui, nous franchissons le pas inverse : ****produire du son****.  
-Là où le microphone transformait les vibrations de l’air en signaux électriques, notre objectif est désormais de faire l’inverse : transformer des données numériques en une onde sonore audible. Pour cela, rien de tel que de construire un ****petit synthétiseur****, directement en [[Il était une fois... Java|Java]].
+Là où le microphone transformait les vibrations de l’air en signaux électriques, notre objectif est désormais de faire l’inverse : transformer des données numériques en une onde sonore audible. Pour cela, rien de tel que de construire un ****petit synthétiseur****, directement en [Java](/back/java/il-etait-une-fois-java/).
 
 Mais avant d’entrer dans le code, rappelons brièvement ce que nous manipulons réellement : ****le son lui-même****.
 

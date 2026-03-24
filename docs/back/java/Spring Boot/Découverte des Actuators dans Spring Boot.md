@@ -11,9 +11,9 @@ published_at: "2026-01-13"
 sfeir_slug: "decouverte-des-actuators-dans-spring-boot"
 sfeir_tags: [Back, Java, Spring Boot, Actuator]
 ---
-Dans un contexte où les applications logicielles ne cessent de croître en complexité, [[Superviser votre application Spring Boot grâce à Prometheus et Grafana|la surveillance et la maintenance]] deviennent des enjeux majeurs. Déployer une application ne suffit pas : il faut pouvoir en vérifier l’état de santé, comprendre son comportement interne et anticiper ses éventuels dysfonctionnements.
+Dans un contexte où les applications logicielles ne cessent de croître en complexité, [la surveillance et la maintenance](/back/java/spring-boot/superviser-votre-application-spring-boot-grace-a-prometheus-et-grafana/) deviennent des enjeux majeurs. Déployer une application ne suffit pas : il faut pouvoir en vérifier l’état de santé, comprendre son comportement interne et anticiper ses éventuels dysfonctionnements.
 
-Dans le monde [[Il était une fois... Java|Java]], [[Il était une fois... Spring Boot|Spring Boot]] s’est imposé comme un framework de référence, alliant simplicité et richesse fonctionnelle. Parmi les nombreuses fonctionnalités qu’il propose, **Spring Boot Actuator** occupe une place de choix.  
+Dans le monde [Java](/back/java/il-etait-une-fois-java/), [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) s’est imposé comme un framework de référence, alliant simplicité et richesse fonctionnelle. Parmi les nombreuses fonctionnalités qu’il propose, **Spring Boot Actuator** occupe une place de choix.  
 Cette brique, parfois méconnue, fournit une panoplie d’outils pour **observer, diagnostiquer et interagir avec une application en cours d’exécution**, et cela avec une intégration minimale.
 
 Dans de nombreux article autour de [Spring Boot](https://www.sfeir.dev/back/back-spring-boot/) nous vous avons parlé des actuators, aujourd'hui c'est l'heure de les découvrir en détails.
@@ -314,17 +314,17 @@ info.app.description=Application de gestion de bibliothèque
 
 Il est important de rappeler que ces endpoints peuvent contenir des données sensibles. Il est donc recommandé de restreindre leur accès, n'hésitez pas à lire nos article sur la sécurité pour trouver comment faire.
 
-[[Sécurisez vos API avec Spring Security - Basic Auth]]
+[Sécurisez vos API avec Spring Security - Basic Auth](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-basic-auth/)
 
-[[Sécurisez vos API avec Spring Security - JWT]]
+[Sécurisez vos API avec Spring Security - JWT](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-jwt/)
 
-[[Sécurisez vos API avec Spring Security - accès par rôle]]
+[Sécurisez vos API avec Spring Security - accès par rôle](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-acces-par-role/)
 
 ## Créer ses propres Actuators
 
 Spring Boot permet d’enrichir le système avec des endpoints personnalisés. Cela permet d’exposer des indicateurs métier, comme par exemple le nombre de livres empruntés dans une bibliothèque, ou l’état d’une file d’attente interne.
 
-Pour cela, Spring Boot met à notre disposition [[Comprendre les annotations dans Spring Boot - guide et exemples|l'annotation @Endpoint]].
+Pour cela, Spring Boot met à notre disposition [l'annotation @Endpoint](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/).
 
 ```java
 @Component

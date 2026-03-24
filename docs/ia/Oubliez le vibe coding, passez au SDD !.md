@@ -249,7 +249,7 @@ Enfin, Bond passe à l’action. De même, nous demandons à l’IA de générer
 
 C’est ici que la magie opère.  
 Specify lit les fichiers **`spec.md`**, **`plan.md`** et **`task.md`**, puis transmet ces informations à **Gemini**, qui génère automatiquement le code source correspondant :  
-les entités [[Il était une fois... Java|Java]], les contrôleurs [[Il était une fois... Spring Boot|Spring Boot]], les pages Thymeleaf, la base de données H2, et même les tests unitaires si la constitution le prévoit.
+les entités [Java](/back/java/il-etait-une-fois-java/), les contrôleurs [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/), les pages Thymeleaf, la base de données H2, et même les tests unitaires si la constitution le prévoit.
 
 ## Résultat
 

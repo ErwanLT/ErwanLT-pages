@@ -19,4 +19,4 @@ Les **Design Patterns** sont regroupés en 3 grandes familles :
 2. **Comportementaux** : Les Design Patterns comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.
 3. **Structurel** : Les Design Patterns structurels se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus facile à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.
 
-Et pour découvrir les avantages des **Design Patterns** et pourquoi les adopter dans vos projets, [[Pourquoi utiliser les Design Patterns ?|cliquez ici]] !
+Et pour découvrir les avantages des **Design Patterns** et pourquoi les adopter dans vos projets, [cliquez ici](/back/java/design-patterns/pourquoi-utiliser-les-design-patterns/) !

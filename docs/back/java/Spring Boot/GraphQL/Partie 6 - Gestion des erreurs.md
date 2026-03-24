@@ -18,7 +18,7 @@ Musique de fond pour l'article
 ---
 
 Ahoy, compagnons ! Aujourd’hui, je pose ma plume sur un problème épineux qui touche tout capitaine travaillant avec GraphQL : **la gestion des erreurs**.  
-Quand une tempête frappe et que des exceptions se lèvent, [[Comment bien gérer ses exceptions dans Spring Boot|il faut savoir manier le gouvernail pour éviter le naufrage]].  
+Quand une tempête frappe et que des exceptions se lèvent, [il faut savoir manier le gouvernail pour éviter le naufrage](/back/java/spring-boot/comment-bien-gerer-ses-exceptions-dans-spring-boot/).  
 Voici comment j’ai apprivoisé ce défi dans une application Spring Boot.
 
 ## Lever le pavillon noir des exceptions
@@ -161,4 +161,4 @@ GraphQL ne veut pas bloquer une requête entière à cause d’une erreur dans u
 La gestion des erreurs dans une API GraphQL est une étape cruciale pour garantir une expérience utilisateur fluide et une maintenance efficace. Avec Spring Boot, l’utilisation de **`DataFetcherExceptionResolver`** offre une solution élégante et flexible pour gérer les exceptions de manière centralisée. Cela permet de fournir des messages d’erreurs personnalisés, de garder des traces des problèmes rencontrés grâce au logging, et de simplifier le débugage en offrant une localisation précise des erreurs.
 
 ## Précédémment
-[[Partie 5 - Documentation]]
+[Partie 5 - Documentation](/back/java/spring-boot/graphql/partie-5-documentation/)

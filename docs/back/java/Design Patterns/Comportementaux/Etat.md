@@ -11,18 +11,18 @@ published_at: "2024-03-22"
 sfeir_slug: "design-patterns-comportementaux-etat"
 sfeir_tags: [Back, Java, Design pattern]
 ---
-[[Les Design Patterns]] comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
+[Les Design Patterns](/definition/les-design-patterns/) comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
 Les designs patterns comportementaux les plus utilisés sont les suivants :
 
-- [[Stratégie]]
-- [[Mémento]]
-- [[Médiateur]]
-- [[Observateur]]
-- [[Chaine de responsabilité]]
-- [[Commande]]
+- [Stratégie](/back/java/design-patterns/comportementaux/strategie/)
+- [Mémento](/back/java/design-patterns/comportementaux/memento/)
+- [Médiateur](/back/java/design-patterns/comportementaux/mediateur/)
+- [Observateur](/back/java/design-patterns/comportementaux/observateur/)
+- [Chaine de responsabilité](/back/java/design-patterns/comportementaux/chaine-de-responsabilite/)
+- [Commande](/back/java/design-patterns/comportementaux/commande/)
 - **Etat**
-- [[Visiteur]]
-- [[Interpréteur]]
+- [Visiteur](/back/java/design-patterns/comportementaux/visiteur/)
+- [Interpréteur](/back/java/design-patterns/comportementaux/interpreteur/)
 
 Ici nous nous attaquerons au **design pattern** **Etat**.
 ## Le design pattern Etat
@@ -53,7 +53,7 @@ Chaque objet État encapsule le comportement spécifique à un état particulier
 
 ### Exemple d'implémentation
 
-Comme lors des [[Commande|articles sur le design pattern Commande]], ou celui du [[Mémento|design pattern Memento]] nous allons utiliser l'exemple d'un éditeur de texte dans lequel nous allons modifier notre document, et donc par extension ses états.  
+Comme lors des [articles sur le design pattern Commande](/back/java/design-patterns/comportementaux/commande/), ou celui du [design pattern Memento](/back/java/design-patterns/comportementaux/memento/) nous allons utiliser l'exemple d'un éditeur de texte dans lequel nous allons modifier notre document, et donc par extension ses états.  
 Dans cet exemple nous avons :
 
 [![diagramme de classe](https://www.sfeir.dev/content/images/2024/03/state.drawio.png)](https://www.sfeir.dev/content/images/2024/03/state.drawio.png)
@@ -165,7 +165,7 @@ code méthode main
 
 Dans cet exemple, je commence un nouveau document dans le but de sauvegarder les différentes recettes de cuisine que je teste pour ne pas les perdre.  
 Je démarre d'une page blanche, et commence à écrire ma recette dans mon document.  
-A la fin, je sauvegarde mon document afin de ne pas perdre les modifications apportées. On pourrait très bien utiliser dans la [[Mémento|sauvegarde le design pattern memento]] si jamais je veux faire des retours arrière.
+A la fin, je sauvegarde mon document afin de ne pas perdre les modifications apportées. On pourrait très bien utiliser dans la [sauvegarde le design pattern memento](/back/java/design-patterns/comportementaux/memento/) si jamais je veux faire des retours arrière.
 
 En exécutant le code ci-dessus, nous aurons en sortie console le résultat suivant :
 

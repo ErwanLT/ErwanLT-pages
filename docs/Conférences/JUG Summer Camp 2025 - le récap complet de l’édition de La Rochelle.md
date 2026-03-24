@@ -20,7 +20,7 @@ Chaque rentrée de septembre, la communauté Java se donne rendez-vous pour un m
 
 ## Les JUG : le cœur battant de la communauté Java
 
-Les **Java User Groups (JUG)** sont des communautés locales qui rassemblent les développeurs autour d’une passion commune : [[Il était une fois... Java|l’écosystème Java]]. Présents aux quatre coins du monde, ils incarnent depuis plus de vingt ans un espace d’échanges, de transmission et de partage.  
+Les **Java User Groups (JUG)** sont des communautés locales qui rassemblent les développeurs autour d’une passion commune : [l’écosystème Java](/back/java/il-etait-une-fois-java/). Présents aux quatre coins du monde, ils incarnent depuis plus de vingt ans un espace d’échanges, de transmission et de partage.  
 En France, on retrouve des JUG dynamiques à Paris, Lyon, Toulouse, Tours, Nantes… chacun organisant régulièrement des soirées techniques, des conférences, ou encore des ateliers pratiques. Ces rendez-vous, souvent gratuits, permettent aux passionnés de rester à jour, de découvrir de nouvelles pratiques, mais aussi de renforcer le tissu humain qui fait la richesse du métier.
 
 [
@@ -90,7 +90,7 @@ Sébastien souligne ensuite que la transition vers une architecture multi-tenant
 
 Les systèmes modernes sont de plus en plus complexes, distribués et imprévisibles. Face à cette réalité, une question se pose : **comment s’assurer que votre application peut survivre à l’inattendu ?**
 
-C’est là qu’intervient le [[L'armée des singes du chaos - définition|**Chaos Engineering**]], une discipline qui consiste à introduire volontairement des perturbations pour tester la robustesse et la résilience des systèmes avant qu’un incident réel ne survienne.
+C’est là qu’intervient le [**Chaos Engineering**](/definition/l-armee-des-singes-du-chaos-definition/), une discipline qui consiste à introduire volontairement des perturbations pour tester la robustesse et la résilience des systèmes avant qu’un incident réel ne survienne.
 
 [![](https://www.sfeir.dev/content/images/2025/09/IMG_4288.jpeg)](https://www.sfeir.dev/content/images/2025/09/IMG_4288.jpeg)
 
@@ -98,7 +98,7 @@ Talk d'Erwan Le Tutour au JUG Summer Camp 2025
 
 Pour en savoir plus sur le sujet c'est par ici 👇🏻
 
-[[Introduisez du chaos dans votre application Spring Boot]]
+[Introduisez du chaos dans votre application Spring Boot](/back/java/tests/introduisez-du-chaos-dans-votre-application-spring-boot/)
 
 ### IV. Construire des serveurs MCP plus intelligents : approches génériques vs. spécifiques au domaine - [Horacio Gonzalez](https://www.linkedin.com/in/horaciogonzalez/?ref=sfeir.dev)
 

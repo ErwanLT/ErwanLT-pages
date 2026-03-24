@@ -11,18 +11,18 @@ published_at: "2024-02-01"
 sfeir_slug: "design-patterns-comportementaux-commande"
 sfeir_tags: [Back, Java, Design pattern]
 ---
-[[Les Design Patterns]] comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
+[Les Design Patterns](/definition/les-design-patterns/) comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
 Les designs patterns comportementaux les plus utilisés sont les suivants :
 
-- [[Stratégie]]
-- [[Mémento]]
-- [[Médiateur]]
-- [[Observateur]]
-- [[Chaine de responsabilité]]
+- [Stratégie](/back/java/design-patterns/comportementaux/strategie/)
+- [Mémento](/back/java/design-patterns/comportementaux/memento/)
+- [Médiateur](/back/java/design-patterns/comportementaux/mediateur/)
+- [Observateur](/back/java/design-patterns/comportementaux/observateur/)
+- [Chaine de responsabilité](/back/java/design-patterns/comportementaux/chaine-de-responsabilite/)
 - **Commande**
-- [[Etat]]
-- [[Visiteur]]
-- [[Interpréteur]]
+- [Etat](/back/java/design-patterns/comportementaux/etat/)
+- [Visiteur](/back/java/design-patterns/comportementaux/visiteur/)
+- [Interpréteur](/back/java/design-patterns/comportementaux/interpreteur/)
 
 Dans cet article, nous nous attaquerons au **design Commande.
 ## Le design pattern Commande

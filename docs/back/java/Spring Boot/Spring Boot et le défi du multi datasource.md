@@ -11,7 +11,7 @@ published_at: "2026-01-04"
 sfeir_slug: "spring-boot-multi-datasource"
 sfeir_tags: [Back, Java, Spring Boot, Spring Data]
 ---
-Ah, [[Il était une fois... Spring Boot|****Spring Boot**** et son autoconfiguration si pratique !]]  
+Ah, [****Spring Boot**** et son autoconfiguration si pratique !](/back/java/spring-boot/il-etait-une-fois-spring-boot/)  
 Quelques lignes dans un `application.properties`, une dépendance `spring-boot-starter-data-jpa`, et vous voilà connecté à une base de données, prêt à manipuler vos entités en toute transparence.
 
 Mais que se passe-t-il lorsque votre application doit interagir avec ****plusieurs bases de données**** ?  
@@ -30,7 +30,7 @@ Plusieurs raisons peuvent motiver ce choix :
 
 - ****Séparation fonctionnelle**** : par exemple, isoler les données des utilisateurs d’un côté, et celles des commandes de l’autre.
 - ****Contraintes techniques**** : certains modules doivent se connecter à des bases déjà existantes, voire à des SGBD différents.
-- [[Sécurisez vos API avec Spring Security - Basic Auth|****Sécurité****]] ****ou conformité**** : séparer certaines données sensibles sur un serveur ou un environnement dédié.
+- [****Sécurité****](/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-basic-auth/) ****ou conformité**** : séparer certaines données sensibles sur un serveur ou un environnement dédié.
 - ****Performance et scalabilité**** : permettre à chaque base d’évoluer indépendamment selon les besoins métiers.
 
 En somme, le multi-datasource est une réponse à une architecture plus modulaire, parfois un avant-goût d’une approche microservices.
@@ -156,7 +156,7 @@ public class UserDbConfig {
 }
 ```
 
-- `@EnableJpaRepositories` : [[Comprendre les annotations dans Spring Boot - guide et exemples|cette annotation]] indique à Spring où chercher les repositories associés à cette datasource.
+- `@EnableJpaRepositories` : [cette annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) indique à Spring où chercher les repositories associés à cette datasource.
 - `@Primary` : permet à Spring de savoir quelle datasource utiliser par défaut si plusieurs existent.
 - `userDataSourceProperties()` : lit les propriétés dans `application.properties`.
 - `userDataSource()` : crée le bean `DataSource` réel utilisé pour se connecter à la base.

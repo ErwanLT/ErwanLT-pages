@@ -75,7 +75,7 @@ On commence à avoir quelque chose
 ### L'extension .md
 
 Depuis tout à l'heure je vous parle du fichier README**.md**, mais c'est quoi cette extension au juste ?  
-Eh bien, le md correspond au [[Markdown - définition|**Markdown**]](https://fr.wikipedia.org/wiki/Markdown?ref=sfeir.dev), un langage de balisage créé en 2004 (un petit jeune comparé à d'autres langages), qui offre une [syntaxe facile à lire et écrire](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax?ref=sfeir.dev).
+Eh bien, le md correspond au [**Markdown**](/definition/markdown-definition/)(https://fr.wikipedia.org/wiki/Markdown?ref=sfeir.dev), un langage de balisage créé en 2004 (un petit jeune comparé à d'autres langages), qui offre une [syntaxe facile à lire et écrire](https://docs.github.com/fr/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax?ref=sfeir.dev).
 
 Voici pour la petite aparté, maintenant entrons dans le vif du sujet.
 

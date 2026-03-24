@@ -5,8 +5,8 @@ permalink: "/back/java/spring-boot/cache/ameliorer-son-cache-spring-boot-avec-ca
 tags: [back, java, spring-boot, cache]
 status: "Draft"
 ---
-Dans un [[Mise en place du cache dans une application Spring Boot|article précédent]], nous avons vu comment mettre en place un **cache en mémoire simple** avec [[Il était une fois... Spring Boot|Spring Boot]] en utilisant uniquement le `ConcurrentMapCacheManager`.  
-Cette approche est idéale pour comprendre le mécanisme et tester rapidement [[Comprendre les annotations dans Spring Boot - guide et exemples|les annotations de Spring]] (`@Cacheable`, `@CachePut`, `@CacheEvict`).
+Dans un [article précédent](/back/java/spring-boot/cache/mise-en-place-du-cache-dans-une-application-spring-boot/), nous avons vu comment mettre en place un **cache en mémoire simple** avec [Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) en utilisant uniquement le `ConcurrentMapCacheManager`.  
+Cette approche est idéale pour comprendre le mécanisme et tester rapidement [les annotations de Spring](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) (`@Cacheable`, `@CachePut`, `@CacheEvict`).
 
 Cependant, dans une application réelle, ce cache présente rapidement des limites :
 

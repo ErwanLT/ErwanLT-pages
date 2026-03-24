@@ -12,11 +12,11 @@ sfeir_slug: "junit-6-le-successeur-de-junit-5-est-la"
 sfeir_tags: [Back, Java, Test]
 ---
 Après **plus de sept ans de bons et loyaux services**, **JUnit 5** cède sa place à son successeur : **JUnit 6**, sorti officiellement le **30 septembre 2025**.  
-Une nouvelle ère s’ouvre pour le framework de test le plus utilisé dans l’écosystème [[Il était une fois... Java|Java]], mais cette fois-ci, l’histoire ne se répète pas tout à fait.
+Une nouvelle ère s’ouvre pour le framework de test le plus utilisé dans l’écosystème [Java](/back/java/il-etait-une-fois-java/), mais cette fois-ci, l’histoire ne se répète pas tout à fait.
 
 ## Une transition apaisée
 
-Souvenons-nous : lors du passage de **JUnit 4 à JUnit 5**, nombreux furent les projets à devoir revoir [[Pourquoi tester son code ?|leurs tests]] de fond en comble — une véritable mue, parfois laborieuse, entre _runners_, [[Comprendre les annotations dans Spring Boot - guide et exemples|annotations]] et dépendances éclatées.  
+Souvenons-nous : lors du passage de **JUnit 4 à JUnit 5**, nombreux furent les projets à devoir revoir [leurs tests](/product/pourquoi-tester-son-code/) de fond en comble — une véritable mue, parfois laborieuse, entre _runners_, [annotations](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) et dépendances éclatées.  
 Mais cette fois, la transition s’annonce bien plus paisible : **pas de révolution syntaxique**, **pas de rupture conceptuelle**, simplement une **évolution naturelle**, tournée vers la modernité, la performance et la cohérence.
 
 JUnit 6 reste fondé sur **le modèle Jupiter** introduit avec JUnit 5, mais consolide l’ensemble de la plateforme avec un **numéro de version unifié** pour _Platform_, _Jupiter_ et _Vintage_.  
@@ -40,7 +40,7 @@ Ce socle assure donc :
 - une **stabilité industrielle éprouvée**,
 - et une compatibilité naturelle avec **Java 21**, pour ceux qui ont déjà franchi le pas.
 
-En d’autres termes, JUnit 6 préfère la **stabilité maîtrisée** à la course vers la nouveauté : il prépare le terrain sereinement, avant qu’un futur **JUnit 7** n’entérine définitivement Java 21 comme nouvelle base (ou qui sait, peut être [[Java 25 - quelles sont les nouveautés ?|Java 25]] – oui on peut rêver).
+En d’autres termes, JUnit 6 préfère la **stabilité maîtrisée** à la course vers la nouveauté : il prépare le terrain sereinement, avant qu’un futur **JUnit 7** n’entérine définitivement Java 21 comme nouvelle base (ou qui sait, peut être [Java 25](/back/java/java-25-quelles-sont-les-nouveautes/) – oui on peut rêver).
 
 ### Une plateforme unifiée et simplifiée
 
@@ -249,7 +249,7 @@ Selon l’environnement d’exécution, elle pourrait aussi apparaître comme `
 
 ### Tests paramétrés et nouveau formatage CSV
 
-JUnit 5 avait popularisé [[Test paramétrés - un test pour les gouverner tous|les tests paramétrés]] grâce à l’annotation `@ParameterizedTest`, permettant de rejouer un même scénario avec plusieurs jeux de données.  
+JUnit 5 avait popularisé [les tests paramétrés](/back/java/tests/test-parametres-un-test-pour-les-gouverner-tous/) grâce à l’annotation `@ParameterizedTest`, permettant de rejouer un même scénario avec plusieurs jeux de données.  
 JUnit 6 perfectionne cette approche, en rendant `@CsvSource` **plus souple, plus expressif**, et surtout **plus cohérent avec les standards du langage Java moderne**.
 
 La syntaxe de base reste simple : chaque ligne du `@CsvSource` correspond à une exécution du test, avec des arguments séparés par des virgules.

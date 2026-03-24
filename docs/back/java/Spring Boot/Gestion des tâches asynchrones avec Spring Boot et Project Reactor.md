@@ -5,7 +5,7 @@ permalink: "/back/java/spring-boot/gestion-des-taches-asynchrones-avec-spring-bo
 tags: [back, java, spring-boot]
 status: "Draft"
 ---
-Cet article explore comment utiliser [[Il était une fois... Spring Boot|**Spring Boot**]] avec [**Project Reactor**](https://projectreactor.io/) pour implémenter des traitements asynchrones et réactifs dans une application Java. Il montre comment configurer Reactor, utiliser les types `Mono` et `Flux` pour les opérations non bloquantes, et intégrer ces flux réactifs dans une API Spring WebFlux performante.  
+Cet article explore comment utiliser [**Spring Boot**](/back/java/spring-boot/il-etait-une-fois-spring-boot/) avec [**Project Reactor**](https://projectreactor.io/) pour implémenter des traitements asynchrones et réactifs dans une application Java. Il montre comment configurer Reactor, utiliser les types `Mono` et `Flux` pour les opérations non bloquantes, et intégrer ces flux réactifs dans une API Spring WebFlux performante.  
 Nous abordons également un exemple concret (appels HTTP asynchrones ou traitement de fichiers en arrière-plan), avec un code complet et annoté, ainsi que les bonnes pratiques pour gérer les erreurs réactives et optimiser les performances.
 
 ## Introduction
@@ -47,7 +47,7 @@ Avant de commencer, il est nécessaire de créer un projet Spring Boot et d’aj
 ```
 
 Cette dépendance intègre Spring Boot, le framework Spring WebFlux et Reactor Core (et utilise par défaut Netty comme serveur réactif).  
-Il suffit ensuite d’[[Comprendre les annotations dans Spring Boot - guide et exemples|annoter votre application]] avec `@SpringBootApplication`, WebFlux s’auto-configure automatiquement. Aucun autre préparatif n’est nécessaire côté serveur web , ni dans le fichier de configuration `application.properties` à moins de vouloir personnaliser le port, les timeouts, ...  
+Il suffit ensuite d’[annoter votre application](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) avec `@SpringBootApplication`, WebFlux s’auto-configure automatiquement. Aucun autre préparatif n’est nécessaire côté serveur web , ni dans le fichier de configuration `application.properties` à moins de vouloir personnaliser le port, les timeouts, ...  
 L’essentiel est donc d’inclure **`spring-boot-starter-webflux`** pour activer le stack réactif
 
 ## Concepts de base de Project Reactor

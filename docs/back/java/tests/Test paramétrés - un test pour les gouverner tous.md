@@ -38,7 +38,7 @@ N'oubliez pas de remplacer **${junit-params.version}** par la version de votre
 
 ## Un premier exemple
 
-Grâce à cette dépendance, vous avez maintenant accès à une nouvelle [[Comprendre les annotations dans Spring Boot - guide et exemples|annotation]] _@ParameterizedTest_, qui comme son nom l’indique, permet au moteur JUnit d’exécuter ce test avec des valeurs d’entrées différentes.
+Grâce à cette dépendance, vous avez maintenant accès à une nouvelle [annotation](/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/) _@ParameterizedTest_, qui comme son nom l’indique, permet au moteur JUnit d’exécuter ce test avec des valeurs d’entrées différentes.
 
 **Exemple :**
 

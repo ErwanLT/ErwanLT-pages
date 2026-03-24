@@ -15,7 +15,7 @@ Pour des besoins plus avancés (rechargement de modifications structurelles sans
 Spring Boot DevTools est un module officiel de Spring Boot destiné exclusivement au développement. Ses fonctions principales :
 
 - **Restart** : Spring Boot DevTools s’appuie sur un mécanisme ingénieux de **redémarrage rapide**. Concrètement, l’application utilise deux **classloaders** distincts : l’un, dit __base__, conserve en mémoire les dépendances stables (frameworks, bibliothèques externes) qui ne changent pas souvent ; l’autre, dit __restart__, ne charge que le code de l’application en cours de développement. Lorsqu’une modification est détectée sur le classpath, DevTools recrée uniquement le classloader __restart__, sans toucher au classloader __base__. Résultat : le redémarrage est bien plus rapide, car seule la partie du code modifiée est rechargée.
-- **LiveReload** : serveur LiveReload embarqué qui peut rafraîchir automatiquement le navigateur quand des ressources statiques ou des templates changent (utile lorsque l'on utilise **[[Intégration de Thymeleaf dans une application Spring Boot|thymeleaf]]**).
+- **LiveReload** : serveur LiveReload embarqué qui peut rafraîchir automatiquement le navigateur quand des ressources statiques ou des templates changent (utile lorsque l'on utilise **[thymeleaf](/back/java/spring-boot/integration-de-thymeleaf-dans-une-application-spring-boot/)**).
 - **Comportements spécifiques au dev** : désactivation de caches, prise en charge d’une console H2 en dev, autorisation d’options de configuration uniquement pour le profil développement. DevTools est automatiquement désactivé sur une application packagé à moins d’être explicitement réactivé.
 
 ## ⚖️ Avantages et inconvénients
@@ -83,7 +83,7 @@ Pour que cela fonctionne correctement :
 2. On installe l’extension LiveReload dans le navigateur ou on utilise un navigateur compatible.
 3. On désactive les caches de templates (DevTools le fait automatiquement).
 
-Ça marche particulièrement bien quand on utilise [[Intégration de Thymeleaf dans une application Spring Boot|Thymeleaf]] : le cycle devient presque instantané.
+Ça marche particulièrement bien quand on utilise [Thymeleaf](/back/java/spring-boot/integration-de-thymeleaf-dans-une-application-spring-boot/) : le cycle devient presque instantané.
 
 ## Configuration utile en dev
 
@@ -208,4 +208,4 @@ Quand on travaille sur des gros modèles qui changent souvent, on peut compléte
 Si l’on cherche un gain immédiat de productivité sans complexité, DevTools est le meilleur point de départ.  
 Il ne remplace pas les solutions de hot‑swap avancées, mais il couvre **80% des besoins** avec **0 friction**.
 
-Et quand on le combine avec [[Intégration de Thymeleaf dans une application Spring Boot|Thymeleaf]] ou des outils d’observabilité comme [[Superviser votre application Spring Boot grâce à Prometheus et Grafana]], le confort de dev devient franchement agréable.
+Et quand on le combine avec [Thymeleaf](/back/java/spring-boot/integration-de-thymeleaf-dans-une-application-spring-boot/) ou des outils d’observabilité comme [Superviser votre application Spring Boot grâce à Prometheus et Grafana](/back/java/spring-boot/superviser-votre-application-spring-boot-grace-a-prometheus-et-grafana/), le confort de dev devient franchement agréable.

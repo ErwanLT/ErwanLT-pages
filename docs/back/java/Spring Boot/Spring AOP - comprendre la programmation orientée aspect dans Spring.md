@@ -45,7 +45,7 @@ Spring AOP fournit plusieurs types d’advices pour intervenir à différents mo
 
 ## Ajouter Spring-AOP à votre projet
 
-La solution la plus simple si vous êtes dans un contexte [[Il était une fois... Spring Boot|d'application Spring Boot]] est de rajouter la [dépendance au starter AOP](https://www.sfeir.dev/back/how-to-trouver-ses-starters-springboot/).
+La solution la plus simple si vous êtes dans un contexte [d'application Spring Boot](/back/java/spring-boot/il-etait-une-fois-spring-boot/) est de rajouter la [dépendance au starter AOP](https://www.sfeir.dev/back/how-to-trouver-ses-starters-springboot/).
 
 ```xml
 <dependency>
@@ -173,7 +173,7 @@ Ici, je n'ai utilisé que l'expression **execution** dans mes **pointcuts**, 
 - `this(com.example.service.MyInterface)` : cible les beans implémentant une interface donnée.
 - `target(com.example.service.MyService)` : cible les beans de type spécifique.
 - `args(java.lang.String, ..)` : cible les méthodes avec un ou plusieurs paramètres.
-- `@annotation(MyCustomAnnotation)` : cible les méthodes annotées. (pour un exemple de cette dernière, [[Maîtrisez vos règles métier - Intégrez Drools dans Spring Boot|allez lire la série sur les BRMS]]
+- `@annotation(MyCustomAnnotation)` : cible les méthodes annotées. (pour un exemple de cette dernière, [allez lire la série sur les BRMS](/back/java/spring-boot/brms/maitrisez-vos-regles-metier-integrez-drools-dans-spring-boot/)
 
 Il est aussi possible de combiner plusieurs conditions avec `&&`, `||`, `!`.
 
