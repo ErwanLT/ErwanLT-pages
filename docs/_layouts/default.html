@@ -71,6 +71,9 @@
                  class="banner-image w-full max-h-[360px] object-cover rounded-2xl border border-slate-200 shadow-sm" />
         </div>
         {% endif %}
+        {% unless page.content contains '<h1' %}
+        <h1 class="text-center">{{ page.title }}</h1>
+        {% endunless %}
         {{ content }}
     </div>
 </main>
