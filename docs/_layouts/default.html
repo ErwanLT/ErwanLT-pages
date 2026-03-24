@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>{{ page.title }} - {{ site.title }}</title>
     
-    <!-- Tailwind (CDN) -->
+    <!-- Tailwind (CDN + Typography) -->
     <script>
         tailwind = {
             config: {
@@ -23,7 +23,7 @@
             }
         }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
 
     <!-- CSS personnalisé -->
     <link rel="stylesheet" href="{{ '/assets/css/page.css' | relative_url }}">
@@ -53,12 +53,16 @@
 <!-- Corps de la page avec sidebar verticale + contenu -->
 <main class="flex-1 max-w-[1400px] mx-auto w-full px-6 py-6 grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-6">
     {% include sidebar.html %}
-    <div class="content-area">
+    <div class="content-area prose prose-slate max-w-none">
         {% if page.tags %}
-        {% include tags.html %}
+        <div class="not-prose">
+            {% include tags.html %}
+        </div>
         {% endif %}
         {% if page.music %}
-        <iframe class="music my-6" src="{{ page.music }}" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="not-prose">
+            <iframe class="music my-6" src="{{ page.music }}" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
         {% endif %}
         {{ content }}
     </div>
@@ -67,6 +71,11 @@
 <div class="max-w-[1400px] mx-auto w-full px-6 pb-10">
     {% include footer.html %}
 </div>
+
+<script>
+    window.__BASEURL__ = {{ '' | relative_url | jsonify }};
+</script>
+<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>
 
 </body>
 </html>

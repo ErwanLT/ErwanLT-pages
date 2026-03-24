@@ -27,7 +27,7 @@ body {
     padding: 2rem;
 }
 
-/* Headings */
+/* Headings (typography handled by Tailwind prose) */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Grotesk', sans-serif;
     letter-spacing: -0.02em;
@@ -45,8 +45,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Images */
-main img {
+.content-area img {
+    max-width: 720px;
     width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.25rem auto;
+}
+
+.content-area img.full-width {
+    max-width: 100%;
 }
 
 .portrait {

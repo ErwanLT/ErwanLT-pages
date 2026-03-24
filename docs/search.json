@@ -1,0 +1,18 @@
+---
+layout: null
+---
+[
+{% assign first = true %}
+{% for p in site.pages %}
+  {% unless p.url contains '/tags/' or p.url contains '/assets/' or p.url contains '/search.json' %}
+    {% if first == false %},{% endif %}
+    {% assign first = false %}
+    {
+      "title": {{ p.title | jsonify }},
+      "url": {{ p.url | relative_url | jsonify }},
+      "content": {{ p.content | strip_html | strip_newlines | jsonify }},
+      "tags": {{ p.tags | jsonify }}
+    }
+  {% endunless %}
+{% endfor %}
+]

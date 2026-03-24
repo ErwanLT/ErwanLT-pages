@@ -1,14 +1,43 @@
 ---
 layout: default
-title: "Tag: java"
+title: "Java"
 permalink: "/tags/java/"
 tag: "java"
 ---
 <h1>{{ page.title }}</h1>
-<ul>
-{% for p in site.pages %}
-  {% if p.tags contains page.tag %}
-    <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-  {% endif %}
-{% endfor %}
-</ul>
+<p>Toutes les sous‑catégories pour java.</p>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<a href="{{ '/tags/design-patterns/' | relative_url }}" class="block rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition">
+  <div class="p-4 flex flex-col gap-3">
+    <h5 class="text-base font-semibold text-slate-900">Design Patterns</h5>
+    <p class="text-slate-700 text-sm">Voir les articles.</p>
+    <span class="inline-flex items-center justify-center rounded-lg bg-brand-500 text-white text-sm font-medium px-4 py-2 group-hover:bg-brand-700 transition">Voir</span>
+  </div>
+</a>
+
+<a href="{{ '/tags/quarkus/' | relative_url }}" class="block rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition">
+  <div class="p-4 flex flex-col gap-3">
+    <h5 class="text-base font-semibold text-slate-900">Quarkus</h5>
+    <p class="text-slate-700 text-sm">Voir les articles.</p>
+    <span class="inline-flex items-center justify-center rounded-lg bg-brand-500 text-white text-sm font-medium px-4 py-2 group-hover:bg-brand-700 transition">Voir</span>
+  </div>
+</a>
+
+<a href="{{ '/tags/spring-boot/' | relative_url }}" class="block rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition">
+  <div class="p-4 flex flex-col gap-3">
+    <h5 class="text-base font-semibold text-slate-900">Spring Boot</h5>
+    <p class="text-slate-700 text-sm">Voir les articles.</p>
+    <span class="inline-flex items-center justify-center rounded-lg bg-brand-500 text-white text-sm font-medium px-4 py-2 group-hover:bg-brand-700 transition">Voir</span>
+  </div>
+</a>
+
+<a href="{{ '/tags/tests/' | relative_url }}" class="block rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition">
+  <div class="p-4 flex flex-col gap-3">
+    <h5 class="text-base font-semibold text-slate-900">Tests</h5>
+    <p class="text-slate-700 text-sm">Voir les articles.</p>
+    <span class="inline-flex items-center justify-center rounded-lg bg-brand-500 text-white text-sm font-medium px-4 py-2 group-hover:bg-brand-700 transition">Voir</span>
+  </div>
+</a>
+
+</div>

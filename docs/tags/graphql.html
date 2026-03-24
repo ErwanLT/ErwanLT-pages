@@ -1,14 +1,21 @@
 ---
 layout: default
-title: "Tag: graphql"
+title: "Graphql"
 permalink: "/tags/graphql/"
 tag: "graphql"
 ---
 <h1>{{ page.title }}</h1>
-<ul>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
 {% for p in site.pages %}
-  {% if p.tags contains page.tag %}
-    <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
-  {% endif %}
+{% if p.tags contains page.tag %}
+<a href="{{ p.url | relative_url }}" class="block rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition">
+  <div class="p-4">
+    <h3 class="text-lg font-semibold text-slate-900">{{ p.title }}</h3>
+    {% if p.date %}<p class="text-xs text-slate-500 mt-1">{{ p.date | date: "%d/%m/%Y" }}</p>{% endif %}
+    {% if p.excerpt %}<p class="text-slate-700 text-sm mt-3">{{ p.excerpt | strip_html | truncate: 140 }}</p>{% endif %}
+  </div>
+</a>
+{% endif %}
 {% endfor %}
-</ul>
+</div>

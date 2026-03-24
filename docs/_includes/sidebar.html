@@ -1,197 +1,351 @@
 <aside class="sidebar-scrollable">
-    <div class="bg-white/80 backdrop-blur border border-slate-200 rounded-2xl p-4 shadow-sm">
-        <a class="block px-3 py-2 rounded-lg text-slate-900 font-semibold hover:bg-slate-100" href="{{ '/' | relative_url }}">Accueil</a>
-
-        <div class="mt-4 space-y-2 text-sm">
-            <details open class="group">
+  <div class="bg-white/80 backdrop-blur border border-slate-200 rounded-2xl p-4 shadow-sm">
+    {% include search.html %}
+    <a class="block px-3 py-2 rounded-lg text-slate-900 font-semibold hover:bg-slate-100" href="{{ '/' | relative_url }}">Accueil</a>
+    <div class="mt-4 space-y-2 text-sm">
+      <details class="group">
+        <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+          <span>Back</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+        </summary>
+        <div class="pl-3 pt-2 space-y-1">
+          <details class="group">
+            <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+              <span>Java</span>
+              <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+            </summary>
+            <div class="pl-3 pt-2 space-y-1">
+              <details class="group">
                 <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
-                    <span>Spring Boot</span>
-                    <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
-                </summary>
-                <div class="pl-3 pt-2 space-y-2">
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/spring-boot/' | relative_url }}">Tous les articles</a>
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/' | relative_url }}">Les annotations</a>
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/comment-personnaliser-la-banniere-d-un-projet-spring-boot/' | relative_url }}">Bannière Spring Boot</a>
-
-                    <details class="group">
-                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
-                            <span>BRMS</span>
-                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
-                        </summary>
-                        <div class="pl-3 pt-2 space-y-1">
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/brms/maitrisez-vos-regles-metier-integrez-drools-dans-spring-boot/' | relative_url }}">Drools</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/brms/integration-d-easy-rules-dans-une-application-spring-boot/' | relative_url }}">Easy Rules</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/brms/revolutionner-la-gestion-des-regles-metier-integrer-rulebook-dans-spring-boot/' | relative_url }}">Rulebook</a>
-                        </div>
-                    </details>
-
-                    <details class="group">
-                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
-                            <span>Sécurité</span>
-                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
-                        </summary>
-                        <div class="pl-3 pt-2 space-y-1">
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/security/securisez-vos-api-avec-spring-security-basic-auth/' | relative_url }}">Basic Auth</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/security/securisez-vos-api-avec-spring-security-jwt/' | relative_url }}">JWT</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/security/securisez-vos-api-avec-spring-security-acces-par-role/' | relative_url }}">JWT + RBAC</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/security/integration-de-ldap-dans-une-application-spring-boot-avec-spring-security/' | relative_url }}">LDAP</a>
-                        </div>
-                    </details>
-
-                    <details class="group">
-                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
-                            <span>GraphQL</span>
-                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
-                        </summary>
-                        <div class="pl-3 pt-2 space-y-1">
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/graphql/' | relative_url }}">Tous les articles</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/graphql/partie-1-mise-en-place/' | relative_url }}">Partie 1</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/graphql/partie-2-le-schema-dans-graphql/' | relative_url }}">Partie 2</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/graphql/partie-3-controllers/' | relative_url }}">Partie 3</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/graphql/partie-4-tests-unitaires/' | relative_url }}">Partie 4</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/graphql/partie-5-documentation/' | relative_url }}">Partie 5</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/graphql/partie-6-gestion-des-erreurs/' | relative_url }}">Partie 6</a>
-                        </div>
-                    </details>
-
-                    <details class="group">
-                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
-                            <span>Cache</span>
-                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
-                        </summary>
-                        <div class="pl-3 pt-2 space-y-1">
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/cache/' | relative_url }}">Tous les articles</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/cache/mise-en-cache-avec-redis-dans-spring-boot/' | relative_url }}">Redis</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/cache/ameliorer-son-cache-spring-boot-avec-caffeine/' | relative_url }}">Caffeine</a>
-                        </div>
-                    </details>
-
-                    <details class="group">
-                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
-                            <span>Messaging</span>
-                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
-                        </summary>
-                        <div class="pl-3 pt-2 space-y-1">
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/messaging/' | relative_url }}">Tous les articles</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/messaging/integration-de-kafka-dans-une-application-spring-boot/' | relative_url }}">Kafka</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/messaging/integration-de-jms-dans-une-application-spring-boot/' | relative_url }}">JMS</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/messaging/implementation-d-un-systeme-de-notifications-en-temps-reel-avec-spring-boot-et-server-sent-events/' | relative_url }}">Server-Sent Events</a>
-                        </div>
-                    </details>
-
-                    <details class="group">
-                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
-                            <span>Tests</span>
-                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
-                        </summary>
-                        <div class="pl-3 pt-2 space-y-1">
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/testing/' | relative_url }}">Tous les articles</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/testing/maitrisez-votre-architecture-spring-boot-avec-archunit/' | relative_url }}">ArchUnit</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/testing/maitrisez-les-tests-de-charge-avec-gatling-pour-spring-boot/' | relative_url }}">Gatling</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/testing/introduisez-du-chaos-dans-votre-application-spring-boot/' | relative_url }}">Chaos Monkey</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/testing/test-parametres-un-test-pour-les-gouverner-tous/' | relative_url }}">Tests paramétrés</a>
-                        </div>
-                    </details>
-
-                    <details class="group">
-                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
-                            <span>IA</span>
-                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
-                        </summary>
-                        <div class="pl-3 pt-2 space-y-1">
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/ia/de-la-question-naturelle-a-la-requete-jpa-tool-calling-avec-spring-ai/' | relative_url }}">Spring AI</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/ia/et-si-on-integrait-langchain-dans-spring-boot-partie-1/' | relative_url }}">LangChain</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/ia/ludotheque-augmentee-un-rag-local-avec-spring-ai-ollama-et-chroma/' | relative_url }}">RAG</a>
-                        </div>
-                    </details>
-                </div>
-            </details>
-
-            <details class="group">
-                <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
-                    <span>Design Patterns</span>
-                    <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
-                </summary>
-                <div class="pl-3 pt-2 space-y-2">
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/design-pattern/' | relative_url }}">Tous les articles</a>
-
-                    <details class="group">
-                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
-                            <span>Création</span>
-                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
-                        </summary>
-                        <div class="pl-3 pt-2 space-y-1">
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/creation/builder/' | relative_url }}">Builder</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/creation/factory/' | relative_url }}">Factory</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/creation/prototype/' | relative_url }}">Prototype</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/creation/singleton/' | relative_url }}">Singleton</a>
-                        </div>
-                    </details>
-
-                    <details class="group">
-                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
-                            <span>Structure</span>
-                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
-                        </summary>
-                        <div class="pl-3 pt-2 space-y-1">
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/structure/adaptateur/' | relative_url }}">Adaptateur</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/structure/composite/' | relative_url }}">Composite</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/structure/decorateur/' | relative_url }}">Décorateur</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/structure/facade/' | relative_url }}">Façade</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/structure/pont/' | relative_url }}">Pont</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/structure/proxy/' | relative_url }}">Proxy</a>
-                        </div>
-                    </details>
-
-                    <details class="group">
-                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
-                            <span>Comportementaux</span>
-                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
-                        </summary>
-                        <div class="pl-3 pt-2 space-y-1">
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/chaine-de-responsabilite/' | relative_url }}">Chaine de responsabilité</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/commande/' | relative_url }}">Commande</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/etat/' | relative_url }}">Etat</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/interpreteur/' | relative_url }}">Interpréteur</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/mediateur/' | relative_url }}">Médiateur</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/memento/' | relative_url }}">Memento</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/observateur/' | relative_url }}">Observateur</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/strategie/' | relative_url }}">Stratégie</a>
-                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/visiteur/' | relative_url }}">Visiteur</a>
-                        </div>
-                    </details>
-                </div>
-            </details>
-
-            <details class="group">
-                <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
-                    <span>Back</span>
-                    <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                  <span>Design Patterns</span>
+                  <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
                 </summary>
                 <div class="pl-3 pt-2 space-y-1">
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/back/' | relative_url }}">Tous les articles</a>
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/java/' | relative_url }}">Java</a>
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/quarkus/' | relative_url }}">Quarkus</a>
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/python/' | relative_url }}">Python</a>
+                  <details class="group">
+                    <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                      <span>Comportementaux</span>
+                      <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                    </summary>
+                    <div class="pl-3 pt-2 space-y-1">
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/comportementaux/chaine-de-responsabilite/' | relative_url }}">Chaine de responsabilité</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/comportementaux/commande/' | relative_url }}">Commande</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/comportementaux/etat/' | relative_url }}">Etat</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/comportementaux/interpreteur/' | relative_url }}">Interpréteur</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/comportementaux/mediateur/' | relative_url }}">Médiateur</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/comportementaux/memento/' | relative_url }}">Mémento</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/comportementaux/observateur/' | relative_url }}">Observateur</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/comportementaux/strategie/' | relative_url }}">Stratégie</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/comportementaux/visiteur/' | relative_url }}">Visiteur</a>
+                    </div>
+                  </details>
+                  <details class="group">
+                    <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                      <span>Création</span>
+                      <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                    </summary>
+                    <div class="pl-3 pt-2 space-y-1">
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/creation/builder/' | relative_url }}">Builder</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/creation/factory/' | relative_url }}">Factory</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/creation/prototype/' | relative_url }}">Prototype</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/creation/singleton/' | relative_url }}">Singleton</a>
+                    </div>
+                  </details>
+                  <details class="group">
+                    <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                      <span>Structurel</span>
+                      <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                    </summary>
+                    <div class="pl-3 pt-2 space-y-1">
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/structurel/adaptateur/' | relative_url }}">Adaptateur</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/structurel/composite/' | relative_url }}">Composite</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/structurel/decorateur/' | relative_url }}">Décorateur</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/structurel/facade/' | relative_url }}">Façade</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/structurel/pont/' | relative_url }}">Pont</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/structurel/proxy/' | relative_url }}">Proxy</a>
+                    </div>
+                  </details>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/design-patterns/pourquoi-utiliser-les-design-patterns/' | relative_url }}">Pourquoi utiliser les Design Patterns ?</a>
                 </div>
-            </details>
-
-            <details class="group">
+              </details>
+              <details class="group">
                 <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
-                    <span>Autres</span>
-                    <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                  <span>Quarkus</span>
+                  <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
                 </summary>
                 <div class="pl-3 pt-2 space-y-1">
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/product/' | relative_url }}">Product</a>
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/ia/' | relative_url }}">IA</a>
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/conferences/' | relative_url }}">Conférences</a>
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/definition/' | relative_url }}">Définitions</a>
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/histoires/' | relative_url }}">Histoires</a>
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/portrait/' | relative_url }}">Portraits</a>
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/cloud/' | relative_url }}">Cloud</a>
-                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/bugs/' | relative_url }}">Bugs</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/quarkus/comment-personnaliser-la-banniere-d-un-projet-quarkus/' | relative_url }}">Comment personnaliser la bannière d'un projet Quarkus</a>
                 </div>
-            </details>
+              </details>
+              <details class="group">
+                <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                  <span>Spring Boot</span>
+                  <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                </summary>
+                <div class="pl-3 pt-2 space-y-1">
+                  <details class="group">
+                    <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                      <span>BRMS</span>
+                      <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                    </summary>
+                    <div class="pl-3 pt-2 space-y-1">
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/brms/integration-d-easy-rules-dans-une-application-spring-boot/' | relative_url }}">Intégration d'Easy Rules dans une application Spring Boot</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/brms/maitrisez-vos-regles-metier-integrez-drools-dans-spring-boot/' | relative_url }}">Maîtrisez vos règles métier - Intégrez Drools dans Spring Boot</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/brms/revolutionner-la-gestion-des-regles-metier-integrer-rulebook-dans-spring-boot/' | relative_url }}">Révolutionner la gestion des règles métier - intégrer RuleBook dans Spring Boot</a>
+                    </div>
+                  </details>
+                  <details class="group">
+                    <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                      <span>Cache</span>
+                      <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                    </summary>
+                    <div class="pl-3 pt-2 space-y-1">
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/cache/ameliorer-son-cache-spring-boot-avec-caffeine/' | relative_url }}">Améliorer son cache Spring Boot avec Caffeine</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/cache/mise-en-cache-avec-redis-dans-spring-boot/' | relative_url }}">Mise en cache avec Redis dans Spring Boot</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/cache/mise-en-place-du-cache-dans-une-application-spring-boot/' | relative_url }}">Mise en place du cache dans une application Spring Boot</a>
+                    </div>
+                  </details>
+                  <details class="group">
+                    <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                      <span>GraphQL</span>
+                      <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                    </summary>
+                    <div class="pl-3 pt-2 space-y-1">
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/graphql/partie-1-mise-en-place/' | relative_url }}">Partie 1 - Mise en place</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/graphql/partie-2-le-schema-dans-graphql/' | relative_url }}">Partie 2 - le schéma dans GraphQL</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/graphql/partie-3-controllers/' | relative_url }}">Partie 3 - Controllers</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/graphql/partie-4-tests-unitaires/' | relative_url }}">Partie 4 - Tests unitaires</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/graphql/partie-5-documentation/' | relative_url }}">Partie 5 - Documentation</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/graphql/partie-6-gestion-des-erreurs/' | relative_url }}">Partie 6 - Gestion des erreurs</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/graphql/a-l-abordage-de-graphql-avec-spring-boot/' | relative_url }}">À l'abordage de GraphQL avec Spring Boot</a>
+                    </div>
+                  </details>
+                  <details class="group">
+                    <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                      <span>IA</span>
+                      <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                    </summary>
+                    <div class="pl-3 pt-2 space-y-1">
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/ia/de-la-question-naturelle-a-la-requete-jpa-tool-calling-avec-spring-ai/' | relative_url }}">De la question naturelle à la requête JPA : tool calling avec Spring AI</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/ia/et-si-on-integrait-langchain-dans-spring-boot-partie-1/' | relative_url }}">Et si on intégrait LangChain dans Spring Boot ? Partie 1</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/ia/et-si-on-integrait-langchain-dans-spring-boot-partie-2/' | relative_url }}">Et si on intégrait LangChain dans Spring Boot ? Partie 2</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/ia/ludotheque-augmentee-un-rag-local-avec-spring-ai-ollama-et-chroma/' | relative_url }}">Ludothèque augmentée : un RAG local avec Spring AI, Ollama et Chroma</a>
+                    </div>
+                  </details>
+                  <details class="group">
+                    <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                      <span>Messaging</span>
+                      <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                    </summary>
+                    <div class="pl-3 pt-2 space-y-1">
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/messaging/implementation-d-un-systeme-de-notifications-en-temps-reel-avec-spring-boot-et-server-sent-events/' | relative_url }}">Implémentation d’un système de notifications en temps réel avec Spring Boot et Server-Sent Events</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/messaging/integration-de-jms-dans-une-application-spring-boot/' | relative_url }}">Intégration de JMS dans une application Spring Boot</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/messaging/integration-de-kafka-dans-une-application-spring-boot/' | relative_url }}">Intégration de Kafka dans une application Spring Boot</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/messaging/integration-de-kafka-dans-une-application-spring-boot-allons-plus-loins/' | relative_url }}">Intégration de Kafka dans une application Spring Boot - Allons plus loins</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/messaging/transactional-outbox-la-piece-manquante-entre-votre-base-et-kafka/' | relative_url }}">Transactional Outbox : la pièce manquante entre votre base et Kafka</a>
+                    </div>
+                  </details>
+                  <details class="group">
+                    <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                      <span>sécurité</span>
+                      <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                    </summary>
+                    <div class="pl-3 pt-2 space-y-1">
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/securite/integration-de-ldap-dans-une-application-spring-boot-avec-spring-security/' | relative_url }}">Intégration de LDAP dans une application Spring Boot avec Spring Security</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-acces-par-role/' | relative_url }}">Sécurisez vos API avec Spring Security - accès par rôle</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-basic-auth/' | relative_url }}">Sécurisez vos API avec Spring Security - Basic Auth</a>
+                      <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/securite/securisez-vos-api-avec-spring-security-jwt/' | relative_url }}">Sécurisez vos API avec Spring Security - JWT</a>
+                    </div>
+                  </details>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/accelerer-son-application-spring-boot-grace-a-l-asynchrone/' | relative_url }}">Accélérer son application Spring Boot grâce à l’asynchrone</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/application-a-toute-epreuve-transformez-votre-application-en-forteresse-de-resilience/' | relative_url }}">Application à toute épreuve - transformez votre application en forteresse de résilience</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/boostez-votre-application-spring-boot-grace-aux-design-patterns/' | relative_url }}">Boostez votre application Spring Boot grâce aux design patterns</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/comment-bien-gerer-ses-exceptions-dans-spring-boot/' | relative_url }}">Comment bien gérer ses exceptions dans Spring Boot</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/comment-personnaliser-la-banniere-d-un-projet-spring-boot/' | relative_url }}">Comment personnaliser la bannière d'un projet Spring Boot</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/' | relative_url }}">Comprendre les annotations dans Spring Boot - guide et exemples</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/creation-d-un-systeme-de-gestion-d-audit-avec-spring-boot-et-spring-data-envers/' | relative_url }}">Création d’un système de gestion d’audit avec Spring Boot et Spring Data Envers</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/decouverte-des-actuators-dans-spring-boot/' | relative_url }}">Découverte des Actuators dans Spring Boot</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/developpement-d-applications-en-ligne-de-commande-avec-spring-shell-dans-spring-boot/' | relative_url }}">Développement d’applications en ligne de commande avec Spring Shell dans Spring Boot</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/elasticsearch-spring-boot-premiers-pas/' | relative_url }}">Elasticsearch & Spring Boot – Premiers pas (Partie 1)</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/elasticsearch-spring-boot-premiers-pas-2/' | relative_url }}">Elasticsearch & Spring Boot – Premiers pas (Partie 2)</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/et-si-vos-prochaines-migrations-etaient-simples/' | relative_url }}">Et si vos prochaines migrations étaient simples ?</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/gestion-des-taches-asynchrones-avec-spring-boot-et-project-reactor/' | relative_url }}">Gestion des tâches asynchrones avec Spring Boot et Project Reactor</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/generer-vos-clients-d-api-a-partir-de-leur-specification-openapi/' | relative_url }}">Générer vos clients d'API à partir de leur spécification OpenAPI</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/gerer-des-requetes-dynamiques-avec-spring-boot-et-les-sealed-interfaces/' | relative_url }}">Gérer des requêtes dynamiques avec Spring Boot et les Sealed Interfaces</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/gerer-et-superviser-ses-applications-avec-spring-boot-admin/' | relative_url }}">Gérer et superviser ses applications avec Spring Boot Admin</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/gerer-les-erreurs-dans-spring-boot-ce-qu-il-faut-dire-et-ce-qu-il-faut-taire/' | relative_url }}">Gérer les erreurs dans Spring Boot : ce qu’il faut dire… et ce qu’il faut taire</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/httpexchange-vs-openfeign-le-match-des-clients-http/' | relative_url }}">HttpExchange vs OpenFeign - le match des clients HTTP</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/il-etait-une-fois-spring-boot/' | relative_url }}">Il était une fois... Spring Boot</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/internationalisation-i18n-et-localisation-l10n-avec-spring-boot-comment-rendre-vos-applications-multilingues/' | relative_url }}">Internationalisation (i18n) et localisation (l10n) avec Spring Boot : comment rendre vos applications multilingues</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/integration-de-thymeleaf-dans-une-application-spring-boot/' | relative_url }}">Intégration de Thymeleaf dans une application Spring Boot</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/les-profils-dans-spring-boot/' | relative_url }}">Les profils dans Spring Boot</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/limiter-les-appels-a-son-api-rest-avec-bucket4j/' | relative_url }}">Limiter les appels à son API REST avec Bucket4j</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/mapstruct-dites-adieu-au-code-repetitif-et-boostez-vos-mappages-java/' | relative_url }}">MapStruct - Dites adieu au code répétitif et boostez vos mappages Java !</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/migration-et-versioning-de-base-de-donnees-dans-une-application-spring-boot-flyway-vs-liquibase/' | relative_url }}">Migration et versioning de base de données dans une application Spring Boot - Flyway vs Liquibase</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/mise-en-place-de-hateoas-dans-spring-boot-un-guide-pratique/' | relative_url }}">Mise en place de HATEOAS dans Spring Boot  un guide pratique</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/mise-en-place-de-querydsl-dans-une-application-spring-boot/' | relative_url }}">Mise en place de QueryDSL dans une application Spring Boot</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/mise-en-place-de-r2dbc-dans-une-application-spring-boot/' | relative_url }}">Mise en place de R2DBC dans une application Spring Boot</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/papa-je-veux-un-pokedex-partie-1/' | relative_url }}">Papa, je veux un Pokédex - Partie 1</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/papa-je-veux-un-pokedex-partie-2/' | relative_url }}">Papa, je veux un Pokédex - partie 2</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/papa-je-veux-un-pokedex-partie-3/' | relative_url }}">Papa, je veux un Pokédex - partie 3</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/planifier-des-taches-avec-spring-boot-et-quartz-scheduler/' | relative_url }}">Planifier des taches avec Spring Boot et Quartz Scheduler</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/planifier-des-taches-avec-spring-batch/' | relative_url }}">Planifier des tâches avec Spring Batch</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/reussir-sa-migration-de-swagger-2-a-openapi-3/' | relative_url }}">Réussir sa migration de Swagger 2 à OpenApi 3</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/spring-aop-comprendre-la-programmation-orientee-aspect-dans-spring/' | relative_url }}">Spring AOP - comprendre la programmation orientée aspect dans Spring</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/spring-boot-devtools-le-turbo-gratuit-de-vos-developpements/' | relative_url }}">Spring Boot DevTools - le turbo gratuit de vos développements</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/spring-boot-et-le-defi-du-multi-datasource/' | relative_url }}">Spring Boot et le défi du multi datasource</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/spring-data-rest-creer-des-api-sans-controllers/' | relative_url }}">Spring Data REST - créer des API sans controllers</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/spring-modulith-du-monolith-aux-modules/' | relative_url }}">Spring Modulith : du monolith aux modules</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/superviser-votre-application-spring-boot-grace-a-prometheus-et-grafana/' | relative_url }}">Superviser votre application Spring Boot grâce à Prometheus et Grafana</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/validation-spring-boot-du-standard-au-sur-mesure/' | relative_url }}">Validation Spring Boot - du standard au sur-mesure</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/vers-un-standard-des-erreurs-http/' | relative_url }}">Vers un standard des erreurs HTTP</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/spring-boot/versioning-des-api-dans-spring-boot-guide-complet/' | relative_url }}">Versioning des API dans Spring Boot - Guide Complet</a>
+                </div>
+              </details>
+              <details class="group">
+                <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                  <span>tests</span>
+                  <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                </summary>
+                <div class="pl-3 pt-2 space-y-1">
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/tests/introduisez-du-chaos-dans-votre-application-spring-boot/' | relative_url }}">Introduisez du chaos dans votre application Spring Boot</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/tests/maitrisez-les-tests-de-charge-avec-gatling-pour-spring-boot/' | relative_url }}">Maîtrisez les Tests de Charge avec Gatling pour Spring Boot</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/tests/maitrisez-votre-architecture-spring-boot-avec-archunit/' | relative_url }}">Maîtrisez votre architecture Spring Boot avec ArchUnit</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/tests/resilience-applicative-avec-resilience4j-et-spring-boot/' | relative_url }}">Résilience applicative avec Resilience4j et Spring Boot</a>
+                  <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/tests/test-parametres-un-test-pour-les-gouverner-tous/' | relative_url }}">Test paramétrés - un test pour les gouverner tous</a>
+                </div>
+              </details>
+              <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/agrandissons-l-orchestre-avec-la-guitare/' | relative_url }}">Agrandissons l'orchestre avec la guitare</a>
+              <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/architecture-hexagonale-en-java-relier-ddd-design-patterns-et-code-concret/' | relative_url }}">Architecture hexagonale en Java - relier DDD, Design Patterns et code concret</a>
+              <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/creons-un-synthetiseur-en-java/' | relative_url }}">Créons un synthétiseur en Java</a>
+              <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/il-etait-une-fois-java/' | relative_url }}">Il était une fois... Java</a>
+              <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/java-25-quelles-sont-les-nouveautes/' | relative_url }}">Java 25 : quelles sont les nouveautés ?</a>
+              <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/java-26-quoi-de-neuf/' | relative_url }}">Java 26 - quoi de neuf ?</a>
+              <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/junit-6-le-successeur-de-junit-5-est-la/' | relative_url }}">JUnit 6 - le successeur de JUnit 5 est là !</a>
+              <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/papa-dessine-moi-un-jeu-video/' | relative_url }}">Papa, dessine-moi un jeu vidéo</a>
+              <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/tetris-un-classique-intemporel-a-redecouvrir-par-le-code/' | relative_url }}">Tetris - un classique intemporel à redécouvrir par le code</a>
+              <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/tutoriel-java-sound-transformer-le-son-du-microphone-en-images-temps-reel/' | relative_url }}">Tutoriel Java Sound - transformer le son du microphone en images temps réel</a>
+              <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/java/un-mur-de-lampes-a-lave-pour-la-securite/' | relative_url }}">Un mur de lampes à lave pour la sécurité</a>
+            </div>
+          </details>
+          <details class="group">
+            <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+              <span>Python</span>
+              <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+            </summary>
+            <div class="pl-3 pt-2 space-y-1">
+              <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/python/snake-un-classique-intemporel-a-redecouvrir-par-le-code/' | relative_url }}">Snake - un classique intemporel à redécouvrir par le code</a>
+            </div>
+          </details>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/demystifier-les-regex/' | relative_url }}">Démystifier les regex</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/back/votre-api-rest-est-elle-vraiment-restful/' | relative_url }}">Votre API REST est-elle vraiment RESTful ?</a>
         </div>
+      </details>
+      <details class="group">
+        <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+          <span>Bugs</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+        </summary>
+        <div class="pl-3 pt-2 space-y-1">
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/bugs/et-si-la-premiere-pandemie-moderne-avait-eu-lieu-dans-un-jeu-video/' | relative_url }}">Et si la première pandémie moderne avait eu lieu dans un jeu vidéo ?</a>
+        </div>
+      </details>
+      <details class="group">
+        <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+          <span>Cloud</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+        </summary>
+        <div class="pl-3 pt-2 space-y-1">
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/cloud/cloud-souverainete-et-droit-extraterritorial/' | relative_url }}">Cloud, souveraineté et droit extraterritorial</a>
+        </div>
+      </details>
+      <details class="group">
+        <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+          <span>Conférences</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+        </summary>
+        <div class="pl-3 pt-2 space-y-1">
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/conferences/jug-summer-camp-2025-le-recap-complet-de-l-edition-de-la-rochelle/' | relative_url }}">JUG Summer Camp 2025 - le récap complet de l’édition de La Rochelle</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/conferences/touraine-tech-2026-rencontre-avec-des-speakers/' | relative_url }}">Touraine Tech 2026 : rencontre avec des speakers</a>
+        </div>
+      </details>
+      <details class="group">
+        <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+          <span>Définition</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+        </summary>
+        <div class="pl-3 pt-2 space-y-1">
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/definition/ddd-definition/' | relative_url }}">DDD - Définition</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/definition/easter-eggs-definition/' | relative_url }}">Easter eggs - définition</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/definition/elk-definition/' | relative_url }}">ELK - définition</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/definition/graphql-definition/' | relative_url }}">GraphQL - définition</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/definition/l-armee-des-singes-du-chaos-definition/' | relative_url }}">L'armée des singes du chaos - définition</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/definition/les-design-patterns/' | relative_url }}">Les Design Patterns</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/definition/markdown-definition/' | relative_url }}">Markdown - définition</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/definition/methode-agile-definition/' | relative_url }}">Méthode Agile - définition</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/definition/quarkus-definition/' | relative_url }}">Quarkus - définition</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/definition/rest-definition/' | relative_url }}">REST - définition</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/definition/soap-definition/' | relative_url }}">SOAP - définition</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/definition/vaadin-definition/' | relative_url }}">Vaadin - définition</a>
+        </div>
+      </details>
+      <details class="group">
+        <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+          <span>Histoires</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+        </summary>
+        <div class="pl-3 pt-2 space-y-1">
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/histoires/le-developpement-dont-vous-etes-le-heros-chroniques-d-une-journee-en-terre-agile/' | relative_url }}">Le développement dont vous êtes le héros - chroniques d’une journée en terre agile</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/histoires/le-developpement-dont-vous-etes-le-heros-devoxx-or-die/' | relative_url }}">Le développement dont vous êtes le héros : Devoxx or Die</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/histoires/le-product-owner-dont-vous-etes-le-heros-epopee-en-terre-corporate/' | relative_url }}">Le Product Owner dont vous êtes le héros : épopée en terre corporate</a>
+        </div>
+      </details>
+      <details class="group">
+        <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+          <span>IA</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+        </summary>
+        <div class="pl-3 pt-2 space-y-1">
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/ia/advent-of-code-2025/' | relative_url }}">Advent of code 2025</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/ia/de-frankenstein-a-l-ia-generative-la-lecon-de-mary-shelley/' | relative_url }}">De Frankenstein à l’IA générative - la leçon de Mary Shelley</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/ia/deboguer-l-intuition-chronique-technique-d-un-futur-ou-le-code-s-ecrit-tout-seul/' | relative_url }}">Déboguer l’intuition - chronique technique d’un futur où le code s’écrit tout seul</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/ia/grokipedia-une-simple-encyclopedie/' | relative_url }}">Grokipedia - une simple encyclopédie ?</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/ia/ia-degenerative-quand-l-algorithme-est-malade/' | relative_url }}">IA dégénérative - quand l'algorithme est malade</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/ia/ia-generative-vs-advent-of-code/' | relative_url }}">IA generative vs Advent of code</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/ia/l-evolution-de-l-intelligence-artificielle-un-reve-ancien-devenu-realite-technologique/' | relative_url }}">L’évolution de l’intelligence artificielle - un rêve ancien devenu réalité technologique</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/ia/oubliez-le-vibe-coding-passez-au-sdd/' | relative_url }}">Oubliez le vibe coding, passez au SDD !</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/ia/qui-est-responsable-quand-l-ia-contribue-le-cas-matplotlib-qui-bouscule-l-open-source/' | relative_url }}">Qui est responsable quand l’IA contribue ? Le cas Matplotlib qui bouscule l’open source</a>
+        </div>
+      </details>
+      <details class="group">
+        <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+          <span>Portrait</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+        </summary>
+        <div class="pl-3 pt-2 space-y-1">
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/portrait/alejandro-jodorowsky-et-les-technoperes-une-vision-prophetique-de-l-intelligence-artificielle-et-du-dataisme/' | relative_url }}">Alejandro Jodorowsky et les Technopères - une vision prophétique de l’intelligence artificielle et du dataïsme</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/portrait/hommage-a-chuck-norris-le-dernier-commit/' | relative_url }}">Hommage à Chuck Norris - le dernier commit</a>
+        </div>
+      </details>
+      <details class="group">
+        <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+          <span>Product</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+        </summary>
+        <div class="pl-3 pt-2 space-y-1">
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/product/avoir-un-profil-github-qui-claque/' | relative_url }}">Avoir un profil GitHub qui claque</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/product/blocage-des-sites-pour-adultes-en-france-loi-bras-de-fer-et-explosion-des-vpn/' | relative_url }}">Blocage des sites pour adultes en France : loi, bras de fer et explosion des VPN !</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/product/hacktoberfest-entre-dans-l-arene-du-code/' | relative_url }}">Hacktoberfest - entre dans l'arène du code !</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/product/l-histoire-des-bugs-informatiques-les-plus-celebres/' | relative_url }}">L&#x27;histoire des bugs informatiques les plus célèbres</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/product/la-responsabilite-societale-des-entreprises-rse-un-concept-obsolete/' | relative_url }}">La responsabilité sociétale des entreprises (RSE), un concept obsolète ?</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/product/les-commandes-git-essentielles-demystifiees/' | relative_url }}">Les commandes git essentielles démystifiées</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/product/mais-pourquoi-ecris-tu/' | relative_url }}">Mais pourquoi écris-tu ?</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/product/ouverture-des-inscriptions-a-l-hacktoberfest/' | relative_url }}">Ouverture des inscriptions à l'Hacktoberfest !</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/product/papa-dessine-moi-un-programme/' | relative_url }}">Papa, dessine-moi un programme</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/product/pourquoi-tester-son-code/' | relative_url }}">Pourquoi tester son code ?</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/product/presentation-de-postman-flows/' | relative_url }}">Présentation de Postman Flows</a>
+          <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/product/vous-revez-de-donner-un-talk-mais-n-osez-pas-voici-mon-retour-d-experience/' | relative_url }}">Vous rêvez de donner un talk mais n’osez pas ? Voici mon retour d’expérience.</a>
+        </div>
+      </details>
     </div>
+  </div>
 </aside>

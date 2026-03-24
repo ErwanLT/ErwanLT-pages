@@ -1,0 +1,7 @@
+{% assign count = 0 %}
+{% for p in site.pages %}
+  {% if p.tags contains include.tag %}
+    {% assign count = count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+{{ count }}
