@@ -1,16 +1,34 @@
 ---
-layout: default
-title: Factory
-tags: [java, tutoriel, design pattern, creation, factory]
+layout: "default"
+title: "Factory"
+permalink: "/designPattern/creation/factory/"
+tags: [back, java, design pattern, tutoriel, creation]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/design-pattern-factory/"
+banner: "https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGZhY3Rvcnl8ZW58MHx8fHwxNjgyMTg5Nzg4&ixlib=rb-4.0.3&q=80&w=2000"
+published_at: "2023-05-03"
+sfeir_slug: "design-pattern-factory"
+date: "2023-05-03"
 ---
+# Les designs patterns de création c'est quoi ?
 
-# Le design pattern Factory
+[Les Design Patterns](/definition/les-design-patterns/) de Création sont un ensemble de design patterns qui permettent de créer des objets d'une manière qui soit flexible, modulaire et qui facilite leur réutilisation. Ils sont utilisés pour résoudre des problèmes de conception liés à la création d'objets.  
+Les designs pattern de création les plus utilisés sont les suivants :
 
-## Définition
+- **Factory**
+- [Builder](/designPattern/creation/builder/)
+- [Prototype](/designPattern/creation/prototype/)
+- [Singleton](/designPattern/creation/singleton/)
+
+Ici nous nous attaquerons au **design pattern factory**.
+
+## Le design pattern FACTORY
+
+### Définition
 
 En programmation orientée objet, le design pattern **factory** est un pattern de création qui utilise des méthodes de fabrication pour résoudre le problème de création d'objets sans avoir à spécifier la classe exacte de l'objet à créer. On utilise une interface ou une classe abstraite pour définir une méthode de création qui est implémentée par les sous-classes pour créer des objets de différentes classes. Ainsi, le Factory Method permet de créer des objets sans connaitre leur implémentation.
 
-## Exemple d'implementation
+### Exemple d'implementation
 
 ![Factory](https://www.sfeir.dev/content/images/2023/04/Factory.png)
 
@@ -48,7 +66,7 @@ public class ManMadeSatellite implements Celestial {
 }
 ```
 
-Pour finir, nous avons notre classe **CelestialFactory** qui s'occupera de créer une instance des trois classes précedente en fonction d'une chaine de caractère passé en paramètre.
+Pour finir nous avons notre classe **CelestialFactory** qui s'occupera de créer une instance des trois classes précedente en fonction d'une chaine de caractère passé en paramètre.
 
 ```java
 public static Celestial getCelestial(String type){
@@ -78,7 +96,7 @@ Celestial manMadeSatellite = CelestialFactory.getCelestial("STARLINK");
 System.out.println(manMadeSatellite.canHaveNaturalSatellite());
 ```
 
-Le bout de code précédent donnerait un output comme celui-ci :
+Le bout de code précédent donnerais un output comme celui ci :
 
 ```
 Une planete peut avoir des satellites naturels

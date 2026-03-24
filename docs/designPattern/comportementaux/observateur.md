@@ -1,21 +1,41 @@
 ---
-layout: default
-title: Observateur
-tags: [java, tutoriel, design pattern, comportementaux, observateur]
+layout: "default"
+title: "Observateur"
+permalink: "/designPattern/comportementaux/observateur/"
+tags: [back, java, design pattern, tutoriel, comportementaux]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/design-patterns-comportementaux-observateur/"
+banner: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fG5vdGlmaWNhdGlvbnxlbnwwfHx8fDE3MDc5Nzk1ODB8MA&ixlib=rb-4.0.3&q=80&w=2000"
+published_at: "2024-03-08"
+sfeir_slug: "design-patterns-comportementaux-observateur"
+date: "2024-03-08"
 ---
+[Les Design Patterns](/definition/les-design-patterns/) comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
+Les designs patterns comportementaux les plus utilisés sont les suivants :
 
-# Le design pattern Observateur
+- [Stratégie](/designPattern/comportementaux/strategie/)
+- [Mémento](/designPattern/comportementaux/memento/)
+- [Médiateur](/designPattern/comportementaux/mediateur/)
+- **Observateur**
+- [Chaine de responsabilité](/designPattern/comportementaux/chaine-de-responsabilite/)
+- [Commande](/designPattern/comportementaux/commande/)
+- [Etat](/designPattern/comportementaux/etat/)
+- [Visiteur](/designPattern/comportementaux/visiteur/)
+- [Interpréteur](/designPattern/comportementaux/interpreteur/)
 
-## Définition
+Ici nous nous attaquerons au **design pattern** **Observateur**.
+## Le design pattern Observateur
+
+### Définition
 
 Le design Pattern **Observateur** fait partie de la famille des design patterns comportementaux.  
 Il définît une relation **observateurs** / **observé** où l’observé informe de tout changement ses observateurs via l’une de leurs méthodes.
 
 ### Avantages et inconvénients
 
-|   |   |
-|---|---|
-|- Découplage fort<br>- Extensibilité<br>- Modularité|- Mise à jour inefficace<br>- Risque de fuites de mémoire|
+| Avantages                                            | Inconvénients                                             |
+| ---------------------------------------------------- | --------------------------------------------------------- |
+| - Découplage fort<br>- Extensibilité<br>- Modularité | - Mise à jour inefficace<br>- Risque de fuites de mémoire |
 
 ### Avantages
 
@@ -28,7 +48,7 @@ Il définît une relation **observateurs** / **observé** où l’observé i
 1. **Mise à jour inefficace**: Si le sujet a de nombreux observateurs et que les mises à jour sont fréquentes, cela peut entraîner des performances inefficaces.
 2. **Risque de fuites de mémoire**: Si les observateurs ne sont pas correctement gérés, cela peut entraîner des fuites de mémoire.
 
-## Exemple d'implémentation
+### Exemple d'implémentation
 
 Pour la suite de cet article, nous allons reprendre l'exemple du chat d'équipe comme vu lors de l'article sur le design pattern Médiateur
 
@@ -146,7 +166,7 @@ Erwan a quitté le chat d'équipe.
 Alan a quitté le chat d'équipe.
 ```
 
-## En conclusion
+### En conclusion
 
 Le Design Pattern Observateur est un outil puissant pour la gestion des événements et la communication entre objets dans les applications logicielles. En utilisant ce pattern, les développeurs peuvent concevoir des systèmes flexibles, modulaires et extensibles, tout en réduisant le couplage entre les composants.
 

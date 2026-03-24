@@ -1,35 +1,55 @@
 ---
-layout: default
-title: Interpréteur
-tags: [java, tutoriel, design pattern, comportementaux, interpréteur]
+layout: "default"
+title: "Interpréteur"
+permalink: "/designPattern/comportementaux/interpreteur/"
+tags: [back, java, design pattern, tutoriel, comportementaux]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/les-design-patterns-comportementaux-interpreteur/"
+banner: "https://www.sfeir.dev/content/images/2024/04/L01E24.webp"
+published_at: "2024-04-19"
+sfeir_slug: "les-design-patterns-comportementaux-interpreteur"
+date: "2024-04-19"
 ---
+[Les Design Patterns](/definition/les-design-patterns/) comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
+Les designs patterns comportementaux les plus utilisés sont les suivants :
 
-# Le design pattern Interpréteur
+- [Stratégie](/designPattern/comportementaux/strategie/)
+- [Mémento](/designPattern/comportementaux/memento/)
+- [Médiateur](/designPattern/comportementaux/mediateur/)
+- [Observateur](/designPattern/comportementaux/observateur/)
+- [Chaine de responsabilité](/designPattern/comportementaux/chaine-de-responsabilite/)
+- [Commande](/designPattern/comportementaux/commande/)
+- [Etat](/designPattern/comportementaux/etat/)
+- [Visiteur](/designPattern/comportementaux/visiteur/)
+- **Interpréteur**
 
-## Définition
+Ici nous nous attaquerons au **design pattern** **Interpréteur**.
+## Le design pattern Interpréteur
+
+### Définition
 
 Le design pattern **Interpréteur** est un modèle comportemental qui permet d'interpréter ou d'évaluer un langage ou une grammaire. Il définit une représentation grammaticale d'une langue donnée, ainsi qu'un interpréteur qui utilise cette représentation pour interpréter les phrases de cette langue.  
 Chaque élément de la grammaire est représenté par une classe, et les combinaisons d'éléments sont interprétées par des méthodes spécifiques de ces classes. Lorsqu'une expression est passée à l'interpréteur, il utilise la représentation grammaticale pour interpréter et évaluer l'expression selon les règles définies par la grammaire.
 
-## Avantages et inconvénients
+### Avantages et inconvénients
 
 |   |   |
 |---|---|
 |- Structure modulaire<br>- Facilité d'ajout de nouvelles fonctionnalités<br>- Fléxibilité|- Complexité de la conception<br>- Performance<br>- Difficulté de compréhension|
 
-### Avantages
+#### Avantages
 
 1. **Structure modulaire :** Il permet de décomposer une grammaire complexe en une structure modulaire d'expressions simples, ce qui facilite la maintenance et l'évolution du système.
 2. **Facilité d'ajout de nouvelles fonctionnalités :** En ajoutant de nouvelles classes d'expressions ou en modifiant les règles de grammaire, on peut étendre facilement les fonctionnalités de l'interpréteur sans modifier son noyau.
 3. **Flexibilité :** L'interpréteur permet d'ajuster dynamiquement les règles de grammaire et les comportements d'interprétation, ce qui le rend flexible pour traiter différents types d'expressions et de langages.
 
-### Inconvénients
+#### Inconvénients
 
 1. **Complexité de la conception :** La mise en œuvre de l'interpréteur peut devenir complexe, surtout pour les langages ou les grammaires très complexes. La gestion des interactions entre les différentes classes d'expressions peut être délicate.
 2. **Performance :** Dans certains cas, l'interpréteur peut avoir des performances moins efficaces par rapport à d'autres méthodes de traitement des langages, comme la compilation. L'évaluation répétée des expressions peut entraîner des surcoûts de performance, notamment pour les expressions complexes.
 3. **Difficulté de compréhension :** Pour les développeurs non familiers avec le design pattern Interpréteur, sa logique peut être difficile à comprendre et à maintenir. La structure en arbre des expressions et les interactions entre les différentes classes peuvent rendre le code moins intuitif.
 
-## Exemple d'implémentation
+### Exemple d'implémentation
 
 Pour la suite de cet article, nous utiliserons **2 exemples** :
 
@@ -48,7 +68,7 @@ public interface Expression<T> {
 
 Interface générique
 
-### La calculatrice
+#### La calculatrice
 
 La calculatrice que nous allons implémenter sera simple, elle disposera des 4 opérations de base :
 
@@ -142,7 +162,7 @@ public class DivideExpression extends ComputeExpression<Integer>{
 
 Nous verrons par la suite comment utiliser ces expressions.
 
-### Le système de traduction
+#### Le système de traduction
 
 Nous allons également développer un système de traduction de phrases simple en utilisant le design pattern **Interpréteur**. Chaque mot dans une phrase est interprété et traduit en utilisant un contexte de traduction spécifique à une langue.
 
@@ -211,7 +231,7 @@ public class FrenchTranslationContext implements TranslationContext{
 
 Maintenant que nous avons toutes nos classes, il est temps de voir comment les utiliser entre elles.
 
-## Exemple d'utilisation
+### Exemple d'utilisation
 
 Comme j'ai 2 cas d'utilisation, ma méthode main aura 2 fonctions distincte pour ne pas nous emmêler les pinceaux :
 
@@ -281,7 +301,7 @@ bonjour monde Java
 
 sortie console traduction
 
-## En conclusion
+### En conclusion
 
 Le design pattern **Interpréteur** est un outil puissant pour implémenter des systèmes de traitement de langages ou d'expressions. Il permet de décomposer des problèmes complexes en structures modulaires et facilite l'extension et la maintenance des systèmes.  
 En utilisant ce design pattern, vous pouvez créer des systèmes de requêtes, des systèmes de traduction, des analyseurs syntaxiques et bien plus encore, en offrant une flexibilité et une extensibilité accrue.

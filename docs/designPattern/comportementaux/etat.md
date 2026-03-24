@@ -1,38 +1,58 @@
 ---
-layout: default
-title: Etat
-tags: [java, tutoriel, design pattern, comportementaux, etat]
+layout: "default"
+title: "Etat"
+permalink: "/designPattern/comportementaux/etat/"
+tags: [back, java, design pattern, tutoriel, comportementaux]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/design-patterns-comportementaux-etat/"
+banner: "https://images.unsplash.com/photo-1581110993053-76f2c092a192?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fG1pY3Jvc29mdCUyMHdvcmR8ZW58MHx8fHwxNzEwNDM3NTg5fDA&ixlib=rb-4.0.3&q=80&w=2000"
+published_at: "2024-03-22"
+sfeir_slug: "design-patterns-comportementaux-etat"
+date: "2024-03-22"
 ---
+[Les Design Patterns](/definition/les-design-patterns/) comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
+Les designs patterns comportementaux les plus utilisés sont les suivants :
 
-# Le design pattern Etat
+- [Stratégie](/designPattern/comportementaux/strategie/)
+- [Mémento](/designPattern/comportementaux/memento/)
+- [Médiateur](/designPattern/comportementaux/mediateur/)
+- [Observateur](/designPattern/comportementaux/observateur/)
+- [Chaine de responsabilité](/designPattern/comportementaux/chaine-de-responsabilite/)
+- [Commande](/designPattern/comportementaux/commande/)
+- **Etat**
+- [Visiteur](/designPattern/comportementaux/visiteur/)
+- [Interpréteur](/designPattern/comportementaux/interpreteur/)
 
-## Définition
+Ici nous nous attaquerons au **design pattern** **Etat**.
+## Le design pattern Etat
+
+### Définition
 
 Le design pattern **État** est un design pattern comportemental qui permet à un objet de modifier son comportement en fonction de son état interne.  
 Plutôt que de gérer directement les transitions entre les différents états, l'objet délègue cette responsabilité à des objets État spécialisés.  
 Chaque objet État encapsule le comportement spécifique à un état particulier, ce qui permet à l'objet principal de déléguer dynamiquement ses actions en fonction de son état actuel.
 
-## Avantages et inconvénients
+### Avantages et inconvénients
 
 |   |   |
 |---|---|
 |- Modularité et extensibilité<br>- Séparation des préoccupations<br>- Fléxibilité|- Complexité accrue<br>- Surcoût initial<br>- La cohérence|
 
-## Avantages
+### Avantages
 
 1. **Modularité et extensibilité** : Le pattern État permet d'encapsuler chaque état dans une classe distincte, favorisant ainsi la modularité du code. Cela rend également l'ajout de nouveaux états ou la modification des comportements existants plus facile et moins risqué.
 2. **Séparation des préoccupations** : Ce pattern permet de séparer les différents comportements en fonction des états, ce qui rend le code plus facile à comprendre et à maintenir. Chaque classe État est responsable de son propre comportement, ce qui réduit le couplage entre les différentes parties du système.
 3. **Flexibilité** : Le pattern État permet aux objets de modifier dynamiquement leur comportement en fonction de leur état interne. Cela offre une grande flexibilité dans la gestion des transitions entre les états et permet d'adapter le comportement de l'objet en fonction du contexte.
 
-## Inconvénients
+### Inconvénients
 
 1. **Complexité accrue** : L'usage du pattern État peut rendre le code plus complexe, en particulier dans les systèmes avec de nombreux états et transitions. La multiplication des classes État peut rendre le code plus difficile à comprendre pour les développeurs, en particulier s'ils ne sont pas familiers avec le pattern.
 2. **Surcoût initial** : La mise en place du pattern État peut nécessiter un surcoût initial en termes de conception et de développement. Il faut créer des classes État pour chaque état possible, ce qui peut prendre du temps et de l'effort.
 3. **La cohérence** : Si les transitions entre les états ne sont pas correctement gérées, cela peut conduire à des problèmes de cohérence dans le système. Il est important de s'assurer que les transitions entre les états sont correctement gérées pour éviter les comportements imprévus.
 
-## Exemple d'implémentation
+### Exemple d'implémentation
 
-Comme lors des [articles sur le design pattern Commande](https://www.sfeir.dev/back/design-patterns-comportementaux-commande/), ou celui du [design pattern Memento](https://www.sfeir.dev/back/design-patterns-comportementaux-memento/) nous allons utiliser l'exemple d'un éditeur de texte dans lequel nous allons modifier notre document, et donc par extension ses états.  
+Comme lors des [articles sur le design pattern Commande](/designPattern/comportementaux/commande/), ou celui du [design pattern Memento](/designPattern/comportementaux/memento/) nous allons utiliser l'exemple d'un éditeur de texte dans lequel nous allons modifier notre document, et donc par extension ses états.  
 Dans cet exemple nous avons :
 
 [![diagramme de classe](https://www.sfeir.dev/content/images/2024/03/state.drawio.png)](https://www.sfeir.dev/content/images/2024/03/state.drawio.png)
@@ -106,7 +126,7 @@ Dans la classe `EmptyDocumentState`, la méthode _insertText()_ change l'éta
 
 Maintenant, lorsqu'un texte est inséré dans un document vide, l'état du document change vers un document non vide, et les actions ultérieures seront effectuées dans le nouvel état.
 
-## Exemple d'utilisation
+### Exemple d'utilisation
 
 ```java
 public static void main(String[] args){
@@ -144,7 +164,7 @@ code méthode main
 
 Dans cet exemple, je commence un nouveau document dans le but de sauvegarder les différentes recettes de cuisine que je teste pour ne pas les perdre.  
 Je démarre d'une page blanche, et commence à écrire ma recette dans mon document.  
-A la fin, je sauvegarde mon document afin de ne pas perdre les modifications apportées. On pourrait très bien utiliser dans la [sauvegarde le design pattern memento](https://www.sfeir.dev/back/design-patterns-comportementaux-memento/) si jamais je veux faire des retours arrière.
+A la fin, je sauvegarde mon document afin de ne pas perdre les modifications apportées. On pourrait très bien utiliser dans la [sauvegarde le design pattern memento](/designPattern/comportementaux/memento/) si jamais je veux faire des retours arrière.
 
 En exécutant le code ci-dessus, nous aurons en sortie console le résultat suivant :
 
@@ -168,7 +188,7 @@ Préparation :
 Sauvegarde du document...
 ```
 
-## En conclusion
+### En conclusion
 
 Le design pattern État offre une solution efficace pour gérer les différents états d'un objet dans un système logiciel. En encapsulant chaque état dans une classe distincte, ce pattern favorise la modularité, la flexibilité et la séparation des préoccupations.
 

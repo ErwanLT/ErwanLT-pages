@@ -1,16 +1,36 @@
 ---
-layout: default
-title: Commande
-tags: [java, tutoriel, design pattern, comportementaux, commande]
+layout: "default"
+title: "Commande"
+permalink: "/designPattern/comportementaux/commande/"
+tags: [back, java, design pattern, tutoriel, comportementaux]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/design-patterns-comportementaux-commande/"
+banner: "https://images.unsplash.com/photo-1524741978410-350ba91a70d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGNvbW1hbmR8ZW58MHx8fHwxNzA1MDQ1ODMwfDA&ixlib=rb-4.0.3&q=80&w=2000"
+published_at: "2024-02-01"
+sfeir_slug: "design-patterns-comportementaux-commande"
+date: "2024-02-01"
 ---
+[Les Design Patterns](/definition/les-design-patterns/) comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
+Les designs patterns comportementaux les plus utilisés sont les suivants :
 
-# Le design pattern Commande
+- [Stratégie](/designPattern/comportementaux/strategie/)
+- [Mémento](/designPattern/comportementaux/memento/)
+- [Médiateur](/designPattern/comportementaux/mediateur/)
+- [Observateur](/designPattern/comportementaux/observateur/)
+- [Chaine de responsabilité](/designPattern/comportementaux/chaine-de-responsabilite/)
+- **Commande**
+- [Etat](/designPattern/comportementaux/etat/)
+- [Visiteur](/designPattern/comportementaux/visiteur/)
+- [Interpréteur](/designPattern/comportementaux/interpreteur/)
 
-## Définition
+Dans cet article, nous nous attaquerons au **design Commande.
+## Le design pattern Commande
+
+### Définition
 
 Le design pattern Commande est une approche qui prend une action à réaliser et la convertit en un objet autonome qui encapsule tous les détails de cette action. Cette conversion permet de paramétrer des méthodes avec différentes actions, de planifier leur exécution, de les mettre en file d'attente ou d'annuler des opérations déjà effectuées.
 
-## Exemple d'implémentation
+### Exemple d'implémentation
 
 Pour la suite de cet article, nous utiliserons comme exemple votre éditeur de document / texte préféré (Notepad++, BBEdit, Microsoft Word...) et sa barre de menu contextuel.
 
@@ -100,7 +120,7 @@ public class Document {
 }
 ```
 
-## Utilisation
+### Utilisation
 
 - Un objet Commande est créé et associé à une action spécifique.
 
@@ -125,7 +145,7 @@ Document Opened
 Document Saved
 ```
 
-## En conclusion
+### En conclusion
 
 Le design pattern commande offre aux développeurs la possibilité de découper les opérations en objets autonomes, facilitant ainsi la gestion des actions utilisateurs dans les applications logicielles.  
 En encapsulant chaque action en tant qu'objet autonome, ce modèle favorise la modularité, la réutilisation et la flexibilité du code.

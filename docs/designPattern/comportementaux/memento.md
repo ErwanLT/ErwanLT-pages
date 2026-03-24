@@ -1,20 +1,40 @@
 ---
-layout: default
-title: Memento
-tags: [java, tutoriel, design pattern, comportementaux, memento]
+layout: "default"
+title: "Mémento"
+permalink: "/designPattern/comportementaux/memento/"
+tags: [back, java, design pattern, tutoriel, comportementaux]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/design-patterns-comportementaux-memento/"
+banner: "https://images.unsplash.com/photo-1531492898132-a3dfbc4dbac1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGZsb3BweXxlbnwwfHx8fDE3MDY3OTQ2MzV8MA&ixlib=rb-4.0.3&q=80&w=2000"
+published_at: "2024-02-23"
+sfeir_slug: "design-patterns-comportementaux-memento"
+date: "2024-02-23"
 ---
+[Les Design Patterns](/definition/les-design-patterns/) comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
+Les designs patterns comportementaux les plus utilisés sont les suivants :
 
-# Le design pattern Mémento
+- [Stratégie](/designPattern/comportementaux/strategie/)
+- **Mémento**
+- [Médiateur](/designPattern/comportementaux/mediateur/)
+- [Observateur](/designPattern/comportementaux/observateur/)
+- [Chaine de responsabilité](/designPattern/comportementaux/chaine-de-responsabilite/)
+- [Commande](/designPattern/comportementaux/commande/)
+- [Etat](/designPattern/comportementaux/etat/)
+- [Visiteur](/designPattern/comportementaux/visiteur/)
+- [Interpréteur](/designPattern/comportementaux/interpreteur/)
 
-## Définition
+Ici nous nous attaquerons au **design pattern** **Mémento**.
+## Le design pattern Mémento
+
+### Définition
 
 Le pattern Memento, un modèle de conception comportementale, offre la possibilité de sauvegarder et de rétablir l'état interne d'un objet sans compromettre son encapsulation. En Java, ce pattern est fréquemment employé pour mettre en place des fonctionnalités de sauvegarde et de restauration d'état dans les applications.
 
-## Avantages et inconvénients
+### Avantages et inconvénients
 
-|   |   |
-|---|---|
-|- Restauration d'état précis<br>- Encapsulation préservée<br>- Facilité d'extension<br>- Flexibilité|- Consommation de mémoire<br>- Complexité accrue<br>- Performance<br>- Usage approprié|
+| Avantages                                                                                            | Inconvénients                                                                          |
+| ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| - Restauration d'état précis<br>- Encapsulation préservée<br>- Facilité d'extension<br>- Flexibilité | - Consommation de mémoire<br>- Complexité accrue<br>- Performance<br>- Usage approprié |
 
 ### Avantages
 
@@ -30,9 +50,9 @@ Le pattern Memento, un modèle de conception comportementale, offre la possibili
 3. **Performance** : La sauvegarde et la restauration d'état peuvent avoir un coût en termes de performance, surtout si l'état est volumineux ou si l'historique est long.
 4. **Usage approprié** : Le pattern Memento est plus adapté aux scénarios où la gestion de l'historique est nécessaire, ce qui peut ne pas être le cas pour tous les types d'objets.
 
-## Exemple d'implémentation
+### Exemple d'implémentation
 
-Comme lors de [l'article sur le design pattern Commande](https://www.sfeir.dev/back/design-patterns-comportementaux-commande/), nous allons utiliser l'exemple d'un éditeur de texte et des actions de sauvegarde (Ctrl+S/Cmd+S) et de retour arrière (Ctrl+Z/Cmd+Z).
+Comme lors de [l'article sur le design pattern Commande](/designPattern/comportementaux/commande/) nous allons utiliser l'exemple d'un éditeur de texte et des actions de sauvegarde (Ctrl+S/Cmd+S) et de retour arrière (Ctrl+Z/Cmd+Z).
 
 [![](https://www.sfeir.dev/content/images/2024/02/memento.png)](https://www.sfeir.dev/content/images/2024/02/memento.png)
 
@@ -261,6 +281,6 @@ The Memento Design Pattern
 How to implement it in Java?
 ```
 
-## En conclusion
+### En conclusion
 
 Le design pattern Memento est un outil précieux pour gérer l'état des objets dans une application Java. En utilisant le pattern Memento, nous avons pu implémenter avec succès un éditeur de texte avec des fonctionnalités de sauvegarde et d'annulation d'actions.

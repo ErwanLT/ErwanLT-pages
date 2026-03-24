@@ -1,20 +1,40 @@
 ---
-layout: default
-title: Visiteur
-tags: [java, tutoriel, design pattern, comportementaux, visiteur]
+layout: "default"
+title: "Visiteur"
+permalink: "/designPattern/comportementaux/visiteur/"
+tags: [back, java, design pattern, tutoriel, comportementaux]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/les-design-patterns-comportementaux-visiteur/"
+banner: "https://images.unsplash.com/photo-1614447413359-5f87a652a269?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDE1fHx2aXNpdG9yfGVufDB8fHx8MTcxMTYwNTk5Nnww&ixlib=rb-4.0.3&q=80&w=2000"
+published_at: "2024-04-12"
+sfeir_slug: "les-design-patterns-comportementaux-visiteur"
+date: "2024-04-12"
 ---
+[Les Design Patterns](/definition/les-design-patterns/) comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
+Les designs patterns comportementaux les plus utilisés sont les suivants :
 
-# Le design pattern Visiteur
+- [Stratégie](/designPattern/comportementaux/strategie/)
+- [Mémento](/designPattern/comportementaux/memento/)
+- [Médiateur](/designPattern/comportementaux/mediateur/)
+- [Observateur](/designPattern/comportementaux/observateur/)
+- [Chaine de responsabilité](/designPattern/comportementaux/chaine-de-responsabilite/)
+- [Commande](/designPattern/comportementaux/commande/)
+- [Etat](/designPattern/comportementaux/etat/)
+- **Visiteur**
+- [Interpréteur](/designPattern/comportementaux/interpreteur/)
 
-## Définition
+Ici nous nous attaquerons au **design pattern** **Visiteur**.
+## Le design pattern Visiteur
+
+### Définition
 
 Le design patterns **Visiteur** est un design pattern comportemental qui permet de séparer l'algorithme des éléments sur lesquels il opère. Il est souvent utilisé lorsque vous avez une structure d'objets complexe et que vous voulez ajouter de nouvelles opérations sans modifier les classes des objets eux-mêmes.
 
 ### Avantages et inconvénients
 
-|   |   |
-|---|---|
-|- Séparation des préoccupations<br>- Extensibilité<br>- Maintenabilité<br>- Polymorphisme<br>- Encapsulation|- Complexité accrue<br>- Violation du principe d'encapsulation<br>- Ajout de nouveaux types d'objets<br>- Les structures de données complexes|
+| Avantages                                                                                                    | Inconvénients                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| - Séparation des préoccupations<br>- Extensibilité<br>- Maintenabilité<br>- Polymorphisme<br>- Encapsulation | - Complexité accrue<br>- Violation du principe d'encapsulation<br>- Ajout de nouveaux types d'objets<br>- Les structures de données complexes |
 
 ### Avantages
 
@@ -31,11 +51,11 @@ Le design patterns **Visiteur** est un design pattern comportemental qui perm
 3. **Ajout de nouveaux types d'objets** : Si vous devez ajouter de nouveaux types d'objets à visiter, vous devrez modifier l'interface `Visitor` pour inclure une méthode pour chaque nouveau type, ce qui peut rendre le code plus fragile.
 4. **Les structures de données complexes** : Le pattern Visiteur peut être moins adapté pour les structures de données complexes, car il peut nécessiter la création de plusieurs visiteurs pour traiter toutes les opérations souhaitées.
 
-## Exemple d'implémentation
+### Exemple d'implémentation
 
 Au cœur du pattern **Visitor** se trouve la notion de séparation des préoccupations. Plutôt que de mélanger le code des opérations à effectuer sur une structure d'objets avec le code de cette structure, le Visitor déplace ces opérations dans des classes distinctes appelées visiteurs. Ces visiteurs agissent comme des extensions externes à la hiérarchie d'objets, ce qui rend le code plus modulaire et plus facile à maintenir.
 
-## Le Double Dispatch
+### Le Double Dispatch
 
 Le concept clé derrière le pattern **Visitor** est le double dispatch. Dans le contexte de l'orienté objet, le dispatch simple se produit lorsqu'une méthode est appelée sur un objet et l'implémentation de cette méthode est déterminée par le type de l'objet. Cependant, le double dispatch va un peu plus loin. Il s'agit d'une forme de polymorphisme où la méthode à appeler est déterminée à la fois par le type de l'objet et par le type des arguments passés à cette méthode.
 
@@ -284,8 +304,9 @@ public class JsonExporter implements Visitor {
 
 Et le double dispatch dans tout ça ? Le double dispatch est bien utilisé dans notre code. Lorsque nous appelons la méthode `accept` sur un objet spatial, la méthode appropriée de visite est appelée en fonction du type de l'objet spatial et du visiteur utilisé. Ensuite, le visiteur peut accéder aux méthodes de l'objet spatial pour générer la représentation correspondante.
 
-## Exemple d'utilisation
+### Exemple d'utilisation
 
+{% raw %}
 ```java
 public class VisitorMain {
     public static void main(String[] args) {
@@ -319,6 +340,7 @@ public class VisitorMain {
     }
 }}
 ```
+{% endraw %}
 
 méthode main
 
@@ -391,7 +413,7 @@ Je crée ensuite un premier **visiteur** (jsonVisitor) que je donne en paramè
 }
 ```
 
-## En conclusion
+### En conclusion
 
 Le [design pattern](https://www.sfeir.dev/back/kesaco-designs-pattern/) Visitor offre une solution pour séparer les algorithmes des objets sur lesquels ils opèrent, offrant ainsi modularité, extensibilité et maintenabilité au sein des applications logicielles.  
 En exploitant le double dispatch, le pattern Visitor permet une sélection dynamique des méthodes de visite en fonction des types d'objets et des visiteurs utilisés, facilitant ainsi la gestion des opérations sur des structures d'objets complexes.

@@ -1,23 +1,41 @@
 ---
-layout: default
-title: Médiateur
-tags: [java, tutoriel, design pattern, comportementaux, médiateur]
+layout: "default"
+title: "Médiateur"
+permalink: "/designPattern/comportementaux/mediateur/"
+tags: [back, java, design pattern, tutoriel, comportementaux]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/design-patterns-comportementaux-mediateur/"
+banner: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGNoYXR8ZW58MHx8fHwxNzA3MjA1NjQwfDA&ixlib=rb-4.0.3&q=80&w=2000"
+published_at: "2024-03-01"
+sfeir_slug: "design-patterns-comportementaux-mediateur"
+date: "2024-03-01"
 ---
+[Les Design Patterns](/definition/les-design-patterns/) comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
+Les designs patterns comportementaux les plus utilisés sont les suivants :
 
-# Le design pattern **Médiateur**
+- [Stratégie](/designPattern/comportementaux/strategie/)
+- [Mémento](/designPattern/comportementaux/memento/)
+- **Médiateur**
+- [Observateur](/designPattern/comportementaux/observateur/)
+- [Chaine de responsabilité](/designPattern/comportementaux/chaine-de-responsabilite/)
+- [Commande](/designPattern/comportementaux/commande/)
+- [Etat](/designPattern/comportementaux/etat/)
+- [Visiteur](/designPattern/comportementaux/visiteur/)
+- [Interpréteur](/designPattern/comportementaux/interpreteur/)
+
+Dans cet article, nous nous attaquerons au **design pattern Médiateur**.
+
+## Le design pattern **Médiateur**
 
 ### Définition
 
 Le pattern **Médiateur** est un design pattern comportemental qui favorise le couplage lâche en définissant un objet qui encapsule la manière dont un ensemble d'objets interagit. Plutôt que de permettre à ces objets de communiquer directement entre eux, ils communiquent uniquement à travers le médiateur. Cela réduit la dépendance entre les objets et facilite la modification et l'extension du système, car les interactions sont centralisées dans le médiateur.
 
-## Avantages et inconvénients
+### Avantages et inconvénients
 
-| Avantage                        | inconvénient                                   |
-|---------------------------------|------------------------------------------------|
-| Découplage des composants       | Complexité accrue du médiateur                 |
-| Centralisation des interactions | Augmentation de la dépendance sur le médiateur |                                                                                                                                                |
-| Facilité d'extension            | Surutilisation du pattern<br>                  |
-|                                 | Coût d'initialisation                          |
+| Avantages                                                                                  | Inconvénients                                                                                                                                  |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| - Découplage des composants<br>- Centralisation des interactions<br>- Facilité d'extension | - Complexité accrue du médiateur<br>- Augmentation de la dépendance sur le médiateur<br>- Surutilisation du pattern<br>- Coût d'initialisation |
 
 ### Avantages
 
@@ -32,7 +50,7 @@ Le pattern **Médiateur** est un design pattern comportemental qui favorise le
 3. **Surutilisation du pattern :** Il est important de ne pas abuser du pattern Médiateur. Utiliser un médiateur pour chaque interaction entre les objets peut rendre le code difficile à suivre et à comprendre. Il est préférable de réserver l'utilisation du pattern Mediator pour les cas où il offre un réel avantage en termes de modularité et de maintenabilité.
 4. **Coût d'initialisation :** La mise en place d'un médiateur peut ajouter un coût d'initialisation au système, surtout si celui-ci doit gérer de nombreux objets et interactions. Il est important de considérer ce coût lors de la conception du système et de s'assurer que le bénéfice en termes de modularité et de maintenabilité justifie ce coût supplémentaire.
 
-## Exemple d'implémentation
+### Exemple d'implémentation
 
 Pour la suite de cet article, nous allons prendre comme exemple une application de messagerie instantanée. Les plus vieux d'entre vous se souviendront de MSN, les plus jeunes utilisant sans doute Messenger, WhatsApp ou peut-être Discord.
 
@@ -83,7 +101,7 @@ Cette approche présente plusieurs avantages :
 - Elle favorise un couplage lâche entre les utilisateurs en les obligeant à communiquer uniquement via le canal de discussion. Cela rend le code plus modulaire et plus facile à maintenir, car les interactions entre les utilisateurs sont encapsulées dans un seul endroit.
 - En centralisant toutes les interactions dans la **ChatRoom**, le code devient plus organisé et plus facile à comprendre. Les interactions entre les utilisateurs sont clairement définies et encapsulées, ce qui facilite la gestion des flux de données et des comportements du système.
 
-## Exemple d'utilisation
+### Exemple d'utilisation
 
 ```java
 public static void main(String[] args) {
@@ -104,7 +122,7 @@ Thu Feb 08 15:49:36 CET 2024 [Sacha] : Hi! John!
 Thu Feb 08 15:49:36 CET 2024 [John] : Hello! Sacha!
 ```
 
-## En conclusion
+### En conclusion
 
 Le design pattern Mediator offre une approche puissante pour gérer les interactions entre objets dans un système logiciel. En favorisant un couplage lâche entre les composants du système et en centralisant toutes les interactions dans un seul endroit, ce pattern simplifie la conception, la maintenance et l'extension du code. Cela en fait un outil précieux pour les développeurs logiciels.
 

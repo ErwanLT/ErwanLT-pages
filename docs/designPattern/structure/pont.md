@@ -1,44 +1,59 @@
 ---
-layout: default
-title: Pont
-tags: [java, tutoriel, design pattern, structure, pont]
+layout: "default"
+title: "Pont"
+permalink: "/designPattern/structure/pont/"
+tags: [back, java, design pattern, tutoriel, structure]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/les-design-patterns-structurels-pont/"
+banner: "https://images.unsplash.com/photo-1429041966141-44d228a42775?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDJ8fGJyaWRnZXxlbnwwfHx8fDE3MTc2NzYyNjh8MA&ixlib=rb-4.0.3&q=80&w=2000"
+published_at: "2024-07-05"
+sfeir_slug: "les-design-patterns-structurels-pont"
+date: "2024-07-05"
 ---
+[Les Design Patterns](/definition/les-design-patterns/) en programmation, se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus faciles à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.
 
-# Le design pattern Pont
+Les design patterns structurels les plus utilisés sont les suivants :
+- [Adaptateur](/designPattern/structure/adaptateur/)
+- [Composite](/designPattern/structure/composite/)
+- [Décorateur](/designPattern/structure/decorateur/)
+- [Façade](/designPattern/structure/facade/)
+- **Pont**
+- [Proxy](/designPattern/structure/proxy/)
+## Le design pattern Pont
 
-## Définition
+### Définition
 
 Le design pattern **Pont** permet de découpler une abstraction d'une implémentation afin qu'elles puissent évoluer indépendamment.  
 Il permet de séparer la logique d'une classe de sa représentation physique, facilitant ainsi la gestion et l'extension du code.  
 Le pattern **Pont** utilise la composition plutôt que l'héritage, permettant de combiner des implémentations et des abstractions de manière plus flexible.
 
-## ⚖️ Avantages et inconvénients
+### ⚖️ Avantages et inconvénients
 
-|   |   |
-|---|---|
-|- Séparation des préoccupations<br>- Flexibilité<br>- Réduction de la complexité<br>- Composition|- Complexité accrue<br>- Maintenance|
+| Avantages                                                                                         | Inconvénients                        |
+| ------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| - Séparation des préoccupations<br>- Flexibilité<br>- Réduction de la complexité<br>- Composition | - Complexité accrue<br>- Maintenance |
 
-### ➕Avantages
+#### ➕Avantages
 
 1. **Séparation des préoccupations** : En séparant l'abstraction de son implémentation, il devient plus facile de gérer et de maintenir le code. Cela améliore la clarté et la lisibilité du code.
 2. **Flexibilité** : Les abstractions et les implémentations peuvent évoluer indépendamment. On peut changer une implémentation sans affecter l'abstraction et vice versa.
 3. **Réduction de la complexité** : Le pattern réduit le nombre de sous-classes nécessaires. Au lieu de créer plusieurs classes pour chaque combinaison d'abstraction et d'implémentation, on crée des classes indépendantes qui peuvent être combinées dynamiquement.
 4. **Composition** : Plutôt que d'utiliser un héritage rigide, le pattern favorise la composition, permettant une plus grande modularité et réutilisabilité du code.
 
-### ➖Inconvénients
+#### ➖Inconvénients
 
 1. **Complexité accrue** : L'introduction de couches supplémentaires peut rendre le code plus complexe à comprendre pour les développeurs qui ne sont pas familiers avec le pattern.
 2. **Maintenance** : La séparation stricte entre l'abstraction et l'implémentation peut parfois mener à une surcharge de maintenance, surtout si le modèle est mal appliqué ou dans des cas où il n'est pas nécessaire.
 
-## Exemple d'implémentation
+### Exemple d'implémentation
 
-Dans mes articles précédents sur les design patterns [Décorateur](https://www.sfeir.dev/back/les-design-patterns-structurels-decorateur/) et [Façade](https://www.sfeir.dev/back/les-design-patterns-structurels-facade/), j'ai utilisé l'exemple de [types de cafés différents](https://www.sfeir.dev/back/les-design-patterns-structurels-decorateur/) ainsi que d'une boutique spécialisée dans la vente de ce dernier. Généralement dans ce genre d'établissement nous avons aussi la possibilité de choisir la taille de notre boisson. C'est ce que nous verrons dans notre exemple d'implémentation.
+Dans mes articles précédents sur les design patterns [Décorateur](/designPattern/structure/decorateur/) et [Façade](/designPattern/structure/facade/), j'ai utilisé l'exemple de types de cafés différents ainsi que d'une boutique spécialisée dans la vente de ce dernier. Généralement dans ce genre d'établissement nous avons aussi la possibilité de choisir la taille de notre boisson. C'est ce que nous verrons dans notre exemple d'implémentation.
 
 [![diagramme de classe](https://www.sfeir.dev/content/images/2024/06/bridge.drawio.png)](https://www.sfeir.dev/content/images/2024/06/bridge.drawio.png)
 
 implémentation
 
-#### Classe abstraite
+##### Classe abstraite
 
 La classe abstraite `Coffee` définit l'interface pour les types de cafés et contient une référence à une implémentation de `CoffeeSize`.
 
@@ -54,7 +69,7 @@ public abstract class Coffee {
 }
 ```
 
-#### Implémentation : CoffeeSize
+##### Implémentation : CoffeeSize
 
 L'interface `CoffeeSize` définit l'interface pour les tailles de café.
 
@@ -64,7 +79,7 @@ public interface CoffeeSize {
 }
 ```
 
-#### Implémentation concrète des tailles de café
+###### Implémentation concrète des tailles de café
 
 Les classes `SmallSize`, `MediumSize`, et `LargeSize` implémentent l'interface `CoffeeSize` et fournissent des implémentations spécifiques pour chaque taille de café.
 
@@ -88,7 +103,7 @@ public class LargeSize implements CoffeeSize {
 }
 ```
 
-#### Abstraction concrète : Types de cafés
+###### Abstraction concrète : Types de cafés
 
 Les classes `Espresso` et `Latte` étendent la classe abstraite `Coffee` et fournissent des implémentations spécifiques pour chaque type de café.
 
@@ -120,7 +135,7 @@ class Latte extends Coffee {
 }
 ```
 
-## Exemple d'utilisation
+### Exemple d'utilisation
 
 ```java
 public static void main(String[] args) {
@@ -178,7 +193,7 @@ Latte: Preparing a medium coffee.
 Espresso: Preparing a large coffee.
 ```
 
-## En conclusion
+### En conclusion
 
 Le design pattern Pont est particulièrement utile pour découpler les différentes parties d'un système, comme dans l'exemple du café.  
 Il permet de créer des systèmes flexibles et facilement extensibles, où les abstractions et leurs implémentations peuvent évoluer indépendamment.

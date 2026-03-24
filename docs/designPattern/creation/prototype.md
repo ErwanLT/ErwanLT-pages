@@ -1,13 +1,29 @@
 ---
-layout: default
-title: Prototype
-tags: [java, tutoriel, design pattern, creation, prototype]
+layout: "default"
+title: "Prototype"
+permalink: "/designPattern/creation/prototype/"
+tags: [back, java, design pattern, tutoriel, creation]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/les-designs-patterns-de-creation-prototype/"
+banner: "https://images.unsplash.com/photo-1624066969616-69b0b0301d4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDE0fHxwcm90b3R5cGV8ZW58MHx8fHwxNjgzMTk4ODkx&ixlib=rb-4.0.3&q=80&w=2000"
+published_at: "2023-05-24"
+sfeir_slug: "les-designs-patterns-de-creation-prototype"
+date: "2023-05-24"
 ---
+# Les designs patterns de création c'est quoi ?
 
+[Les Design Patterns](/definition/les-design-patterns/) de Création sont un ensemble de design patterns qui permettent de créer des objets d'une manière qui soit flexible, modulaire et qui facilite leur réutilisation. Ils sont utilisés pour résoudre des problèmes de conception liés à la création d'objets.  
+Les designs pattern de création les plus utilisés sont les suivants :
 
-# Le design pattern Prototype
+- [Factory](/designPattern/creation/factory/)
+- [Builder](/designPattern/creation/builder/)
+- **Prototype**
+- [Singleton](/designPattern/creation/singleton/)
 
-## définition
+Ici nous nous attaquerons au **design pattern prototype**.
+## Le design pattern Prototype
+
+### définition
 
 En programmation orientée objet, le design pattern **Prototype** est utilisé lorsque la création d'une instance est complexe ou consommatrice en temps. Plutôt que créer plusieurs instances de la classe, on copie la première instance et on modifie la copie de façon appropriée.
 
@@ -15,7 +31,7 @@ Pour implémenter ce patron il faut déclarer une classe abstraite spécifiant u
 
 Le client de cette classe, au lieu d'écrire du code invoquant directement une nouvelle instance de la classe, appellera la méthode _**clone()**_ sur le **prototype** ou utilisera une autre méthode fourni par un autre design pattern.
 
-## Cas d'utilisation
+### Cas d'utilisation
 
 1. Création d'objets coûteuse : Lorsqu'il est coûteux de créer un nouvel objet en utilisant le processus d'instanciation habituel, le Prototype permet de cloner un objet existant pour obtenir une copie modifiable, évitant ainsi les coûts de création répétée.
     

@@ -1,16 +1,37 @@
 ---
-layout: default
-title: Stratégie
-tags: [java, tutoriel, design pattern, comportementaux, stratégie]
+layout: "default"
+title: "Stratégie"
+permalink: "/designPattern/comportementaux/strategie/"
+tags: [back, java, design pattern, tutoriel, comportementaux]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/les-designs-pattern-comportementaux/"
+banner: "https://images.unsplash.com/photo-1523875194681-bedd468c58bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fHN0cmF0ZWd5fGVufDB8fHx8MTcwNDQ1NjI1NHww&ixlib=rb-4.0.3&q=80&w=2000"
+published_at: "2024-01-11"
+sfeir_slug: "les-designs-pattern-comportementaux"
+date: "2024-01-11"
 ---
+[Les Design Patterns](/definition/les-design-patterns/) comportementaux, en programmation, représentent des solutions éprouvées aux problèmes récurrents liés à la communication entre les objets et les responsabilités de ces objets. Ces design patterns se concentrent sur la manière dont les objets interagissent et communiquent entre eux.  
+Les designs patterns comportementaux les plus utilisés sont les suivants :
 
-# Le design pattern Stratégie
+- **Stratégie**
+- [Mémento](/designPattern/comportementaux/memento/)
+- [Médiateur](/designPattern/comportementaux/mediateur/)
+- [Observateur](/designPattern/comportementaux/observateur/)
+- [Chaine de responsabilité](/designPattern/comportementaux/chaine-de-responsabilite/)
+- [Commande](/designPattern/comportementaux/commande/)
+- [Etat](/designPattern/comportementaux/etat/)
+- [Visiteur](/designPattern/comportementaux/visiteur/)
+- [Interpréteur](/designPattern/comportementaux/interpreteur/)
 
-## Définition
+Ici nous nous attaquerons au **design pattern** **Stratégie**.
+
+## Le design pattern Stratégie
+
+### Définition
 
 En programmation orientée objet, le design pattern Stratégie définit une famille d'algorithmes, encapsulant chacun d'eux, et les rendant interchangeables. Il permet à un client de choisir un algorithme parmi plusieurs sans modifier la structure du code. Cela favorise la flexibilité et l'extensibilité du code.
 
-## Exemple d'implémentation
+### Exemple d'implémentation
 
 [![](https://www.sfeir.dev/content/images/2024/01/strategy.drawio--1-.png)](https://www.sfeir.dev/content/images/2024/01/strategy.drawio--1-.png)
 
@@ -91,7 +112,7 @@ Le résultat du code ci-dessus en console sera le suivant
 -1
 ```
 
-## En conclusion
+### En conclusion
 
 Le design pattern Stratégie offre de la flexibilité aux développeurs. En encapsulant des familles d'algorithmes interchangeables, ce pattern permet aux clients de choisir dynamiquement le comportement désiré sans altérer la structure du code existant.  
 En utilisant le design pattern Stratégie, nous pouvons facilement ajouter de nouvelles stratégies sans perturber le fonctionnement global de l'application.

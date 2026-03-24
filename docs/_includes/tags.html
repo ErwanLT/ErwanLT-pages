@@ -1,49 +1,56 @@
-<div class="mb-3">
+<div class="mb-4 flex flex-wrap gap-2">
     {% for tag in page.tags %}
         {% assign handle = tag %}
+        {% assign tag_slug = tag | slugify %}
         {% case handle %}
             {% when "design pattern" %}
-                <a href="{{ '/designPattern/' | relative_url }}">
-                    <span class="badge bg-custom me-1">{{ tag }}</span>
+                <a class="inline-flex items-center rounded-full bg-brand-100 text-brand-700 px-3 py-1 text-xs font-medium" href="{{ '/tags/design-pattern/' | relative_url }}">
+                    {{ tag }}
                 </a>
             {% when "creation" %}
-                <a href="{{ '/designPattern/creation/' | relative_url }}">
-                    <span class="badge bg-custom me-1">{{ tag }}</span>
+                <a class="inline-flex items-center rounded-full bg-brand-100 text-brand-700 px-3 py-1 text-xs font-medium" href="{{ '/tags/creation/' | relative_url }}">
+                    {{ tag }}
                 </a>
             {% when "comportementaux" %}
-                <a href="{{ '/designPattern/comportementaux/' | relative_url }}">
-                    <span class="badge bg-custom me-1">{{ tag }}</span>
+                <a class="inline-flex items-center rounded-full bg-brand-100 text-brand-700 px-3 py-1 text-xs font-medium" href="{{ '/tags/comportementaux/' | relative_url }}">
+                    {{ tag }}
                 </a>
             {% when "structure" %}
-                <a href="{{ '/designPattern/structurel/' | relative_url }}">
-                    <span class="badge bg-custom me-1">{{ tag }}</span>
+                <a class="inline-flex items-center rounded-full bg-brand-100 text-brand-700 px-3 py-1 text-xs font-medium" href="{{ '/tags/structure/' | relative_url }}">
+                    {{ tag }}
                 </a>
             {% when "spring-boot" %}
-                <a href="{{ '/springboot/' | relative_url }}">
-                    <span class="badge bg-custom me-1">{{ tag }}</span>
+                <a class="inline-flex items-center rounded-full bg-brand-100 text-brand-700 px-3 py-1 text-xs font-medium" href="{{ '/tags/spring-boot/' | relative_url }}">
+                    {{ tag }}
                 </a>
             {% when "BRMS" %}
-                <a href="{{ '/springboot/BRMS' | relative_url }}">
-                    <span class="badge bg-custom me-1">{{ tag }}</span>
+                <a class="inline-flex items-center rounded-full bg-brand-100 text-brand-700 px-3 py-1 text-xs font-medium" href="{{ '/tags/brms/' | relative_url }}">
+                    {{ tag }}
+                </a>
+            {% when "securite" %}
+                <a class="inline-flex items-center rounded-full bg-brand-100 text-brand-700 px-3 py-1 text-xs font-medium" href="{{ '/tags/securite/' | relative_url }}">
+                    {{ tag }}
                 </a>
             {% when "securité" %}
-                <a href="{{ '/springboot/security' | relative_url }}">
-                    <span class="badge bg-custom me-1">{{ tag }}</span>
+                <a class="inline-flex items-center rounded-full bg-brand-100 text-brand-700 px-3 py-1 text-xs font-medium" href="{{ '/tags/securite/' | relative_url }}">
+                    {{ tag }}
                 </a>
             {% when "testing" %}
-                <a href="{{ '/springboot/testing' | relative_url }}">
-                    <span class="badge bg-custom me-1">{{ tag }}</span>
+                <a class="inline-flex items-center rounded-full bg-brand-100 text-brand-700 px-3 py-1 text-xs font-medium" href="{{ '/tags/testing/' | relative_url }}">
+                    {{ tag }}
                 </a>
             {% when "code-generation" %}
-                <a href="{{ '/springboot/code-gen' | relative_url }}">
-                    <span class="badge bg-custom me-1">{{ tag }}</span>
+                <a class="inline-flex items-center rounded-full bg-brand-100 text-brand-700 px-3 py-1 text-xs font-medium" href="{{ '/tags/code-generation/' | relative_url }}">
+                    {{ tag }}
                 </a>
             {% when "asgard" %}
-                <a href="{{ '/asgard/' | relative_url }}">
-                    <span class="badge bg-custom me-1">{{ tag }}</span>
+                <a class="inline-flex items-center rounded-full bg-brand-100 text-brand-700 px-3 py-1 text-xs font-medium" href="{{ '/tags/asgard/' | relative_url }}">
+                    {{ tag }}
                 </a>
             {% else %}
-                <span class="badge bg-secondary me-1">{{ tag }}</span>
+                <a class="inline-flex items-center rounded-full bg-slate-100 text-slate-700 px-3 py-1 text-xs font-medium" href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">
+                    {{ tag }}
+                </a>
         {% endcase %}
     {% endfor %}
 </div>

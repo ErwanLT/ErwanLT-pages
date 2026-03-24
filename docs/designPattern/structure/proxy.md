@@ -1,42 +1,57 @@
 ---
-layout: default
-title: Proxy
-tags: [java, tutoriel, design pattern, structure, proxy]
+layout: "default"
+title: "Proxy"
+permalink: "/designPattern/structure/proxy/"
+tags: [back, java, design pattern, tutoriel, structure]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/les-design-patterns-structurels-proxy/"
+banner: "https://www.sfeir.dev/content/images/2024/06/photo-1556742517-fde6c2abbe11.jpeg"
+published_at: "2024-07-09"
+sfeir_slug: "les-design-patterns-structurels-proxy"
+date: "2024-07-09"
 ---
+[Les Design Patterns](/definition/les-design-patterns/) en programmation, se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus faciles à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.
 
-# Le design pattern Proxy
+Les design patterns structurels les plus utilisés sont les suivants :
+- [Adaptateur](/designPattern/structure/adaptateur/)
+- [Composite](/designPattern/structure/composite/)
+- [Décorateur](/designPattern/structure/decorateur/)
+- [Façade](/designPattern/structure/facade/)
+- [Pont](/designPattern/structure/pont/)
+- **Proxy**
+## Le design pattern Proxy
 
-## Définition
+### Définition
 
 Le design pattern Proxy est un modèle de conception structurel qui fournit un substitut ou un intermédiaire à un autre objet pour contrôler l'accès à cet objet.  
 En Java, un proxy peut être utilisé pour ajouter une couche d'indirection et d'interception, permettant de modifier ou de contrôler l'accès aux fonctionnalités d'un objet sans en altérer le code source.
 
-## ⚖️ Avantages et inconvénients
+### ⚖️ Avantages et inconvénients
 
-|   |   |
-|---|---|
-|- Contrôle d'accès<br>- Réduction des coûts<br>- Gestion des ressources<br>- Ajout de fonctionnalités|- Complexité accrue<br>- Dégradation des performances<br>- Débug plus difficile|
+| Avantages                                                                                             | Inconvénients                                                                   |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| - Contrôle d'accès<br>- Réduction des coûts<br>- Gestion des ressources<br>- Ajout de fonctionnalités | - Complexité accrue<br>- Dégradation des performances<br>- Débug plus difficile |
 
-### ➕Avantages
+#### ➕Avantages
 
 1. **Contrôle d'accès** : Le proxy peut contrôler l'accès à l'objet réel, ce qui est utile pour des raisons de sécurité.
 2. **Réduction des coûts** : Un proxy peut différer la création d'un objet coûteux jusqu'à ce qu'il soit réellement nécessaire.
 3. **Gestion des ressources** : En utilisant un proxy, les ressources peuvent être gérées plus efficacement, par exemple en instanciant des objets à la demande.
 4. **Ajout de fonctionnalités** : Il permet d'ajouter des fonctionnalités supplémentaires telles que la journalisation, la gestion des transactions, ou la mise en cache sans modifier l'objet d'origine.
 
-### ➖Inconvénients
+#### ➖Inconvénients
 
 1. **Complexité accrue** : L'ajout de proxies peut augmenter la complexité du système, rendant le code plus difficile à comprendre et à maintenir.
 2. **Dégradation des performances** : L'interception des appels de méthode via un proxy peut introduire une surcharge et potentiellement dégrader les performances.
 3. **Débug plus difficile** : La présence de proxies peut rendre le débogage plus compliqué car il ajoute un niveau d'indirection entre le client et l'objet réel.
 
-## Exemple d'implémentation
+### Exemple d'implémentation
 
 Dans mes précédents articles nous avons les exemples suivant :
 
-- [Personnaliser son café](https://www.sfeir.dev/back/les-design-patterns-structurels-decorateur/)
-- [Le fonctionnement d'un coffee shop](https://www.sfeir.dev/back/les-design-patterns-structurels-facade/)
-- [Comment choisir la taille de son café](https://www.sfeir.dev/back/les-design-patterns-structurels-pont/)
+- [Personnaliser son café](/designPattern/structure/decorateur/)
+- [Le fonctionnement d'un coffee shop](/designPattern/structure/facade/)
+- [Comment choisir la taille de son café](/designPattern/structure/pont/)
 
 Il nous reste à voir comment payer ce dernier afin de pouvoir en profiter.  
 Dans cet exemple, nous allons implémenter un système de paiement avec différents types de cartes de crédit. Nous aurons une interface `Payment`, une classe `RealPayment` qui représente l'objet réel, et une classe `PaymentProxy` qui agit comme un proxy pour `RealPayment`, en ajoutant des fonctionnalités telles que l'authentification et la journalisation.
@@ -45,7 +60,7 @@ Dans cet exemple, nous allons implémenter un système de paiement avec différe
 
 Diagramme de classe
 
-#### Payment et ses implémentations
+##### Payment et ses implémentations
 
 L'interface `Payment` définit la méthode `pay`, qui sera implémentée par les classes concrètes pour effectuer un paiement.
 
@@ -100,7 +115,7 @@ public class PaymentProxy implements Payment {
 }
 ```
 
-#### Journalisation
+##### Journalisation
 
 La classe `Logger` est une classe utilitaire qui fournit une méthode statique pour journaliser les transactions. Elle affiche un message indiquant le montant du paiement et le numéro de la carte utilisée.
 
@@ -118,7 +133,7 @@ Ici nous faisons un simple print en console, mais nous pourrions très bien util
 - fichier de log dédié
 - ect
 
-#### Authentification
+##### Authentification
 
 La classe `Authenticator` est une classe utilitaire qui fournit une méthode statique pour vérifier l'authentification des utilisateurs. Elle utilise une logique simplifiée pour authentifier les utilisateurs en fonction d'un booléen `isAuthenticated`.
 
@@ -136,7 +151,7 @@ public class Authenticator {
 }
 ```
 
-## Exemple d'utilisation
+### Exemple d'utilisation
 
 ```java
 public static void main(String[] args) {
@@ -178,7 +193,7 @@ Authentication failed for card 2222-2222-2222-2222
 Authentication required to process payment.
 ```
 
-## En conclusion
+### En conclusion
 
 Le design pattern Proxy est efficace pour contrôler l'accès et ajouter des fonctionnalités supplémentaires à des objets.  
 Bien qu'il puisse augmenter la complexité et potentiellement dégrader les performances, ses avantages en matière de gestion des ressources, de sécurité et de modularité sont très utiles.

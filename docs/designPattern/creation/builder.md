@@ -1,16 +1,33 @@
 ---
-layout: default
-title: Builder
-tags: [java, tutoriel, design pattern, creation, builder]
+layout: "default"
+title: "Builder"
+permalink: "/designPattern/creation/builder/"
+tags: [back, java, design pattern, tutoriel, creation]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/les-designs-patterns-de-creation-builder/"
+banner: "https://images.unsplash.com/photo-1560961911-ba7ef651a56c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGxlZ28lMjBicmlja3xlbnwwfHx8fDE3NTUwNzY2Njd8MA&ixlib=rb-4.1.0&q=80&w=2000"
+published_at: "2023-05-03"
+sfeir_slug: "les-designs-patterns-de-creation-builder"
+date: "2023-05-03"
 ---
+# Les designs patterns de création c'est quoi ?
 
-# Le design pattern Builder
+[Les Design Patterns](/definition/les-design-patterns/) de Création sont un ensemble de design patterns qui permettent de créer des objets d'une manière qui soit flexible, modulaire et qui facilite leur réutilisation. Ils sont utilisés pour résoudre des problèmes de conception liés à la création d'objets.  
+Les designs pattern de création les plus utilisés sont les suivants :
 
-## Définition
+- [Factory](/designPattern/creation/factory/)
+- **Builder**
+- [Prototype](/designPattern/creation/prototype/)
+- [Singleton](/designPattern/creation/singleton/)
+
+Ici nous nous attaquerons au **design pattern builder**.
+## Le design pattern BUILDER
+
+### Définition
 
 Le design pattern **Builder** est un modèle de conception qui permet de créer des objets complexes en séparant leur construction de leur représentation. En programmation orientée objet, ce design pattern est couramment utilisé pour créer des objets avec de nombreuses propriétés, en évitant de définir chacune de ces propriétés à chaque fois qu'un nouvel objet est créé.
 
-## Cas d'utilisation
+### Cas d'utilisation
 
 Le design pattern Builder fonctionne en séparant la construction d'un objet de sa représentation. Il se compose de deux parties principales : une classe **Builder** qui est responsable de la construction de l'objet, et une classe représentant l'objet lui-même.
 
@@ -18,7 +35,7 @@ La classe **Builder** contient des méthodes pour définir les différentes pr
 
 Le pattern **Builder** peut être utilisé pour créer des objets avec un grand nombre de propriétés en évitant la complexité d'un constructeur avec de nombreux arguments. Au lieu de cela, le constructeur de la classe représentant l'objet peut avoir une seule propriété qui est un objet Builder. La classe Builder peut alors définir les propriétés une par une, en utilisant des méthodes spécifiques pour chaque propriété.
 
-## Exemple d'implementation
+### Exemple d'implementation
 
 ![Builder](https://www.sfeir.dev/content/images/2023/04/Builder.png)
 

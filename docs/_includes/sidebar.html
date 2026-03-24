@@ -1,26 +1,197 @@
-<nav class="bg-light d-flex flex-column align-items-start p-2 overflow-y: auto; sidebar-scrollable">
-    <button class="btn btn-outline-secondary mb-2" type="button"
-            data-bs-toggle="collapse" data-bs-target="#sidebarContent"
-            aria-controls="sidebarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon">☰</span>
-    </button>
-    
-    <div class="collapse show w-100" id="sidebarContent">
-        <div class="d-flex flex-column p-3 bg-light" style="width: 280px">
-            <div class="nav nav-pills flex-column mb-auto">
-                {% include designPattern_sidebar.html %}
-                <br>
-                {% include springboot_sidebar.html %}
-                <br>
-                {% include project_sidebar.html %}
-                <br>
-            </div>
-            
+<aside class="sidebar-scrollable">
+    <div class="bg-white/80 backdrop-blur border border-slate-200 rounded-2xl p-4 shadow-sm">
+        <a class="block px-3 py-2 rounded-lg text-slate-900 font-semibold hover:bg-slate-100" href="{{ '/' | relative_url }}">Accueil</a>
+
+        <div class="mt-4 space-y-2 text-sm">
+            <details open class="group">
+                <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                    <span>Spring Boot</span>
+                    <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                </summary>
+                <div class="pl-3 pt-2 space-y-2">
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/spring-boot/' | relative_url }}">Tous les articles</a>
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/comprendre-les-annotations-dans-spring-boot-guide-et-exemples/' | relative_url }}">Les annotations</a>
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/comment-personnaliser-la-banniere-d-un-projet-spring-boot/' | relative_url }}">Bannière Spring Boot</a>
+
+                    <details class="group">
+                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
+                            <span>BRMS</span>
+                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                        </summary>
+                        <div class="pl-3 pt-2 space-y-1">
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/brms/maitrisez-vos-regles-metier-integrez-drools-dans-spring-boot/' | relative_url }}">Drools</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/brms/integration-d-easy-rules-dans-une-application-spring-boot/' | relative_url }}">Easy Rules</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/brms/revolutionner-la-gestion-des-regles-metier-integrer-rulebook-dans-spring-boot/' | relative_url }}">Rulebook</a>
+                        </div>
+                    </details>
+
+                    <details class="group">
+                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
+                            <span>Sécurité</span>
+                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                        </summary>
+                        <div class="pl-3 pt-2 space-y-1">
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/security/securisez-vos-api-avec-spring-security-basic-auth/' | relative_url }}">Basic Auth</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/security/securisez-vos-api-avec-spring-security-jwt/' | relative_url }}">JWT</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/security/securisez-vos-api-avec-spring-security-acces-par-role/' | relative_url }}">JWT + RBAC</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/security/integration-de-ldap-dans-une-application-spring-boot-avec-spring-security/' | relative_url }}">LDAP</a>
+                        </div>
+                    </details>
+
+                    <details class="group">
+                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
+                            <span>GraphQL</span>
+                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                        </summary>
+                        <div class="pl-3 pt-2 space-y-1">
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/graphql/' | relative_url }}">Tous les articles</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/graphql/partie-1-mise-en-place/' | relative_url }}">Partie 1</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/graphql/partie-2-le-schema-dans-graphql/' | relative_url }}">Partie 2</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/graphql/partie-3-controllers/' | relative_url }}">Partie 3</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/graphql/partie-4-tests-unitaires/' | relative_url }}">Partie 4</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/graphql/partie-5-documentation/' | relative_url }}">Partie 5</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/graphql/partie-6-gestion-des-erreurs/' | relative_url }}">Partie 6</a>
+                        </div>
+                    </details>
+
+                    <details class="group">
+                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
+                            <span>Cache</span>
+                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                        </summary>
+                        <div class="pl-3 pt-2 space-y-1">
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/cache/' | relative_url }}">Tous les articles</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/cache/mise-en-cache-avec-redis-dans-spring-boot/' | relative_url }}">Redis</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/cache/ameliorer-son-cache-spring-boot-avec-caffeine/' | relative_url }}">Caffeine</a>
+                        </div>
+                    </details>
+
+                    <details class="group">
+                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
+                            <span>Messaging</span>
+                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                        </summary>
+                        <div class="pl-3 pt-2 space-y-1">
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/messaging/' | relative_url }}">Tous les articles</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/messaging/integration-de-kafka-dans-une-application-spring-boot/' | relative_url }}">Kafka</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/messaging/integration-de-jms-dans-une-application-spring-boot/' | relative_url }}">JMS</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/messaging/implementation-d-un-systeme-de-notifications-en-temps-reel-avec-spring-boot-et-server-sent-events/' | relative_url }}">Server-Sent Events</a>
+                        </div>
+                    </details>
+
+                    <details class="group">
+                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
+                            <span>Tests</span>
+                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                        </summary>
+                        <div class="pl-3 pt-2 space-y-1">
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/testing/' | relative_url }}">Tous les articles</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/testing/maitrisez-votre-architecture-spring-boot-avec-archunit/' | relative_url }}">ArchUnit</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/testing/maitrisez-les-tests-de-charge-avec-gatling-pour-spring-boot/' | relative_url }}">Gatling</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/testing/introduisez-du-chaos-dans-votre-application-spring-boot/' | relative_url }}">Chaos Monkey</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/testing/test-parametres-un-test-pour-les-gouverner-tous/' | relative_url }}">Tests paramétrés</a>
+                        </div>
+                    </details>
+
+                    <details class="group">
+                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
+                            <span>IA</span>
+                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                        </summary>
+                        <div class="pl-3 pt-2 space-y-1">
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/ia/de-la-question-naturelle-a-la-requete-jpa-tool-calling-avec-spring-ai/' | relative_url }}">Spring AI</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/ia/et-si-on-integrait-langchain-dans-spring-boot-partie-1/' | relative_url }}">LangChain</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/springboot/ia/ludotheque-augmentee-un-rag-local-avec-spring-ai-ollama-et-chroma/' | relative_url }}">RAG</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <details class="group">
+                <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                    <span>Design Patterns</span>
+                    <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                </summary>
+                <div class="pl-3 pt-2 space-y-2">
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/design-pattern/' | relative_url }}">Tous les articles</a>
+
+                    <details class="group">
+                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
+                            <span>Création</span>
+                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                        </summary>
+                        <div class="pl-3 pt-2 space-y-1">
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/creation/builder/' | relative_url }}">Builder</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/creation/factory/' | relative_url }}">Factory</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/creation/prototype/' | relative_url }}">Prototype</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/creation/singleton/' | relative_url }}">Singleton</a>
+                        </div>
+                    </details>
+
+                    <details class="group">
+                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
+                            <span>Structure</span>
+                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                        </summary>
+                        <div class="pl-3 pt-2 space-y-1">
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/structure/adaptateur/' | relative_url }}">Adaptateur</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/structure/composite/' | relative_url }}">Composite</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/structure/decorateur/' | relative_url }}">Décorateur</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/structure/facade/' | relative_url }}">Façade</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/structure/pont/' | relative_url }}">Pont</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/structure/proxy/' | relative_url }}">Proxy</a>
+                        </div>
+                    </details>
+
+                    <details class="group">
+                        <summary class="cursor-pointer list-none px-3 py-1 rounded-md bg-slate-50 border border-slate-200 font-medium text-slate-800 flex items-center justify-between">
+                            <span>Comportementaux</span>
+                            <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                        </summary>
+                        <div class="pl-3 pt-2 space-y-1">
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/chaine-de-responsabilite/' | relative_url }}">Chaine de responsabilité</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/commande/' | relative_url }}">Commande</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/etat/' | relative_url }}">Etat</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/interpreteur/' | relative_url }}">Interpréteur</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/mediateur/' | relative_url }}">Médiateur</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/memento/' | relative_url }}">Memento</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/observateur/' | relative_url }}">Observateur</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/strategie/' | relative_url }}">Stratégie</a>
+                            <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/designPattern/comportementaux/visiteur/' | relative_url }}">Visiteur</a>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <details class="group">
+                <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                    <span>Back</span>
+                    <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                </summary>
+                <div class="pl-3 pt-2 space-y-1">
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/back/' | relative_url }}">Tous les articles</a>
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/java/' | relative_url }}">Java</a>
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/quarkus/' | relative_url }}">Quarkus</a>
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/python/' | relative_url }}">Python</a>
+                </div>
+            </details>
+
+            <details class="group">
+                <summary class="cursor-pointer list-none px-3 py-2 rounded-lg bg-slate-50 border border-slate-200 font-semibold text-slate-900 flex items-center justify-between">
+                    <span>Autres</span>
+                    <span class="text-slate-400 group-open:rotate-180 transition">⌃</span>
+                </summary>
+                <div class="pl-3 pt-2 space-y-1">
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/product/' | relative_url }}">Product</a>
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/ia/' | relative_url }}">IA</a>
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/conferences/' | relative_url }}">Conférences</a>
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/definition/' | relative_url }}">Définitions</a>
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/histoires/' | relative_url }}">Histoires</a>
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/portrait/' | relative_url }}">Portraits</a>
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/cloud/' | relative_url }}">Cloud</a>
+                    <a class="block px-3 py-1 rounded-md text-slate-700 hover:bg-slate-100" href="{{ '/tags/bugs/' | relative_url }}">Bugs</a>
+                </div>
+            </details>
         </div>
     </div>
-
-
-
-
-
-</nav>
+</aside>

@@ -1,12 +1,28 @@
 ---
-layout: default
-title: Adaptateur
-tags: [java, tutoriel, design pattern, structure, adaptateur]
+layout: "default"
+title: "Adaptateur"
+permalink: "/designPattern/structure/adaptateur/"
+tags: [back, java, design pattern, tutoriel, structure]
+source: "sfeir.dev"
+source_url: "https://www.sfeir.dev/back/les-design-patterns-structurel-adaptateur/"
+banner: "https://images.unsplash.com/photo-1564517945244-d371c925640b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDF8fGFkYXB0ZXJ8ZW58MHx8fHwxNzEzODg3MzY2fDA&ixlib=rb-4.0.3&q=80&w=2000"
+published_at: "2024-06-03"
+sfeir_slug: "les-design-patterns-structurel-adaptateur"
+date: "2024-06-03"
 ---
+[Les Design Patterns](/definition/les-design-patterns/) en programmation, se concentrent sur la manière dont les classes et les objets sont structurés pour former des architectures logicielles plus flexibles et plus faciles à maintenir. Ils facilitent la composition d'objets pour créer des structures plus complexes tout en minimisant les dépendances entre les différents éléments du système.
 
-# Le design pattern Adaptateur
+Les design patterns structurels les plus utilisés sont les suivants :
+- **Adaptateur**
+- [Composite](/designPattern/structure/composite/)
+- [Décorateur](/designPattern/structure/decorateur/)
+- [Façade](/designPattern/structure/facade/)
+- [Pont](/designPattern/structure/pont/)
+- [Proxy](/designPattern/structure/proxy/)
 
-## Définition
+## Le design pattern Adaptateur
+
+### Définition
 
 Le design pattern Adaptateur est un modèle structurel qui permet à des interfaces incompatibles de collaborer entre elles. Il agit comme un intermédiaire qui convertit l'interface d'une classe en une autre interface attendue par le client.
 
@@ -14,27 +30,27 @@ Ce design pattern définit un adaptateur qui enveloppe l'objet à adapter, fourn
 
 Chaque adaptateur implémente l'interface attendue par le client et utilise l'objet à adapter pour répondre aux appels de méthode. Cela permet d'intégrer des composants existants dans de nouvelles architectures sans avoir à les modifier, favorisant ainsi la réutilisation du code et la compatibilité entre différentes parties d'un système logiciel.
 
-## ⚖️ Avantages et inconvénients
+### ⚖️ Avantages et inconvénients
 
-|   |   |
-|---|---|
-|- Réutilisation de code existant<br>- Inter-opérabilité entre interfaces incompatibles<br>- Séparation des préoccupations<br>- Facilite l'évolution|- Complexité<br>- Surcharge de l'interface<br>- Indirection supplémentaire<br>- Conception|
+| Avantages                                                                                                                                           | Inconvénients                                                                              |
+| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| - Réutilisation de code existant<br>- Inter-opérabilité entre interfaces incompatibles<br>- Séparation des préoccupations<br>- Facilite l'évolution | - Complexité<br>- Surcharge de l'interface<br>- Indirection supplémentaire<br>- Conception |
 
-### ➕Avantages
+#### ➕Avantages
 
 1. **Réutilisation de code existant** : L'adaptateur permet d'intégrer des classes ou des composants existants dans de nouveaux systèmes sans avoir à les modifier, ce qui favorise la réutilisabilité du code.
 2. **Interopérabilité entre interfaces incompatibles** : Il facilite la collaboration entre des classes ou des systèmes qui ont des interfaces incompatibles, en fournissant une interface commune pour la communication.
 3. **Séparation des préoccupations** : L'adaptateur isole le client des détails d'implémentation de la classe adaptée, ce qui permet de maintenir une meilleure séparation des préoccupations dans le code.
 4. **Facilite l'évolution du système** : En utilisant des adaptateurs, il devient plus facile d'ajouter de nouvelles classes ou de modifier les classes existantes sans impacter le reste du système.
 
-### ➖Inconvénients
+#### ➖Inconvénients
 
 1. **Complexité accrue** : L'ajout d'adaptateurs peut introduire de la complexité supplémentaire dans le système, notamment lorsqu'il y a plusieurs adaptateurs pour différentes classes ou interfaces.
 2. **Surcharge de l'interface** : Si de nombreux adaptateurs sont utilisés, cela peut entraîner une surcharge d'interfaces et une difficulté à maintenir une cohérence dans tout le système.
 3. **Indirection supplémentaire** : L'utilisation d'adaptateurs peut introduire une indirection supplémentaire lors de l'appel de méthodes, ce qui peut affecter les performances dans certains cas.
 4. **Potentiel de mauvaise conception** : Si mal utilisé, le pattern Adaptateur peut conduire à une mauvaise conception logicielle, notamment si l'adaptation est faite de manière excessive ou peu claire.
 
-## Exemple d'implémentation
+### Exemple d'implémentation
 
 Dans la suite de cet article, nous utiliserons un système de messagerie comme exemple où nous aurons deux services de communication : l'envoi d'e-mails et l'envoi de SMS.
 
@@ -134,7 +150,7 @@ public class SMSServiceAdapter implements MessagingService {
 
 implémentation MessagingService pour SMS
 
-## Exemple d'utilisation
+### Exemple d'utilisation
 
 ```java
 public static void main(String[] args) {
@@ -160,6 +176,6 @@ Sending SMS to +1234567890: Hello from SMS Adapter
 Sending Email to user@example.com (Subject: ): Hello from Email Adapter
 ```
 
-## En conclusion
+### En conclusion
 
 Le design pattern Adaptateur permet de simplifier l'intégration de composants hétérogènes dans un système logiciel. En fournissant une interface commune et en traduisant les appels entre différentes interfaces, il permet de rendre le système plus flexible, réutilisable et facile à maintenir.
