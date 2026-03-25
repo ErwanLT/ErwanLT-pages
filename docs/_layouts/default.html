@@ -74,6 +74,34 @@
         {% unless page.content contains '<h1' %}
         <h1 class="text-center">{{ page.title }}</h1>
         {% endunless %}
+        {% if page.published_at or page.date or page.source %}
+        <div class="not-prose mt-4 mb-6 flex flex-wrap items-center gap-3 text-sm text-slate-500">
+            {% if page.published_at %}
+            <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1">
+                <i class="fa-regular fa-calendar"></i>
+                <span>Publié le {{ page.published_at | date: "%d/%m/%Y" }}</span>
+            </span>
+            {% elsif page.date %}
+            <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1">
+                <i class="fa-regular fa-calendar"></i>
+                <span>Publié le {{ page.date | date: "%d/%m/%Y" }}</span>
+            </span>
+            {% endif %}
+            {% if page.source %}
+            <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1">
+                <i class="fa-solid fa-link"></i>
+                <span>
+                    Source :
+                    {% if page.source_url %}
+                    <a class="text-brand-700 hover:underline" href="{{ page.source_url }}" target="_blank" rel="noopener">{{ page.source }}</a>
+                    {% else %}
+                    {{ page.source }}
+                    {% endif %}
+                </span>
+            </span>
+            {% endif %}
+        </div>
+        {% endif %}
         {{ content }}
     </div>
 </main>
